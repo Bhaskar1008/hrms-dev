@@ -19,8 +19,7 @@ export const useApi = () => {
 };
 
 export const ApiProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // This would be configured from environment variables in production
-  const API_BASE_URL = 'https://api.example.com';
+  const API_BASE_URL = import.meta.env.VITE_API_URL;
 
   const getHeaders = () => {
     const headers: Record<string, string> = {
@@ -38,8 +37,7 @@ export const ApiProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const handleResponse = async (response: Response) => {
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      const error = new Error(errorData.message || 'An error occurred');
-      throw error;
+      throw new Error(errorData.message || 'An error occurred');
     }
 
     return response.json();
@@ -62,7 +60,7 @@ export const ApiProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     });
 
     return handleResponse(response);
-  }, []);
+  }, [API_BASE_URL]);
 
   const post = useCallback(async <T = any>(endpoint: string, data?: any): Promise<T> => {
     const response = await fetch(`${API_BASE_URL}${endpoint}`, {
@@ -72,7 +70,7 @@ export const ApiProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     });
 
     return handleResponse(response);
-  }, []);
+  }, [API_BASE_URL]);
 
   const put = useCallback(async <T = any>(endpoint: string, data?: any): Promise<T> => {
     const response = await fetch(`${API_BASE_URL}${endpoint}`, {
@@ -82,7 +80,7 @@ export const ApiProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     });
 
     return handleResponse(response);
-  }, []);
+  }, [API_BASE_URL]);
 
   const deleteRequest = useCallback(async <T = any>(endpoint: string): Promise<T> => {
     const response = await fetch(`${API_BASE_URL}${endpoint}`, {
@@ -91,7 +89,7 @@ export const ApiProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     });
 
     return handleResponse(response);
-  }, []);
+  }, [API_BASE_URL]);
 
   const upload = useCallback(async <T = any>(
     endpoint: string, 
@@ -132,7 +130,7 @@ export const ApiProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       
       xhr.send(formData);
     });
-  }, []);
+  }, [API_BASE_URL]);
 
   const value = {
     get,

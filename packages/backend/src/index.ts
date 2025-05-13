@@ -5,6 +5,9 @@ import mongoose from 'mongoose';
 import { employeeRoutes } from './routes/employees.js';
 import { authRoutes } from './routes/auth.js';
 import { leaveRoutes } from './routes/leaves.js';
+import { organizationRoutes } from './routes/organizations.js';
+import { uiRoutes } from './routes/ui.js';
+import { dashboardRoutes } from './routes/dashboard.js';
 
 const fastify = Fastify({ logger: true });
 
@@ -25,6 +28,9 @@ await mongoose.connect('mongodb+srv://bhaskarkeelu92:iIGLYgCuz16TMU4n@hrms-dev-c
 fastify.register(authRoutes, { prefix: '/api/auth' });
 fastify.register(employeeRoutes, { prefix: '/api/employees' });
 fastify.register(leaveRoutes, { prefix: '/api/leaves' });
+fastify.register(organizationRoutes, { prefix: '/api/organizations' });
+fastify.register(uiRoutes, { prefix: '/api/ui' });
+fastify.register(dashboardRoutes, { prefix: '/api/dashboard' });
 
 // Start server
 try {

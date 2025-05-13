@@ -24,9 +24,13 @@ const userSchema = new mongoose.Schema({
         .toString('hex');
     },
     validatePassword(password: string): boolean {
+      console.log("Salt ======>",this.salt, this.hashedPassword);
+      if (!this.salt || !this.hashedPassword) return false;
       const hash = crypto
         .pbkdf2Sync(password, this.salt, 1000, 64, 'sha512')
         .toString('hex');
+      console.log("Hash ======>",hash);
+      console.log("Hashed Password ======>",this.hashedPassword);
       return this.hashedPassword === hash;
     }
   }
