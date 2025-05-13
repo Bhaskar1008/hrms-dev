@@ -2,12 +2,12 @@ import Fastify from 'fastify';
 import cors from '@fastify/cors';
 import jwt from '@fastify/jwt';
 import mongoose from 'mongoose';
-import { employeeRoutes } from './routes/employees.js';
-import { authRoutes } from './routes/auth.js';
-import { leaveRoutes } from './routes/leaves.js';
-import { organizationRoutes } from './routes/organizations.js';
-import { uiRoutes } from './routes/ui.js';
-import { dashboardRoutes } from './routes/dashboard.js';
+import { employeeRoutes } from './src/routes/employees.js';
+import { authRoutes } from './src/routes/auth.js';
+import { leaveRoutes } from './src/routes/leaves.js';
+import { organizationRoutes } from './src/routes/organizations.js';
+import { uiRoutes } from './src/routes/ui.js';
+import { dashboardRoutes } from './src/routes/dashboard.js';
 
 const fastify = Fastify({ logger: true });
 
