@@ -19,7 +19,7 @@ await fastify.register(jwt, {
 });
 
 // Connect to MongoDB
-await mongoose.connect('mongodb://localhost:27017/hrms');
+await mongoose.connect('mongodb+srv://bhaskarkeelu92:iIGLYgCuz16TMU4n@hrms-dev-cluster.h3plyfw.mongodb.net/hrms');
 
 // Register routes
 fastify.register(authRoutes, { prefix: '/api/auth' });
