@@ -1,20 +1,27 @@
 {
-  "name": "hrms-portal",
+  "name": "dynamic-hrms-portal",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "mock-api": "json-server --watch mock-api/db.json --port 3001 --middlewares mock-api/middleware.js --delay 300"
   },
   "dependencies": {
-    "axios": "^1.6.7",
+    "chart.js": "^4.4.2",
+    "date-fns": "^3.4.0",
+    "json-server": "^1.0.0-alpha.23",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.22.1"
+    "react-hook-form": "^7.51.0",
+    "react-router-dom": "^6.22.3",
+    "socket.io-client": "^4.7.4",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

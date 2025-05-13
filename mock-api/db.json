@@ -1,0 +1,933 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Super Admin",
+      "email": "admin@example.com",
+      "role": "super_admin",
+      "permissions": ["*"],
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "name": "HR Manager",
+      "email": "hr@example.com",
+      "role": "hr",
+      "permissions": [
+        "employees:read", 
+        "employees:create", 
+        "employees:update", 
+        "employees:delete",
+        "attendance:read", 
+        "attendance:manage",
+        "leaves:read", 
+        "leaves:approve", 
+        "leaves:reject",
+        "payroll:read", 
+        "payroll:manage",
+        "projects:read"
+      ],
+      "organizationId": "1"
+    },
+    {
+      "id": "3",
+      "name": "John Employee",
+      "email": "employee@example.com",
+      "role": "employee",
+      "permissions": [
+        "profile:read", 
+        "profile:update",
+        "attendance:read", 
+        "attendance:mark",
+        "leaves:read", 
+        "leaves:request",
+        "payroll:read",
+        "projects:read"
+      ],
+      "organizationId": "1"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "1",
+      "name": "Example Corp",
+      "industry": "Technology",
+      "address": "123 Tech Blvd, Silicon Valley, CA",
+      "phone": "+1 (555) 123-4567",
+      "email": "contact@example.com",
+      "website": "https://example.com",
+      "logo": "https://example.com/logo.png"
+    }
+  ],
+  "employees": [
+    {
+      "id": "1",
+      "userId": "3",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "employee@example.com",
+      "phone": "+1 (555) 987-6543",
+      "departmentId": "1",
+      "jobTitle": "Software Developer",
+      "hireDate": "2023-01-15",
+      "status": "active",
+      "salary": 75000,
+      "managerId": "2",
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "userId": "4",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "phone": "+1 (555) 234-5678",
+      "departmentId": "2",
+      "jobTitle": "Marketing Specialist",
+      "hireDate": "2023-02-10",
+      "status": "active",
+      "salary": 65000,
+      "managerId": "2",
+      "organizationId": "1"
+    },
+    {
+      "id": "3",
+      "userId": "5",
+      "firstName": "Robert",
+      "lastName": "Johnson",
+      "email": "robert.johnson@example.com",
+      "phone": "+1 (555) 345-6789",
+      "departmentId": "3",
+      "jobTitle": "Financial Analyst",
+      "hireDate": "2023-03-05",
+      "status": "active",
+      "salary": 70000,
+      "managerId": "2",
+      "organizationId": "1"
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "name": "Engineering",
+      "description": "Software development and engineering",
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Marketing",
+      "description": "Marketing and communications",
+      "organizationId": "1"
+    },
+    {
+      "id": "3",
+      "name": "Finance",
+      "description": "Financial operations and accounting",
+      "organizationId": "1"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "1",
+      "employeeId": "1",
+      "date": "2025-05-01",
+      "clockIn": "09:00:00",
+      "clockOut": "17:30:00",
+      "status": "present",
+      "notes": "",
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "employeeId": "1",
+      "date": "2025-05-02",
+      "clockIn": "08:45:00",
+      "clockOut": "17:15:00",
+      "status": "present",
+      "notes": "",
+      "organizationId": "1"
+    },
+    {
+      "id": "3",
+      "employeeId": "2",
+      "date": "2025-05-01",
+      "clockIn": "09:15:00",
+      "clockOut": "18:00:00",
+      "status": "present",
+      "notes": "",
+      "organizationId": "1"
+    }
+  ],
+  "leaves": [
+    {
+      "id": "1",
+      "employeeId": "1",
+      "leaveTypeId": "1",
+      "startDate": "2025-05-10",
+      "endDate": "2025-05-12",
+      "reason": "Personal reasons",
+      "status": "approved",
+      "approvedBy": "2",
+      "approvedDate": "2025-05-05",
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "employeeId": "2",
+      "leaveTypeId": "2",
+      "startDate": "2025-05-15",
+      "endDate": "2025-05-16",
+      "reason": "Medical appointment",
+      "status": "pending",
+      "approvedBy": null,
+      "approvedDate": null,
+      "organizationId": "1"
+    }
+  ],
+  "leaveTypes": [
+    {
+      "id": "1",
+      "name": "Annual Leave",
+      "description": "Regular paid vacation time",
+      "allowance": 20,
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Sick Leave",
+      "description": "Leave for medical reasons",
+      "allowance": 10,
+      "organizationId": "1"
+    },
+    {
+      "id": "3",
+      "name": "Maternity/Paternity Leave",
+      "description": "Leave for new parents",
+      "allowance": 30,
+      "organizationId": "1"
+    }
+  ],
+  "payroll": [
+    {
+      "id": "1",
+      "employeeId": "1",
+      "period": "2025-04",
+      "baseSalary": 6250,
+      "deductions": 1200,
+      "allowances": 500,
+      "netPay": 5550,
+      "paymentDate": "2025-05-01",
+      "status": "paid",
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "employeeId": "2",
+      "period": "2025-04",
+      "baseSalary": 5416.67,
+      "deductions": 1050,
+      "allowances": 400,
+      "netPay": 4766.67,
+      "paymentDate": "2025-05-01",
+      "status": "paid",
+      "organizationId": "1"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Website Redesign",
+      "description": "Redesign company website with modern UI",
+      "startDate": "2025-03-01",
+      "endDate": "2025-06-30",
+      "status": "in_progress",
+      "managerId": "2",
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Mobile App Development",
+      "description": "Develop a new mobile app for customers",
+      "startDate": "2025-04-15",
+      "endDate": "2025-08-15",
+      "status": "planning",
+      "managerId": "2",
+      "organizationId": "1"
+    }
+  ],
+  "projectAssignments": [
+    {
+      "id": "1",
+      "projectId": "1",
+      "employeeId": "1",
+      "role": "Developer",
+      "startDate": "2025-03-01",
+      "endDate": null,
+      "organizationId": "1"
+    },
+    {
+      "id": "2",
+      "projectId": "1",
+      "employeeId": "2",
+      "role": "Designer",
+      "startDate": "2025-03-01",
+      "endDate": null,
+      "organizationId": "1"
+    }
+  ],
+  "uiConfig": {
+    "navigation": {
+      "super_admin": [
+        {
+          "name": "Dashboard",
+          "href": "/dashboard",
+          "icon": "Layout"
+        },
+        {
+          "name": "Employee Management",
+          "icon": "Users",
+          "children": [
+            {
+              "name": "All Employees",
+              "href": "/employees"
+            },
+            {
+              "name": "Departments",
+              "href": "/departments"
+            },
+            {
+              "name": "Positions",
+              "href": "/positions"
+            }
+          ]
+        },
+        {
+          "name": "Attendance",
+          "href": "/attendance",
+          "icon": "Clock"
+        },
+        {
+          "name": "Leave Management",
+          "href": "/leaves",
+          "icon": "Calendar"
+        },
+        {
+          "name": "Payroll",
+          "href": "/payroll",
+          "icon": "DollarSign"
+        },
+        {
+          "name": "Projects",
+          "href": "/projects",
+          "icon": "Briefcase"
+        },
+        {
+          "name": "Organizations",
+          "href": "/organizations",
+          "icon": "Building"
+        },
+        {
+          "name": "Settings",
+          "href": "/settings",
+          "icon": "Settings"
+        }
+      ],
+      "hr": [
+        {
+          "name": "Dashboard",
+          "href": "/dashboard",
+          "icon": "Layout"
+        },
+        {
+          "name": "Employee Management",
+          "icon": "Users",
+          "children": [
+            {
+              "name": "All Employees",
+              "href": "/employees"
+            },
+            {
+              "name": "Departments",
+              "href": "/departments"
+            },
+            {
+              "name": "Positions",
+              "href": "/positions"
+            }
+          ]
+        },
+        {
+          "name": "Attendance",
+          "href": "/attendance",
+          "icon": "Clock"
+        },
+        {
+          "name": "Leave Management",
+          "href": "/leaves",
+          "icon": "Calendar"
+        },
+        {
+          "name": "Payroll",
+          "href": "/payroll",
+          "icon": "DollarSign"
+        },
+        {
+          "name": "Projects",
+          "href": "/projects",
+          "icon": "Briefcase"
+        },
+        {
+          "name": "Settings",
+          "href": "/settings",
+          "icon": "Settings"
+        }
+      ],
+      "employee": [
+        {
+          "name": "Dashboard",
+          "href": "/dashboard",
+          "icon": "Layout"
+        },
+        {
+          "name": "My Profile",
+          "href": "/profile",
+          "icon": "User"
+        },
+        {
+          "name": "Attendance",
+          "href": "/attendance",
+          "icon": "Clock"
+        },
+        {
+          "name": "Leave Requests",
+          "href": "/leaves",
+          "icon": "Calendar"
+        },
+        {
+          "name": "My Payslips",
+          "href": "/payroll",
+          "icon": "DollarSign"
+        },
+        {
+          "name": "My Projects",
+          "href": "/projects",
+          "icon": "Briefcase"
+        }
+      ]
+    },
+    "dashboard": {
+      "super_admin": [
+        {
+          "id": "employee-stats",
+          "type": "stats",
+          "title": "Employee Statistics",
+          "dataUrl": "/api/dashboard/employee-stats",
+          "size": "medium",
+          "refresh": 300
+        },
+        {
+          "id": "recent-leaves",
+          "type": "table",
+          "title": "Recent Leave Requests",
+          "dataUrl": "/api/dashboard/recent-leaves",
+          "size": "medium",
+          "refresh": 300
+        },
+        {
+          "id": "department-headcount",
+          "type": "chart",
+          "title": "Department Headcount",
+          "dataUrl": "/api/dashboard/department-headcount",
+          "chartType": "bar",
+          "size": "medium",
+          "refresh": 600
+        },
+        {
+          "id": "attendance-trend",
+          "type": "chart",
+          "title": "Attendance Trend",
+          "dataUrl": "/api/dashboard/attendance-trend",
+          "chartType": "line",
+          "size": "large",
+          "refresh": 600
+        }
+      ],
+      "hr": [
+        {
+          "id": "employee-stats",
+          "type": "stats",
+          "title": "Employee Statistics",
+          "dataUrl": "/api/dashboard/employee-stats",
+          "size": "medium",
+          "refresh": 300
+        },
+        {
+          "id": "recent-leaves",
+          "type": "table",
+          "title": "Recent Leave Requests",
+          "dataUrl": "/api/dashboard/recent-leaves",
+          "size": "medium",
+          "refresh": 300
+        },
+        {
+          "id": "department-headcount",
+          "type": "chart",
+          "title": "Department Headcount",
+          "dataUrl": "/api/dashboard/department-headcount",
+          "chartType": "bar",
+          "size": "medium",
+          "refresh": 600
+        },
+        {
+          "id": "attendance-trend",
+          "type": "chart",
+          "title": "Attendance Trend",
+          "dataUrl": "/api/dashboard/attendance-trend",
+          "chartType": "line",
+          "size": "large",
+          "refresh": 600
+        }
+      ],
+      "employee": [
+        {
+          "id": "my-attendance",
+          "type": "stats",
+          "title": "My Attendance",
+          "dataUrl": "/api/dashboard/my-attendance",
+          "size": "small",
+          "refresh": 300
+        },
+        {
+          "id": "leave-balance",
+          "type": "stats",
+          "title": "Leave Balance",
+          "dataUrl": "/api/dashboard/my-leave-balance",
+          "size": "small",
+          "refresh": 300
+        },
+        {
+          "id": "my-tasks",
+          "type": "list",
+          "title": "My Tasks",
+          "dataUrl": "/api/dashboard/my-tasks",
+          "size": "medium",
+          "refresh": 300
+        },
+        {
+          "id": "upcoming-holidays",
+          "type": "list",
+          "title": "Upcoming Holidays",
+          "dataUrl": "/api/dashboard/upcoming-holidays",
+          "size": "small",
+          "refresh": 3600
+        }
+      ]
+    },
+    "forms": {
+      "employee_create": {
+        "id": "employee_create",
+        "title": "Add New Employee",
+        "description": "Create a new employee record in the system",
+        "submitUrl": "/api/employees",
+        "method": "POST",
+        "fields": [
+          {
+            "id": "firstName",
+            "type": "text",
+            "label": "First Name",
+            "placeholder": "Enter first name",
+            "required": true,
+            "validation": {
+              "minLength": 2,
+              "maxLength": 50
+            }
+          },
+          {
+            "id": "lastName",
+            "type": "text",
+            "label": "Last Name",
+            "placeholder": "Enter last name",
+            "required": true,
+            "validation": {
+              "minLength": 2,
+              "maxLength": 50
+            }
+          },
+          {
+            "id": "email",
+            "type": "email",
+            "label": "Email",
+            "placeholder": "Enter email address",
+            "required": true,
+            "validation": {
+              "pattern": "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$i",
+              "message": "Invalid email address"
+            }
+          },
+          {
+            "id": "phone",
+            "type": "tel",
+            "label": "Phone",
+            "placeholder": "Enter phone number",
+            "required": false
+          },
+          {
+            "id": "departmentId",
+            "type": "select",
+            "label": "Department",
+            "required": true,
+            "options": [
+              {
+                "label": "Engineering",
+                "value": "1"
+              },
+              {
+                "label": "Marketing",
+                "value": "2"
+              },
+              {
+                "label": "Finance",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "id": "jobTitle",
+            "type": "text",
+            "label": "Job Title",
+            "placeholder": "Enter job title",
+            "required": true
+          },
+          {
+            "id": "hireDate",
+            "type": "date",
+            "label": "Hire Date",
+            "required": true
+          },
+          {
+            "id": "salary",
+            "type": "number",
+            "label": "Salary",
+            "placeholder": "Enter annual salary",
+            "required": true,
+            "validation": {
+              "min": 0
+            }
+          },
+          {
+            "id": "managerId",
+            "type": "select",
+            "label": "Manager",
+            "required": false,
+            "options": [
+              {
+                "label": "HR Manager",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "id": "status",
+            "type": "select",
+            "label": "Status",
+            "required": true,
+            "options": [
+              {
+                "label": "Active",
+                "value": "active"
+              },
+              {
+                "label": "Probation",
+                "value": "probation"
+              },
+              {
+                "label": "Inactive",
+                "value": "inactive"
+              }
+            ],
+            "defaultValue": "active"
+          }
+        ]
+      },
+      "leave_request": {
+        "id": "leave_request",
+        "title": "Submit Leave Request",
+        "description": "Request time off from work",
+        "submitUrl": "/api/leaves",
+        "method": "POST",
+        "fields": [
+          {
+            "id": "leaveTypeId",
+            "type": "select",
+            "label": "Leave Type",
+            "required": true,
+            "options": [
+              {
+                "label": "Annual Leave",
+                "value": "1"
+              },
+              {
+                "label": "Sick Leave",
+                "value": "2"
+              },
+              {
+                "label": "Maternity/Paternity Leave",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "id": "startDate",
+            "type": "date",
+            "label": "Start Date",
+            "required": true
+          },
+          {
+            "id": "endDate",
+            "type": "date",
+            "label": "End Date",
+            "required": true,
+            "validation": {
+              "min": "startDate"
+            }
+          },
+          {
+            "id": "reason",
+            "type": "textarea",
+            "label": "Reason",
+            "placeholder": "Explain the reason for your leave request",
+            "required": true,
+            "validation": {
+              "minLength": 10,
+              "maxLength": 500
+            }
+          },
+          {
+            "id": "attachment",
+            "type": "file",
+            "label": "Supporting Document",
+            "required": false,
+            "fileTypes": ".pdf,.jpg,.png",
+            "maxSize": 5242880
+          }
+        ]
+      }
+    },
+    "tables": {
+      "employees_list": {
+        "id": "employees_list",
+        "title": "Employees",
+        "fetchUrl": "/api/employees",
+        "columns": [
+          {
+            "key": "id",
+            "header": "ID",
+            "type": "text"
+          },
+          {
+            "key": "firstName",
+            "header": "First Name",
+            "type": "text"
+          },
+          {
+            "key": "lastName",
+            "header": "Last Name",
+            "type": "text"
+          },
+          {
+            "key": "email",
+            "header": "Email",
+            "type": "text"
+          },
+          {
+            "key": "jobTitle",
+            "header": "Job Title",
+            "type": "text"
+          },
+          {
+            "key": "departmentName",
+            "header": "Department",
+            "type": "text"
+          },
+          {
+            "key": "hireDate",
+            "header": "Hire Date",
+            "type": "date",
+            "format": "MMM dd, yyyy"
+          },
+          {
+            "key": "status",
+            "header": "Status",
+            "type": "status"
+          },
+          {
+            "key": "actions",
+            "header": "Actions",
+            "type": "actions",
+            "actions": [
+              {
+                "label": "Edit",
+                "action": "edit"
+              },
+              {
+                "label": "View",
+                "action": "view"
+              }
+            ]
+          }
+        ],
+        "filters": [
+          {
+            "id": "status",
+            "type": "select",
+            "label": "Status",
+            "options": [
+              {
+                "label": "Active",
+                "value": "active"
+              },
+              {
+                "label": "Probation",
+                "value": "probation"
+              },
+              {
+                "label": "Inactive",
+                "value": "inactive"
+              }
+            ]
+          },
+          {
+            "id": "departmentId",
+            "type": "select",
+            "label": "Department",
+            "options": [
+              {
+                "label": "Engineering",
+                "value": "1"
+              },
+              {
+                "label": "Marketing",
+                "value": "2"
+              },
+              {
+                "label": "Finance",
+                "value": "3"
+              }
+            ]
+          }
+        ],
+        "pagination": {
+          "pageSize": 10,
+          "pageSizeOptions": [5, 10, 20, 50]
+        }
+      },
+      "leave_requests": {
+        "id": "leave_requests",
+        "title": "Leave Requests",
+        "fetchUrl": "/api/leaves",
+        "columns": [
+          {
+            "key": "employeeName",
+            "header": "Employee",
+            "type": "text"
+          },
+          {
+            "key": "leaveType",
+            "header": "Leave Type",
+            "type": "text"
+          },
+          {
+            "key": "startDate",
+            "header": "Start Date",
+            "type": "date",
+            "format": "MMM dd, yyyy"
+          },
+          {
+            "key": "endDate",
+            "header": "End Date",
+            "type": "date",
+            "format": "MMM dd, yyyy"
+          },
+          {
+            "key": "duration",
+            "header": "Duration",
+            "type": "text"
+          },
+          {
+            "key": "reason",
+            "header": "Reason",
+            "type": "text"
+          },
+          {
+            "key": "status",
+            "header": "Status",
+            "type": "status"
+          },
+          {
+            "key": "actions",
+            "header": "Actions",
+            "type": "actions",
+            "actions": [
+              {
+                "label": "Approve",
+                "action": "approve"
+              },
+              {
+                "label": "Reject",
+                "action": "reject"
+              },
+              {
+                "label": "View",
+                "action": "view"
+              }
+            ]
+          }
+        ],
+        "filters": [
+          {
+            "id": "status",
+            "type": "select",
+            "label": "Status",
+            "options": [
+              {
+                "label": "Pending",
+                "value": "pending"
+              },
+              {
+                "label": "Approved",
+                "value": "approved"
+              },
+              {
+                "label": "Rejected",
+                "value": "rejected"
+              }
+            ]
+          },
+          {
+            "id": "leaveTypeId",
+            "type": "select",
+            "label": "Leave Type",
+            "options": [
+              {
+                "label": "Annual Leave",
+                "value": "1"
+              },
+              {
+                "label": "Sick Leave",
+                "value": "2"
+              },
+              {
+                "label": "Maternity/Paternity Leave",
+                "value": "3"
+              }
+            ]
+          }
+        ],
+        "pagination": {
+          "pageSize": 10,
+          "pageSizeOptions": [5, 10, 20, 50]
+        }
+      }
+    }
+  }
+}
