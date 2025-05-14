@@ -7,61 +7,60 @@ import { useAuth } from '../../contexts/AuthContext';
 import { useUi } from '../../contexts/UiContext';
 import { useApi } from '../../contexts/ApiContext';
 
-const ProjectsPage: React.FC = () => {
+const OrganizationPage: React.FC = () => {
   const [showAddForm, setShowAddForm] = useState(false);
-  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [selectedOrg, setSelectedOrg] = useState<any>(null);
   const { user, hasPermission } = useAuth();
   const { showToast } = useUi();
   const api = useApi();
   
-  const canCreate = hasPermission('projects:create');
-  const canUpdate = hasPermission('projects:update');
-  const isEmployee = user?.role === 'employee';
+  const canCreate = hasPermission('organizations:create');
+  const canUpdate = hasPermission('organizations:update');
 
-  const handleRowClick = async (project: any) => {
-    if (canUpdate || isEmployee) {
+  const handleRowClick = async (org: any) => {
+    if (canUpdate) {
       try {
-        const projectDetails = await api.get(`/api/projects/${project.id}`);
-        setSelectedProject(projectDetails);
+        const orgDetails = await api.get(`/api/organizations/${org.id}`);
+        setSelectedOrg(orgDetails);
       } catch (error) {
-        showToast('Failed to fetch project details', 'error');
+        showToast('Failed to fetch organization details', 'error');
       }
     }
   };
 
-  const handleActionClick = async (action: string, project: any) => {
+  const handleActionClick = async (action: string, org: any) => {
     try {
       if (action === 'edit' && canUpdate) {
-        const projectDetails = await api.get(`/api/projects/${project.id}`);
-        setSelectedProject(projectDetails);
+        const orgDetails = await api.get(`/api/organizations/${org.id}`);
+        setSelectedOrg(orgDetails);
       } else if (action === 'view') {
-        const projectDetails = await api.get(`/api/projects/${project.id}`);
-        setSelectedProject({ ...projectDetails, readOnly: true });
+        const orgDetails = await api.get(`/api/organizations/${org.id}`);
+        setSelectedOrg({ ...orgDetails, readOnly: true });
       } else if (action === 'delete' && canUpdate) {
-        await api.delete(`/api/projects/${project.id}`);
-        showToast('Project deleted successfully', 'success');
+        await api.delete(`/api/organizations/${org.id}`);
+        showToast('Organization deleted successfully', 'success');
       }
     } catch (error) {
-      showToast(`Failed to ${action} project`, 'error');
+      showToast(`Failed to ${action} organization`, 'error');
     }
   };
 
   const handleFormSuccess = () => {
-    showToast('Project saved successfully', 'success');
+    showToast('Organization saved successfully', 'success');
     setShowAddForm(false);
-    setSelectedProject(null);
+    setSelectedOrg(null);
   };
 
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-900">Projects</h1>
-        {canCreate && !showAddForm && !selectedProject && (
+        <h1 className="text-2xl font-bold text-gray-900">Organizations</h1>
+        {canCreate && !showAddForm && !selectedOrg && (
           <Button
             onClick={() => setShowAddForm(true)}
             leftIcon={<Plus className="h-4 w-4" />}
           >
-            Add Project
+            Add Organization
           </Button>
         )}
       </div>
@@ -69,7 +68,7 @@ const ProjectsPage: React.FC = () => {
       {showAddForm && (
         <div className="bg-white shadow rounded-lg overflow-hidden">
           <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200">
-            <h2 className="text-lg font-medium text-gray-900">Add New Project</h2>
+            <h2 className="text-lg font-medium text-gray-900">Add New Organization</h2>
             <button
               onClick={() => setShowAddForm(false)}
               className="text-gray-400 hover:text-gray-500"
@@ -79,7 +78,7 @@ const ProjectsPage: React.FC = () => {
           </div>
           <div className="p-6">
             <DynamicForm
-              formId="project_create"
+              formId="organization_create"
               onSuccess={handleFormSuccess}
               onCancel={() => setShowAddForm(false)}
             />
@@ -87,14 +86,14 @@ const ProjectsPage: React.FC = () => {
         </div>
       )}
 
-      {selectedProject && (
+      {selectedOrg && (
         <div className="bg-white shadow rounded-lg overflow-hidden">
           <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200">
             <h2 className="text-lg font-medium text-gray-900">
-              {selectedProject.readOnly ? 'View Project' : 'Edit Project'}
+              {selectedOrg.readOnly ? 'View Organization' : 'Edit Organization'}
             </h2>
             <button
-              onClick={() => setSelectedProject(null)}
+              onClick={() => setSelectedOrg(null)}
               className="text-gray-400 hover:text-gray-500"
             >
               <X className="h-5 w-5" />
@@ -102,28 +101,24 @@ const ProjectsPage: React.FC = () => {
           </div>
           <div className="p-6">
             <DynamicForm
-              formId="project_edit"
-              initialData={selectedProject}
+              formId="organization_edit"
+              initialData={selectedOrg}
               onSuccess={handleFormSuccess}
-              onCancel={() => setSelectedProject(null)}
+              onCancel={() => setSelectedOrg(null)}
             />
           </div>
         </div>
       )}
 
-      {!showAddForm && !selectedProject && (
+      {!showAddForm && !selectedOrg && (
         <DynamicTable
-          tableId="projects_list"
+          tableId="organizations_list"
           onRowClick={handleRowClick}
           onActionClick={handleActionClick}
-          initialFilters={{
-            employeeId: isEmployee ? user?.id : undefined,
-            organizationId: user?.organizationId
-          }}
         />
       )}
     </div>
   );
 };
 
-export default ProjectsPage;
+export default OrganizationPage;

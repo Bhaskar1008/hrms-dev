@@ -21,27 +21,9 @@ const ProfilePage: React.FC = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        // In a real app, this would fetch from an API
-        // const data = await api.get('/api/employees/me');
-        
-        // For demo, we'll use mock data
-        const mockProfile = {
-          firstName: user?.name.split(' ')[0] || 'John',
-          lastName: user?.name.split(' ')[1] || 'Doe',
-          email: user?.email || 'john.doe@example.com',
-          phone: '+1 (555) 123-4567',
-          department: 'Engineering',
-          position: 'Software Developer',
-          hireDate: '2023-01-15',
-          address: '123 Main St, Anytown, USA',
-          emergencyContact: 'Jane Doe',
-          emergencyPhone: '+1 (555) 987-6543',
-          bio: 'Experienced software developer with a passion for building user-friendly applications.',
-          avatarUrl: user?.avatar || null
-        };
-        
-        setProfile(mockProfile);
-        setFormData(mockProfile);
+        const data = await api.get('/api/employees/me');
+        setProfile(data);
+        setFormData(data);
         setIsLoading(false);
       } catch (error) {
         showToast('Failed to load profile data', 'error');
@@ -59,17 +41,19 @@ const ProfilePage: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleAvatarChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleAvatarChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       const file = e.target.files[0];
       setAvatar(file);
       
-      // Create preview
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setAvatarPreview(reader.result as string);
-      };
-      reader.readAsDataURL(file);
+      try {
+        const formData = new FormData();
+        formData.append('avatar', file);
+        const response = await api.upload('/api/employees/me/avatar', file);
+        setAvatarPreview(response.avatarUrl);
+      } catch (error) {
+        showToast('Failed to upload avatar', 'error');
+      }
     }
   };
 
@@ -78,18 +62,8 @@ const ProfilePage: React.FC = () => {
     setIsSubmitting(true);
     
     try {
-      // In a real app, this would update via API
-      // if (avatar) {
-      //   await api.upload('/api/employees/me/avatar', avatar);
-      // }
-      // await api.put('/api/employees/me', formData);
-      
-      // For demo, we'll just update the local state
-      setProfile({
-        ...formData,
-        avatarUrl: avatarPreview || profile.avatarUrl
-      });
-      
+      const updatedProfile = await api.put('/api/employees/me', formData);
+      setProfile(updatedProfile);
       setIsEditing(false);
       showToast('Profile updated successfully', 'success');
     } catch (error) {
@@ -227,7 +201,7 @@ const ProfilePage: React.FC = () => {
                   value={formData.email || ''}
                   onChange={handleInputChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
-                  disabled // Email is typically not changeable by the user
+                  disabled
                 />
               </div>
               

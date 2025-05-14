@@ -18,6 +18,7 @@ const AttendancePage = lazy(() => import('../pages/attendance/AttendancePage'));
 const LeavesPage = lazy(() => import('../pages/leaves/LeavesPage'));
 const PayrollPage = lazy(() => import('../pages/payroll/PayrollPage'));
 const ProjectsPage = lazy(() => import('../pages/projects/ProjectsPage'));
+const OrganizationPage = lazy(() => import('../pages/organizations/OrganizationPage'));
 
 interface ProtectedRouteProps {
   children: React.ReactNode;
@@ -107,6 +108,13 @@ const AppRoutes: React.FC = () => {
           <Route path="projects" element={
             <ProtectedRoute requiredPermission="projects:read">
               <ProjectsPage />
+            </ProtectedRoute>
+          } />
+
+          {/* Organizations module */}
+          <Route path="organizations" element={
+            <ProtectedRoute requiredPermission="organizations:read">
+              <OrganizationPage />
             </ProtectedRoute>
           } />
         </Route>

@@ -5,12 +5,14 @@ import { Button } from '../../components/ui/Button';
 import { Plus, X } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useUi } from '../../contexts/UiContext';
+import { useApi } from '../../contexts/ApiContext';
 
 const LeavesPage: React.FC = () => {
   const [showRequestForm, setShowRequestForm] = useState(false);
   const [selectedLeave, setSelectedLeave] = useState<any>(null);
   const { user, hasPermission } = useAuth();
   const { showToast } = useUi();
+  const api = useApi();
   
   const isEmployee = user?.role === 'employee';
   const canRequest = hasPermission('leaves:request');
@@ -22,30 +24,30 @@ const LeavesPage: React.FC = () => {
   };
 
   const handleActionClick = async (action: string, leave: any) => {
-    if (action === 'view') {
-      setSelectedLeave({ ...leave, readOnly: true });
-    } else if (action === 'approve' && canApprove) {
-      try {
-        // In a real app, this would call an API
-        // await api.put(`/api/leaves/${leave.id}/approve`);
+    try {
+      if (action === 'view') {
+        const leaveDetails = await api.get(`/api/leaves/${leave.id}`);
+        setSelectedLeave({ ...leaveDetails, readOnly: true });
+      } else if (action === 'approve' && canApprove) {
+        await api.put(`/api/leaves/${leave.id}/approve`, {
+          approverId: user?.id
+        });
         showToast('Leave request approved successfully', 'success');
-      } catch (error) {
-        showToast('Failed to approve leave request', 'error');
-      }
-    } else if (action === 'reject' && canReject) {
-      try {
-        // In a real app, this would call an API
-        // await api.put(`/api/leaves/${leave.id}/reject`);
+      } else if (action === 'reject' && canReject) {
+        await api.put(`/api/leaves/${leave.id}/reject`, {
+          approverId: user?.id
+        });
         showToast('Leave request rejected successfully', 'success');
-      } catch (error) {
-        showToast('Failed to reject leave request', 'error');
       }
+    } catch (error) {
+      showToast(`Failed to ${action} leave request`, 'error');
     }
   };
 
   const handleFormSuccess = () => {
     showToast('Leave request submitted successfully', 'success');
     setShowRequestForm(false);
+    setSelectedLeave(null);
   };
 
   return (
@@ -164,6 +166,10 @@ const LeavesPage: React.FC = () => {
           tableId="leave_requests"
           onRowClick={handleRowClick}
           onActionClick={handleActionClick}
+          initialFilters={{
+            employeeId: isEmployee ? user?.id : undefined,
+            organizationId: user?.organizationId
+          }}
         />
       )}
     </div>
