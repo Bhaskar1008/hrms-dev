@@ -73,11 +73,11 @@ export const dashboardRoutes: FastifyPluginAsync = async (fastify) => {
 
   // My attendance stats
   fastify.get('/my-attendance', async (request, reply) => {
-    const { employeeId } = request.query as { employeeId?: string };
+    const { employeeId, organizationId } = request.query as { employeeId?: string; organizationId?: string };
 
-    if (!employeeId) {
+    if (!employeeId || !organizationId) {
       reply.code(400);
-      throw new Error('Employee ID is required');
+      throw new Error('Employee ID and Organization ID are required');
     }
 
     // For demo, returning mock data
