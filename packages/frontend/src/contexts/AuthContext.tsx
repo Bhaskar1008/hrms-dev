@@ -8,7 +8,7 @@ export interface User {
   email: string;
   role: 'super_admin' | 'hr' | 'employee';
   permissions: string[];
-  organizationId?: string;
+  organizationId: string;
   avatar?: string;
 }
 
@@ -47,7 +47,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           return;
         }
         
-        // This would be a real API call in production
         const userData = await api.get('/auth/me');
         setUser(userData);
       } catch (error) {
@@ -63,7 +62,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (email: string, password: string) => {
     setIsLoading(true);
     try {
-      // This would be a real API call in production
       const response = await api.post('/auth/login', { email, password });
       localStorage.setItem('hrms_token', response.token);
       setUser(response.user);
@@ -85,7 +83,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (!user) return false;
     
     // Super admins have all permissions
-    if (user.role === 'super_admin') return true;
+    if (user.role === 'super_admin' || user.permissions.includes('*')) return true;
     
     return user.permissions.includes(permission);
   };

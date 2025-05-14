@@ -4,12 +4,35 @@ import { useUi } from '../../contexts/UiContext';
 import { DashboardWidget as DashboardWidgetType } from '../../contexts/UiContext';
 import { DashboardWidget } from '../../components/dashboard/DashboardWidget';
 import { Spinner } from '../../components/ui/Spinner';
+import { useApi } from '../../contexts/ApiContext';
 
 const DashboardPage: React.FC = () => {
   const { user } = useAuth();
   const { getDashboardConfig, showToast } = useUi();
   const [widgets, setWidgets] = useState<DashboardWidgetType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [employeeId, setEmployeeId] = useState<string | null>(null);
+  const api = useApi();
+
+  // Fetch employee ID when component mounts
+  useEffect(() => {
+    const fetchEmployeeId = async () => {
+      if (user?.role === 'employee') {
+        try {
+          const response = await api.get(`/api/employees?email=${user.email}`);
+          if (response.data && response.data.length > 0) {
+            setEmployeeId(response.data[0]._id);
+          }
+        } catch (error) {
+          console.error('Failed to fetch employee ID:', error);
+        }
+      }
+    };
+
+    if (user?.email) {
+      fetchEmployeeId();
+    }
+  }, [user?.email, user?.role, api]);
 
   useEffect(() => {
     const fetchDashboardConfig = async () => {
@@ -17,7 +40,16 @@ const DashboardPage: React.FC = () => {
         if (!user?.role) return;
         
         const dashboardWidgets = await getDashboardConfig(user.role);
-        setWidgets(dashboardWidgets);
+        
+        // Add organizationId and employeeId to each widget's dataUrl
+        const widgetsWithParams = dashboardWidgets.map(widget => ({
+          ...widget,
+          dataUrl: `${widget.dataUrl}?organizationId=${user.organizationId}${
+            employeeId ? `&employeeId=${employeeId}` : ''
+          }`
+        }));
+        
+        setWidgets(widgetsWithParams);
       } catch (error) {
         console.error('Failed to load dashboard config:', error);
         showToast('Failed to load dashboard', 'error');
@@ -27,7 +59,7 @@ const DashboardPage: React.FC = () => {
     };
 
     fetchDashboardConfig();
-  }, [user?.role, getDashboardConfig, showToast]);
+  }, [user?.role, user?.organizationId, employeeId, getDashboardConfig, showToast]);
 
   if (isLoading) {
     return (

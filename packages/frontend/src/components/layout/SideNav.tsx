@@ -4,7 +4,7 @@ import { ChevronDown, X } from 'lucide-react';
 
 interface NavigationItem {
   name: string;
-  icon?: React.ReactNode;
+  icon?: React.ComponentType<any>;
   href?: string;
   children?: NavigationItem[];
 }
@@ -81,7 +81,7 @@ const SideNav: React.FC<SideNavProps> = ({ navigation, isOpen, onClose }) => {
                   onClick={() => toggleSubmenu(item.name)}
                 >
                   <div className="flex items-center">
-                    {item.icon && <span className="mr-3">{item.icon}</span>}
+                    {item.icon && <item.icon className="h-5 w-5 mr-3" />}
                     {item.name}
                   </div>
                   <ChevronDown 
@@ -124,7 +124,7 @@ const SideNav: React.FC<SideNavProps> = ({ navigation, isOpen, onClose }) => {
               }`}
               onClick={onClose}
             >
-              {item.icon && <span className="mr-3">{item.icon}</span>}
+              {item.icon && <item.icon className="h-5 w-5 mr-3" />}
               {item.name}
             </Link>
           );
