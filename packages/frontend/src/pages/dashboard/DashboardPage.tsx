@@ -19,7 +19,7 @@ const DashboardPage: React.FC = () => {
     const fetchEmployeeId = async () => {
       if (user?.role === 'employee') {
         try {
-          const response = await api.get(`/api/employees?email=${user.email}`);
+          const response = await api.get(`/employees?email=${user.email}`);
           if (response.data && response.data.length > 0) {
             setEmployeeId(response.data[0]._id);
           }
