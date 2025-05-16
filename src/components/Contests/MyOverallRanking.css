@@ -1,0 +1,69 @@
+.myoverallranking-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 2vw;
+}
+
+.myoverallranking-card-style {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vw;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 100%;
+  /* background-color:brown; */
+  border-radius: 5px;
+  overflow: hidden;
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+  box-shadow: 0.3px 0.55px 1.1px 2px rgba(0, 0, 0, 0.2);
+  /* margin-top: 30px; */
+}
+
+.myoverallranking-content-flex {
+  margin-left: 2vw;
+  margin-top: 2vw;
+  margin-right: 2vw;
+}
+.myoverallranking-content-text {
+  font-size: calc(10px + 0.3vw);
+}
+.myoverallranking-content-row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.4vw;
+  margin-bottom: 1.4vw;
+}
+.myoverallranking-chart1-style {
+  width: 45%;
+  height: 40vh;
+}
+@media (min-width: 319px) and (max-width: 374px) {
+  .myoverallranking-content-row-flex {
+    flex-direction: column;
+  }
+  .myoverallranking-chart1-style {
+    width: 90%;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .myoverallranking-content-row-flex {
+    flex-direction: column;
+  }
+  .myoverallranking-chart1-style {
+    width: 90%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .myoverallranking-content-row-flex {
+    flex-direction: column;
+  }
+  .myoverallranking-chart1-style {
+    width: 90%;
+  }
+}

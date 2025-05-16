@@ -1,0 +1,71 @@
+/* Custom */
+.fs-24 {
+    font-size: 24px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.purple-text {
+    color: #1D428A;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.event-none {
+    pointer-events: none;
+}
+
+
+/* CSS */
+.checking-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+.check-btn{
+height: 65px;
+padding: 19px 30px;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+font-size: 18px;
+font-weight: 600;
+color: #1D428A;
+width: 100%;
+text-align: left;
+margin-bottom: 6px;
+}
+.check-btn.active {
+    border-color: #1D428A;
+}
+/* .check-btn:hover {
+    border-color: #d9d9d9;
+} */
+.input-box {
+    margin-bottom: 6px !important;
+}
+.valid-user {
+    background-color: #5BA46A !important;
+    border-color: #5BA46A !important;
+}
+.invalid-user {
+    background-color: #BB251A !important;
+    border-color: #BB251A !important;
+}
+
+/* Media Query */
+.main-component {
+    padding: 16px;
+    width: 100% !important;
+    display: block !important;
+    background: white !important;
+}
+.main-component h2{
+    margin-bottom: 14px !important;
+}
+
+@media (max-width: 767px){
+    .varified-btn {
+        width: 100%;
+    }
+}

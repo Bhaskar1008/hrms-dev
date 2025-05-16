@@ -1,0 +1,59 @@
+
+
+.child-user-card p{
+    color: #343D46;
+    /* Body 3 - Medium */
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+.user-card-parent h4{
+    color: #272D33;
+
+    /* Desktop - Title 1 */
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 120%;
+    cursor: context-menu;
+}
+.circle {
+    border-radius: 45px;
+    border: 1px solid var(--purple-50, rgba(237, 229, 248, 0.50));
+    width: 40px;
+        height: 40px;
+        padding: 8px 11px;
+        justify-content: center;
+        align-items: center;
+    flex-shrink: 0;
+}
+ 
+
+
+/* media query */
+/* @media (min-width: 320px) {
+    
+    .parent-user {
+        display: block;
+    }
+}
+@media (min-width: 920px) {
+    
+    
+    
+} */
+
+.child-user-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* antd classes */
+.card-information .ant-card{
+    box-shadow: 0px 2px 2px 0px rgba(132, 106, 185, 0.12), 0px 4px 4px 0px rgba(132, 106, 185, 0.10);
+    border-radius: 8px;
+}
+.ant-card-body{
+    padding: 15px;
+}

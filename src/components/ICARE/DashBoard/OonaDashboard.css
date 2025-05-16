@@ -1,0 +1,99 @@
+/* @import '../../../assets/_Mixing.scss' */
+
+@media (min-width: 320px) {
+  .main-container {
+    /* margin-left: -300px;
+        margin-right: -300px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  .for-data {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 920px) {
+  .main-container {
+    /* margin-left: -300px;
+    margin-right: -300px; */
+    /* margin-top: -50px; */
+    /* margin-bottom: -50px; */
+    padding-left: 300px;
+    padding-right: 300px;
+    /* padding-top: 4rem; */
+    padding-bottom: 0px;
+    margin-left: unset;
+    margin-right: unset;
+    box-sizing: border-box;
+    background: #f2f2f3;
+  }
+  .for-data {
+    padding-bottom: 30px;
+  }
+}
+/* this is for the add button  */
+.addButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 27px;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .addButtonCard1 {
+    /* {{ backgroundColor: '', borderRadius: "10px" }} */
+    background-color: #000080;
+    border-radius: 10px;
+    display: block;
+  }
+  .addButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  }
+}
+@media (min-width: 769px) and (orientation: landscape) {
+  .addButtonCard1 {
+    background-color: #000080;
+    border-radius: 10px;
+    display: none;
+  }
+  .addButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  /* Apply landscape-specific styles here */
+  .addButtonCard1 {
+    background-color: #000080;
+    border-radius: 10px;
+    display: block;
+  }
+  .addButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  }
+}

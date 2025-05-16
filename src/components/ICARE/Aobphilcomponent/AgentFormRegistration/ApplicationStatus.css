@@ -1,0 +1,464 @@
+.frame-child1 {
+  position: relative;
+  object-fit: cover;
+}
+
+.verifying-details {
+  position: relative;
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 600;
+  /* font-family: Roboto; */
+  color: #1d428a;
+  text-align: left;
+}
+
+.application-id {
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #212121;
+  text-align: center;
+  display: inline-block;
+  width: 304px;
+}
+
+.verifying-details-parent {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.group-parent1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 12px;
+  gap: 12px;
+  background-image: url("../../../../images//Vector.svg");
+  background-repeat: no-repeat;
+  /* background-position-x: center;
+    background-position-y: top; */
+  background-size: contain;
+  background-position: top;
+  width: 85px;
+}
+.group-parent2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 12px;
+  gap: 12px;
+  background-repeat: no-repeat;
+  /* background-position-x: center;
+    background-position-y: top; */
+  background-size: contain;
+  background-position: top;
+  width: 85px;
+}
+
+.create-account-heading {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
+  font-weight: 500;
+  /* font-family: Roboto; */
+  color: #1d428a;
+  text-align: left;
+}
+
+.our-team-is {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.04em;
+  line-height: 18px;
+}
+
+.our-team-is-verifying-your-doc-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 12px;
+  gap: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #4a5259;
+}
+
+.frame-parent1 {
+  position: relative;
+  /* width: 100%; */
+  display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+  /* justify-content: center; */
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  color: #1d428a;
+  margin-top: 140px;
+}
+
+.frame-icon {
+  position: absolute;
+  /* width: 100%; */
+  top: -6px;
+  right: 52%;
+  left: revert-layer;
+  height: 50px;
+  overflow: hidden;
+  object-fit: cover;
+  color: #fff;
+}
+
+.frame-icon1 {
+  position: absolute;
+  /* width: 100%; */
+  top: 4px;
+  right: 53.2%;
+  left: revert;
+  height: 30px;
+  overflow: hidden;
+  object-fit: cover;
+  color: #fff;
+}
+
+/* .frame-parent2 {
+  margin-top: 180pxx`;
+} */
+
+.qc-discrepancy {
+  width: 100%;
+  position: relative;
+  font-size: 42px;
+  line-height: 110%;
+  font-weight: 500;
+  /* font-family: Roboto; */
+  color: #1d428a;
+  text-align: left;
+  display: inline-block;
+}
+
+.application-id {
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #212121;
+  display: inline-block;
+  width: 304px;
+  margin-bottom: 24px;
+}
+
+.application-id1 {
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #212121;
+  text-align: left;
+  display: inline-block;
+  width: 304px;
+  margin-bottom: 15px;
+}
+
+.qc-discrepancy-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.warningcircle-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.warningcircle-wrapper {
+  border-radius: 21.05px;
+  background-color: rgba(241, 67, 54, 0.23);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 6px;
+}
+
+.qc-discrepency-raised {
+  align-self: stretch;
+  position: relative;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.qc-remarks {
+  align-self: stretch;
+  position: relative;
+  line-height: 14px;
+  color: #6b6b6b;
+}
+
+.update-details {
+  position: relative;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.typography {
+  border-radius: 4px;
+  background-color: #f15a22;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 4px 8px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.as-on {
+  position: relative;
+  line-height: 14px;
+  text-transform: lowercase;
+}
+
+.i {
+  position: relative;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.pm {
+  position: relative;
+  line-height: 14px;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+.lead-id {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.lead-id-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 10px;
+  color: #b5b5b5;
+}
+
+.frame-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.frame-group {
+  flex: 1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.component-26-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.component-26 {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(109, 109, 109, 0.13);
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.component-26-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 12px;
+  color: #3c3d3d;
+  margin-bottom: 15px;
+}
+
+.text {
+  position: relative;
+  font-weight: 500;
+}
+
+.re-submit,
+.re-submit:hover {
+  border-radius: 8px;
+  background-color: #1d428a;
+  box-shadow: 0px 2px 10px rgba(72, 44, 119, 0.22);
+  /* width: 100%; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  box-sizing: border-box;
+  color: #fff;
+  border: none;
+  margin-left: 20px;
+}
+.button_gropup{
+  display: flex;
+}
+
+.BackButton, .BackButton:hover, .BackButton:active, .BackButton:focus{
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(72, 44, 119, 0.22);
+  /* width: 100%; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  box-sizing: border-box;
+  color: #1d428a;
+  border: none;
+  font-weight: bold;
+  border: 1px solid #1d428a;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .main_container {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    padding: 0 16px;
+    margin-top: 30px;
+
+  }
+
+  .main_container .applicant-account-form {
+    font-size: 28px;
+    min-width: 240px;
+  }
+
+  .main_container .title_wrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 87px;
+    z-index: 0;
+    height: 200px;
+    align-items: end;
+  }
+
+  .main_container .form_wrapper {
+    margin-top: 87px;
+    max-width: 730px;
+  }
+
+  .main_container .component-29 {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    background: none;
+    position: static;
+    box-shadow: none;
+    gap: 40px;
+    border-top: none;
+    width: 20%;
+    padding: 4px 8px;
+  }
+
+  .main_container .frame-parent1 {
+    margin-top: 49px;
+  }
+  .form_wrapper{
+    margin-top: 0rem;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .verifying-details {
+    position: relative;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    /* font-family: Roboto; */
+    color: #1d428a;
+    text-align: left;
+  }
+
+  .qc-discrepancy {
+    position: relative;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    /* font-family: Roboto; */
+    color: #1d428a;
+    text-align: left;
+  }
+
+  .mobile-view-qc {
+    margin-top: 0px;
+  }
+
+  .re-submit {
+    width: 100%;
+  }
+
+  .component-26-wrapper {
+    margin-bottom: 16px;
+  }
+
+  .application-id1 {
+    margin-bottom: 0px;
+  }
+  .form_wrapper{
+    margin-top: 12rem;
+  }
+}

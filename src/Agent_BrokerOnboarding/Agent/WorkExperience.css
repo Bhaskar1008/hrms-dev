@@ -1,0 +1,125 @@
+.work-container {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background-color: #f8f9fc; */
+  /* padding: 20px; */
+  min-height: 100vh;
+}
+
+.work-card {
+  /* background-color: #fff; */
+  /* padding: 40px 30px; */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 960px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-title {
+  color: #FF6D00;
+  margin-bottom: 8px;
+}
+
+.work-subtitle {
+  display: block;
+  margin-bottom: 10px;
+  /* margin-top: 2%; */
+  font-size: 14px;
+  letter-spacing: 7%;
+  color: #555;
+}
+.work-experience {
+  color: #00aec1;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2% !important;
+  margin-bottom: 3% !important;
+}
+.work-form .ant-form-item-label > label {
+  font-weight: 400;
+}
+
+.work-block {
+  margin-bottom: 20px;
+}
+
+.work-row {
+  display: flex;
+  gap: 20px;
+}
+
+.add-btn {
+  margin-bottom: 20px;
+  color: #FF6D00;
+  border-color: #FF6D00;
+}
+
+.add-btn:hover {
+  background-color: #ffe5d1;
+}
+
+.declaration-title {
+  margin-bottom: 10px;
+  color: #00aec1;
+}
+
+.declaration-group .ant-form-item {
+  margin-bottom: 12px;
+}
+
+.work-btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.back-btn {
+  border: 1px solid #00aec1;
+  color: #00aec1;
+}
+
+.next-btn {
+  background-color: #FF6D00;
+  border-color: #FF6D00;
+}
+
+.next-btn:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+
+.work-divider {
+  
+  margin-top: 16px;
+  margin-bottom: 16px;
+}/* Base styling for all radio buttons */
+.custom-radio .ant-radio-inner {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+/* Border color for all radios (unselected) */
+.custom-radio .ant-radio .ant-radio-inner {
+  border-color: #4B0082; /* purple */
+}
+
+/* When radio is checked */
+.custom-radio .ant-radio-checked .ant-radio-inner {
+  border-color: #FF6D00; /* orange */
+}
+
+/* Dot (checked mark) */
+.custom-radio .ant-radio-checked .ant-radio-inner::after {
+  background-color: #FF6D00; /* orange dot */
+  
+  
+}
+
+/* Optional: spacing between radio and label */
+.custom-radio .ant-radio-wrapper {
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+}

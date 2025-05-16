@@ -1,0 +1,24 @@
+.notfound{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    height: 550px;
+    width: 1200px;
+    text-align: center;
+    margin-left: 75px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%),0 1px 3px 0 rgb(0 0 0 / 20%);
+}
+.homebutton{
+    background-color: #E46A25 !important;
+    padding: 10px !important;
+    width: 135px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: robotoregular;
+    margin-left: 525px;
+    cursor: pointer;
+}

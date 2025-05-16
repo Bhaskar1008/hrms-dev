@@ -1,0 +1,373 @@
+.myteam-main-class{
+    display: flex;
+  /* width: 100%; */
+    flex-direction: column;
+
+}
+.myteam-card-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    /* margin-top: 3vw; */
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+.myteam-floatbutton-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    width: 10%;
+    background-color: brown;
+}
+.myteam-tab-card-flex{
+    display: flex;
+    width: 40%;
+    /* overflow-x: scroll; */
+    /* background-color: brown; */
+    /* flex-direction: row; */
+    /* margin-top: 3vw; */
+    margin-right: 1vw;
+    margin-left: 2vw;
+}
+.myteam-tab-card-style{
+    display: flex;
+    flex:1;
+    cursor: pointer;
+    /* flex:1; */
+    flex-direction: column;
+    /* box-shadow: 0px 2px 3px 0px #8181817a;
+     */
+    /* padding: 0px; */
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    border-radius: 10px;
+    height: 15vh;
+
+    /* background-color:red; */
+    max-width: 33%;
+  /* margin-bottom:3vw; */
+  margin-right: 2vw;
+  margin-top:2vw;
+}
+.myteam-tab-active-card-style{
+    display: flex;
+    flex:1;
+    cursor: pointer;
+    /* flex:1; */
+    flex-direction: column;
+    /* box-shadow: 0px 2px 3px 0px #8181817a;
+     */
+    /* padding: 0px; */
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    border-radius: 10px;
+    height: 15vh;
+
+    background-color: rgb(1, 180, 187);
+
+    max-width: 33%;
+  /* margin-bottom:3vw; */
+  margin-right: 2vw;
+  margin-top:2vw;
+}
+.myteam-array-count-circle-style{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+
+    background-color: #ff1b43;
+    box-shadow: 0 15px 20px rgb(0 0 0 / 30%);
+
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+}
+.myteam-array-count-circle-flex{
+    display: flex;
+    flex:0.5;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* min-height: 20vh; */
+width: 100%;
+/* background-color: blue; */
+}
+.myteam-tab-text-column-flex{
+    display: flex;
+
+    flex:0.6;
+    /* background-color: brown; */
+    flex-direction: column;
+    justify-content: flex-end;
+    
+ 
+}
+.myteam-tab-text-row-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 11em */
+    /* min-height: 100vh; */
+}
+.myteam-tab-text-style{
+text-align: end;
+color: rgb(0, 0, 0);
+font-weight: 500;
+}
+.myteam-tab-active-text-style{
+    text-align: end;
+    color: white;
+    font-weight: 500;
+    }
+
+.myteam-card-main-style{
+    display: flex;
+    /* flex:1; */
+    flex-direction: row;
+    /* cursor: pointer; */
+    /* box-shadow: 0px 2px 3px 0px #8181817a;
+     */
+    /* padding: 0px; */
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+    border-radius: 3px;
+    /* background-color:red; */
+    width: 47%;
+  margin-bottom:3vw;
+  margin-right: 2vw;
+  margin-top: 2vw;
+ 
+}
+.myteam-card-avatar-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.7vw;
+    margin-left: 1vw;
+    margin-right: 0.7vw;
+    /* align-items: center; */
+    width: 20%;
+    /* background-color: black; */
+}
+.myteam-card-avatar-flex> .ant-avatar-lg {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(105, 55, 151);
+    border-radius: 50%;
+}
+.myteam-card-avatar-text{
+    font-size: 14px;
+    font-weight: bold;
+    color: #54ad40;
+    position: relative;
+    top: 5px;
+    text-align: center;
+    /* align-items: center; */
+    /* left: 7px; */
+    margin-left: 0px;
+    font-family: robotoregular;
+}
+
+.myteam-card-content-flex{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    margin-top: 0.7vw;
+ 
+    width: 80%;
+    /* background-color: rosybrown; */
+}
+.myteam-card-content-top-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    width: 95%;
+    /* background-color: blueviolet; */
+}
+.myteam-card-name-id-flex{
+    display:flex;
+    flex-direction: row;
+}
+.myteam-card-id-text-style{
+    font-size: 14px;
+    font-family: robotoregular;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+.myteam-card-horizontal-line-style{
+    align-items: stretch;
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #ffffff;
+    border-bottom-color: #e8e8e8;
+}
+.myteam-card-content-bottom-flex{
+    display: flex;
+flex-direction: column;
+
+   /* justify-content: flex-start; */
+    width: 90%;
+    /* background-color: blueviolet; */
+}
+.myteam-card-bottom-header-row-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.myteam-card-bottom-header-row-email-area-flex{
+    width: 33.33%;
+    /* background-color: red; */
+}
+.myteam-card-bottom-header-row-mobileno-area-flex{
+    width: 33.33%;
+    /* background-color: red; */
+}
+.myteam-card-bottom-header-row-openleads-area-flex{
+    width: 33.33%;
+    /* background-color: red; */
+}
+.myteam-card-bottom-header-text-style{
+    font-size: 14px;
+    font-weight: 400;
+    color: #9d9d9d;
+    font-family: robotoregular;
+    margin-bottom: 0.3vw;
+    margin-top: 0.4vw;
+    
+  
+}
+.myteam-card-bottom-email-text-style{
+    font-weight: bold;
+    font-size: 14 px;
+    font-family: robotoregular;
+    
+}
+.myteam-card-bottom-button-style{
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 2px;
+    height: 30px;
+  width: 7vw;
+    position: relative;
+    cursor: pointer;
+    border: 1.2px solid #000;
+    font-size: 12px;
+    background-color: white;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+}
+.myteam-card-bottom-button-row-flex{
+display: flex;
+flex-direction: row;
+
+/* justify-content: space-around; */
+}
+
+.myteam-floater-button{
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+@media (min-width: 319px) and (max-width: 767px) {
+    .myteam-card-flex{
+   
+        width: 100%;
+        margin-top: 0vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    .myteam-card-main-style{
+        width: 100%;
+        margin-right: 4vw;
+    }
+    .myteam-tab-card-flex{
+        width: 100%;
+        margin-bottom: 4vw;
+        /* overflow-x: scroll; */
+    }
+    .myteam-card-avatar-flex> .ant-avatar-lg {
+        height: 40px;
+        width: 40px;
+
+        border-radius: 50%;
+    }
+    .myteam-card-content-bottom-flex{
+        width: 100%;
+    }
+    .myteam-card-bottom-button-style{
+        width: 30vw;
+        height: 30px;
+        margin-right: 3vw;
+        margin-bottom: 3vw;
+    }
+    .myteam-card-name-id-flex{
+        flex-direction: column;
+
+    }
+    .myteam-card-avatar-flex{
+        justify-content: flex-start;
+    }
+    .myteam-card-avatar-text{
+        top:-10px;
+        text-align: start;
+    }
+    .myteam-card-bottom-header-row-flex{
+        justify-content: flex-end;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .myteam-card-flex{
+   
+        width: 100%;
+        margin-top: 0vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    .myteam-card-main-style{
+        width: 100%;
+        margin-right: 4vw;
+    }
+    .myteam-tab-card-flex{
+        width: 80%;
+        margin-bottom: 4vw;
+        /* overflow-x: scroll; */
+    }
+    .myteam-card-avatar-flex> .ant-avatar-lg {
+        height: 60px;
+        width: 60px;
+
+        border-radius: 50%;
+    }
+    .myteam-card-content-bottom-flex{
+        width: 100%;
+    }
+    .myteam-card-bottom-button-style{
+        width: 15vw;
+        height: 30px;
+        margin-right: 3vw;
+        margin-bottom: 3vw;
+    }
+  
+ 
+}

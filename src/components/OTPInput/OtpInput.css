@@ -1,0 +1,117 @@
+.otp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 5px;
+  /* margin-left: 10px; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.resend-container {
+  align-items: center;
+  margin-top: 10px;
+}
+
+.resend-text {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.resend-button {
+  background-color: #4ac6bb;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* margin-left: 10px; */
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.resend-button:hover {
+  background-color: #4ac6bb;
+}
+
+.timer-text {
+  font-size: 14px;
+}
+
+.message-text-box {
+  width: 100%;
+  /* background-color: #007BE5; */
+  margin-bottom: 5%;
+}
+
+.timer-text-otp {
+  margin-bottom: 5%;
+}
+
+.verify-button {
+  height: 50px;
+  width: 100%;
+  background-color: #1D428A;
+  /* backgroundColor: "rgba(255,235,0,1)", */
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  /* margin-left: 15px;
+    margin-right: 15px; */
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  top: 12rem;
+  margin: 2px;
+}
+
+.verify-button:hover,
+.verify-button:active,
+.verify-button:focus {
+  background-color: #1D428A;
+  color: #ffffff;
+}
+
+.wrapper-main-box {
+  /* background-color: aquamarine; */
+  height: 34vh;
+  text-align: center;
+}
+
+/* .message-wrapper-box{
+  background-color: #FFEB00;
+
+  text-align: left;
+} */
+
+@media (min-width: 992px) {
+  .wrapper-main-box {
+    /* background-color: aquamarine; */
+    /* overflow-y: hidden; */
+    height: 32vh;
+  }
+}

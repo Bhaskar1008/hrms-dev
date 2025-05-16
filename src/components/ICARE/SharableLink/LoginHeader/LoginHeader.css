@@ -1,0 +1,85 @@
+.login-oona-header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-oona-purple, #1D428A);
+  width: 100%;
+  height: 60px;
+
+  margin: 0;
+  /* padding-left: 2rem; */
+  padding-right: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.logo-header ul {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 20px;
+  list-style-type: none;
+  padding-left: 0px;
+  cursor: pointer;
+}
+.login-head ul {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.parent-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.drawer-content {
+  padding: 20px;
+}
+.containernavdeco1 {
+  align-self: stretch;
+  background: linear-gradient(90deg, #4ac6bb, #7a4cb7 93.75%);
+  height: 8px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.wrapper-layout {
+  z-index: 999;
+  background-color: #1D428A;
+  height: 100vh;
+  width: 100%;
+}
+
+.login-head {
+  cursor: pointer;
+}
+
+.ant-spin-dot {
+  color: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .login-oona-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .login-oona-header .ant-spin-spinning {
+    margin-top: 17px;
+    margin-left: 50px;
+    margin-bottom: 23px;
+  }
+}
+@media (min-width: 920px) {
+ 
+  .login-oona-header .ant-spin-spinning {
+    margin-right: 173px;
+    margin-top: 17px;
+  }
+}

@@ -1,0 +1,122 @@
+/* Rejection Modal Styles */
+.rejection-modal .ant-modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #BBBBBB;
+}
+
+.rejection-modal .ant-modal-body {
+  padding: 0 !important;
+  background-color: #BBBBBB;
+}
+
+.rejection-modal-header {
+  background-color: #00BCD4;
+  color: white;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rejection-modal-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.rejection-modal-close {
+  color: white !important;
+  border: none !important;
+  padding: 0 !important;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent !important;
+}
+
+.rejection-modal-close:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.rejection-modal-content {
+  padding: 12px 15px;
+  background-color: #BBBBBB;
+}
+
+.rejection-field {
+  margin-bottom: 15px;
+}
+
+.rejection-label {
+  display: block;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.required {
+  color: #FF0000;
+  margin-left: 2px;
+}
+
+.rejection-textarea {
+  width: 100%;
+  border-radius: 3px;
+  resize: none;
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid #d9d9d9 !important;
+}
+
+.rejection-textarea:focus {
+  border-color: #00BCD4 !important;
+  box-shadow: 0 0 0 2px rgba(0, 188, 212, 0.2) !important;
+}
+
+.rejection-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.cancel-button {
+  border: 1px solid #00BCD4;
+  color: #00BCD4;
+  background: white;
+  border-radius: 10px !important;
+  min-width: 80px;
+  font-size: 13px;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.cancel-button:hover {
+  background-color: rgba(0, 188, 212, 0.05);
+  color: #00A5BD;
+}
+
+.confirm-reject-button {
+  background-color: #FF5252;
+  border: none;
+  color: white;
+  border-radius: 10px !important;
+  min-width: 80px;
+  font-size: 13px;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.confirm-reject-button:hover:not([disabled]) {
+  background-color: #FF3939;
+}
+
+.confirm-reject-button[disabled] {
+  background-color: rgba(255, 82, 82, 0.5);
+  color: white;
+} 

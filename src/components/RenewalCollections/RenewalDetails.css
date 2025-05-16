@@ -1,0 +1,61 @@
+body{
+    background-color: #f7f7f7 !important;
+  }
+  .header{
+    background-image: url("https://pocbanca.iorta.in/assets/header-tabs.png");
+    height: 150px;
+    padding: 25px 40px;
+    background-size: 100% 100%;
+  }
+  .header h1{
+    color: #00ACC1;
+  }
+  .ant-btn.primaryBtn{
+    /* background-color: rgb(255, 255, 255); */
+    background-color: transparent;
+    color: rgb(60, 61, 61);
+    border-radius: 20px;
+    width: 190px;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  }
+  .ant-btn.secondaryBtn{
+    background-color: transparent;
+    color: rgb(60, 61, 61);
+    border-radius: 20px;
+    width: 190px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  }
+  .tabs{
+    margin: 10px 0 20px;
+  }
+  .avatar-and-status{
+    padding: 5px;
+    text-align: left;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.avatar-and-status>span>span{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.main-cards{
+    border: 1px solid grey;
+}
+.nameInfo{
+  margin: 10px;
+}
+.card-heading{
+  color: #454F63;
+  font-size: 14px;
+}
+/* .shareIcon {
+  margin-left:'50px' !important;
+  border-radius:'50px';
+  background-color:'#00ACC1' !important;
+  padding:'8px';
+  color:'#fff';
+  cursor:'pointer';
+} */

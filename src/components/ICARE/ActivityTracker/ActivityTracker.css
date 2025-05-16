@@ -1,0 +1,450 @@
+.widget_header {
+  align-self: stretch;
+  position: relative;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 500;
+  color: #f2f2f3;
+}
+
+.vector-stroke-icon {
+  position: absolute;
+  height: 58.33%;
+  width: 33.33%;
+  top: 20.83%;
+  right: 33.33%;
+  bottom: 20.83%;
+  left: 33.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.buttonantdprimary-icon-only {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: white;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.year-placeholder-buttom {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 130%;
+  color: inherit;
+}
+.calendar-nav,
+.day {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.calendar-nav {
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.day {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-weight: 500;
+  height: 10px;
+}
+.loadermiddle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.active-day,
+.date,
+.day {
+  flex-shrink: 0;
+  justify-content: center;
+}
+.date {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 12px;
+}
+.active-day {
+  text-decoration: none;
+  flex: 1;
+  border-radius: 4px;
+  background-color: #FF6D00;
+  box-shadow: 0 4px 10px rgba(106, 106, 106, 0.26);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 8px;
+  box-sizing: border-box;
+  gap: 4px;
+  min-width: 64px;
+  color: #fff;
+}
+.active-day,
+.calendar-days-scroll,
+.day1 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+.day1 {
+  text-decoration: none;
+  flex: 1;
+  border-radius: 4px;
+  background-color: #f2f2f3;
+  box-shadow: 0 4px 10px rgba(106, 106, 106, 0.26);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 8px;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 4px;
+  min-width: 64px;
+  color: inherit;
+}
+.calendar-days-scroll {
+  align-self: stretch;
+  overflow-x: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 12px;
+  text-align: center;
+  scrollbar-width: thin;
+  scrollbar-color: #8c58ca transparent;
+}
+.calendar-days-scroll::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar in webkit-based browsers */
+}
+.am,
+.taglabel3 {
+  position: relative;
+}
+.am {
+  flex: 1;
+  line-height: 150%;
+  font-weight: 500;
+}
+.taglabel3 {
+  letter-spacing: 0.01em;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.tag {
+  border-radius: 4px;
+  background-color: #4ac6bb;
+  height: 24px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.global-table-tag,
+.tag,
+.time-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.global-table-tag {
+  align-items: flex-start;
+  font-size: 11px;
+  color: #fff;
+}
+.time-type {
+  align-self: stretch;
+  align-items: center;
+  gap: 24px;
+}
+.image-icon {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.description,
+.text12 {
+  flex: 1;
+  align-items: center;
+}
+.text12 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 2rd line is reached */
+  white-space: pre-wrap;
+}
+.description {
+  height: 40px;
+  overflow: hidden;
+  flex-direction: row;
+}
+.activity-card-1,
+.containerarticle,
+.description {
+  display: flex;
+  justify-content: flex-start;
+}
+.containerarticle {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.activity-card-1 {
+  flex: 1;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
+  border-left: 2px solid #4ac6bb;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 340px;
+}
+.card-group {
+  flex: none;
+  gap: 16px;
+}
+.activity-card-scroll,
+.card-group {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.activity-card-scroll {
+  align-self: stretch;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+.activity-tracker,
+.activity-tracker1 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.activity-tracker1 {
+  width: 100%;
+  border-radius: 8px;
+  border-color: #DCD6E9;
+  background-color: #00AEC1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+.activity-tracker {
+  width: 100%;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 12px;
+  color: #4c4c4c;
+  font-family: Roboto;
+}
+.noRecordText {
+  color: var(--body_text, #4c4c4c);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  text-transform: capitalize;
+}
+@media screen and (max-width: 800px) {
+  .activity-card-1 {
+    flex: 1;
+    min-width: 290px;
+  }
+  .time-type1 {
+    align-self: stretch;
+    width: auto;
+  }
+  .activity-card-2 {
+    flex: 1;
+    min-width: 290px;
+  }
+  .activity-card-scroll,
+  .activity-tracker1 {
+    align-self: stretch;
+    width: auto;
+  }
+}
+@media (max-width: 900px) {
+  .activity-card-1 {
+    flex: 1;
+    width: 290px;
+  }
+  .time-type1 {
+    align-self: stretch;
+    width: auto;
+  }
+  .activity-card-2 {
+    flex: 1;
+    width: 290px;
+  }
+  .activity-card-scroll,
+  .activity-tracker1 {
+    align-self: stretch;
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .widget_header {
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 500;
+    color: #f2f2f3;
+  }
+
+  .calendar-days-scroll {
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+  .containerarticle,
+  .time-type {
+    align-self: stretch;
+    width: auto;
+  }
+
+  .activity-card-1 {
+    flex: unset;
+    padding: 12px;
+    box-sizing: border-box;
+    min-width: auto;
+    align-self: stretch;
+    width: 100%;
+  }
+
+  .activity-card-2 {
+    flex: unset;
+    flex-direction: column;
+    padding-top: 16px;
+    box-sizing: border-box;
+    min-width: 330px;
+    align-self: stretch;
+  }
+  .activity-card-scroll,
+  .card-group {
+    gap: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .card-group {
+    flex: 1;
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .activity-card-scroll {
+    align-self: stretch;
+    width: auto;
+    flex-direction: inherit;
+    overflow: auto;
+  }
+  .activity-tracker1 {
+    /* width: 354px; */
+    padding: 24px 20px;
+    box-sizing: border-box;
+  }
+  .activity-tracker {
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 920px) {
+  .activity-card-1 {
+    /* width: 100%; */
+    width: 346px;
+  }
+  .shormoreButton {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 10%;
+    text-align: center;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: ; */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .activity-card-1 {
+    width: 341px;
+  }
+  .shormoreButton {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 44%;
+    text-align: center;
+    height: 9%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.plusIcon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.activity-card-scroll {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #8c58ca transparent;
+}
+
+.activity-card-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.activity-card-scroll::-webkit-scrollbar-thumb {
+  background-color: #8c58ca;
+  border-radius: 4px;
+}
+
+.activity-card-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #6e3c8e;
+}

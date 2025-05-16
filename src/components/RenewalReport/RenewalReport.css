@@ -1,0 +1,90 @@
+.renewal-main{
+    display: flex;
+    height: 30vh;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    background-color: rgb(206, 160, 225);  
+}
+.wrapper {
+  width: 1300px;
+  max-width: 100%;
+}
+.sales-renewal{
+    display: flex;
+    padding: 20px 20px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    /* box-shadow:  1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.renewal-table{
+  margin-left: 2vw;
+}
+  .renewal-head3{
+      display: flex;
+      color: #fff;
+      text-align: left;
+      font-size: 15px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .renewal-head4{
+    display: flex;
+    font-size: 14px;
+    color: #fff;
+    
+  }
+  .renewal-btn{
+      background-color: rgb(206, 160, 225);
+      font-size: 15px;
+      color: #fff;
+      width: 10vw;
+      height: 45px;
+}
+.renewal-text{
+  display: flex;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+  @media (max-width:524px) {
+    .renewal-main{
+      display: flex;
+      flex-direction: column;
+    }
+    .sales-renewal{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  /* div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  } */

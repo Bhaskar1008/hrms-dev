@@ -1,0 +1,22 @@
+.sharable_link_header {
+  background-color: #1D428A; /* Set background color */
+  padding: 10px; /* Add some padding for spacing */
+  text-align: start; /* Center-align content */
+  cursor: pointer;
+}
+
+.logo {
+  width: 150px; /* Adjust the width of your logo as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 30px;
+}
+.containernavdeco2 {
+  align-self: stretch;
+  background: linear-gradient(90deg, #4ac6bb, #7a4cb7 93.75%);
+  height: 8px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}

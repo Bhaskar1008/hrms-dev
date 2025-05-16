@@ -1,0 +1,150 @@
+.doc-upload-container {
+  display: flex;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.doc-upload-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 960px;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doc-title {
+  color: #ff6a00;
+  font-weight: 500;
+  font-size: clamp(24px, 5vw, 42px);
+  margin-bottom: 24px;
+}
+
+.doc-download {
+  margin: 20px 0;
+}
+
+.doc-link {
+  color: #00aec1;
+  font-weight: 500;
+  display: block;
+  margin-top: 5px;
+}
+
+.browse-btn {
+  background-color: #FF6D00;
+  border-color: #FF6D00;
+  color: white;
+}
+
+.browse-btn:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+
+.doc-note {
+  font-size: 12px;
+  color: #000000;
+  display: block;
+}
+
+.doc-section-title {
+  color: #00AEC1 !important;
+  margin-top: 30px;
+  
+}
+
+.declaration-text {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #707070;
+  font-weight: 400;
+}
+
+.doc-btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.back-btn {
+  border: 1px solid #00aec1;
+  color: #00aec1;
+}
+
+.next-btn {
+  background-color: #FF6D00;
+  border-color: #FF6D00;
+}
+.download-form {
+  color: #00aec1;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2% !important;  
+}
+
+.doc-card {
+  padding: 11px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+}
+
+.doc-card-title
+{
+  color:#444444;
+  font-size:14px;
+  font-weight:500;
+
+}
+.doc-card-subtitle
+{
+  color:#FF6D00;
+  font-size:14px;
+  font-weight:500;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+.doc-card-subtitle:hover{
+  color:#FF6D00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.doc-paragraph-text
+{
+  color:#4A5259;
+  font-size:14px;
+  font-weight:400;
+}
+
+.doc-upload-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doc-upload-icon {
+  gap: 8px;
+  background-color: #FF9C52;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 45px;
+  width: 45px;
+}
+
+/* Target the label inside your custom Form.Item */
+.custom-form-label .ant-form-item-label > label {
+  color: #000000; 
+  font-weight: 500; 
+  margin-top: 5px;
+}

@@ -1,0 +1,89 @@
+/* Document Upload Styles */
+.document-upload-container {
+  width: 100%;
+  margin-bottom: 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.document-upload-header {
+  background-color: white;
+  color: #FF6D00;
+  padding: 12px 16px;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.edit-icon {
+  font-size: 16px;
+  cursor: pointer;
+  color: #888;
+}
+
+.document-upload-card {
+  box-shadow: none;
+  border: none;
+}
+
+.document-upload-card .ant-card-body {
+  padding: 8px;
+  background-color: white;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px;
+  border-radius: 0;
+  margin-bottom: 8px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.document-item:hover {
+  border-color: #00AEC1;
+}
+
+.document-item:last-child {
+  margin-bottom: 0;
+}
+
+.document-upload-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  color: #00AEC1;
+}
+
+.document-upload-icon svg {
+  color: #00AEC1;
+  width: 22px;
+  height: 22px;
+}
+
+.document-details {
+  flex: 1;
+}
+
+.document-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #00AEC1;
+  margin-bottom: 2px;
+}
+
+.document-limit {
+  font-size: 11px;
+  color: #888;
+} 

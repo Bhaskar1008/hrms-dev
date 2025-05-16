@@ -1,0 +1,142 @@
+/* Links.css */
+
+.center_success_image{
+  text-align: center;
+  margin-top: 75px;
+}
+/* Main container styles */
+/* Main container styles */
+.rsmaindivv {
+  position: relative;
+  background-color: #f1f1f1;
+  width: 100%;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+  font-family: Roboto;
+}
+
+.headingForPaymentsuccess{
+  text-align: center;
+  font-size: 16px;
+}
+.success_msg{
+  text-align: center;
+  font-size: 20px;
+}
+/* Styles for the commercial structure */
+.commercial-structure {
+  position: absolute;
+  top: 81px;
+  left: 16px;
+  width: 388px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+/* Common styles for agent types */
+.agent-type {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+/* Heading styles */
+.agent-heading {
+  align-self: stretch;
+  position: relative;
+  line-height: 110%;
+  font-weight: 600;
+}
+
+/* Subheading styles */
+.agent-subheading {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1D428A;
+}
+
+/* Agent link styles */
+.agent-link {
+  border-radius: 12px;
+  background-color: #4ac6bb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 12px 8px 24px;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Icon container styles */
+.icon-container {
+  border-radius: 28.8px;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 6.4px;
+  box-sizing: border-box;
+}
+
+/* Image styles */
+.agent-image {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+.back_btn{
+
+
+}
+.back_btn-paymentlink {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; 
+  letter-spacing: 0.00875rem;
+  font-size: 0.875rem;
+  /* display: flex;      
+border-radius: 15px;    
+align-items: center;   
+ justify-content: center;   
+ padding: 20px;   
+ margin-top: 20px;    
+ margin-bottom: 24px; */
+}
+
+.back_btn-paymentlink:hover {
+  background: #fff;
+  border: 1px dashed #d9d9d9;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+  border-radius: 12px;
+
+}
+
+.btn_parent{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}

@@ -1,0 +1,504 @@
+/* my work */
+/* .header.resourceCenter{
+    background-image: url('https://pocbanca.iorta.in/assets/header-tabs.png');
+    background-size: 100% 100%;
+    height: 150px;
+    padding: 20px 35px;
+}
+
+.product-title{
+    font-size: 29px;
+    color: #00ACC1;
+    margin-bottom: 5px !important;
+    font-weight: 750;
+}
+
+.resourceCenter.primaryBtnResource.top-tab-header-active{
+    background-color: #0aacc1;
+    color: #fff;
+}
+
+.resourceCenter.primaryBtnResource{
+    background-color: #fff;
+    color: #0aacc1;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 0 30px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0,3);
+} */
+
+/*end my work*/
+
+.headerResource {
+  /* background-color: #003C64; */
+    /* height: 11rem; */
+    /* width: 100%; */
+    margin-bottom: 10px;
+    margin-top: -1rem;
+    /* padding: 10px 20px; */
+    padding: 15px;
+    /* background-size: 100% 100%; */
+    color: #1D428A;
+  }
+  .headerResource h1 {
+    color: #1D428A;
+  }
+  
+  .product-title {
+    /* padding-top: 1vw; */
+    font-size: 30px;
+    font-weight: bold;
+    color: #00AEC1;
+    margin-left: 16px;
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .tabsResource {
+    margin-left: 40px;
+  }
+  
+  .primaryBtnResource .ant-btn {
+    background-color: #D2DDE8;;
+    color: rgb(60, 61, 61);
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-bottom: 16px;
+    margin-top: 10px !important;
+    border: none;
+  }
+  
+  .top-tab-header-active {
+    background-color: #1D428A !important;
+    color: #fff !important;
+  }
+  
+  .active-resource {
+    background-color: #003C64; /* Green */
+    color: white;
+  }
+  
+  .inactive {
+    color: "#646666";
+    background-color: white;
+  }
+
+  .tags {
+    border-color: #C1C8CC;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #00AEC1;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: white
+  }
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* adds space between buttons instead of margin-right */
+  }
+  
+  
+  /* .ant-card-body {
+      padding: 10px;
+  } */
+  
+  .card_img {
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .maincard {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .button_calss{
+
+    background-color: #003C64;
+    border-radius: 5px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff!important;
+    padding: 5px 20px;
+    border: none;
+  }
+
+  
+.send{
+  background: #003C64;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .send:hover{
+  background: #003C64!important;
+  color: #fff;
+  border: none;
+  }
+  .cancle{
+  background-color: #FFFFFF;
+    border-width: 1px;
+    border-color: #454F63;
+    padding: 3px 15px 3px 11px;
+    border-radius: 20px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .cancle:hover{
+  background-color: #FFFFFF;
+  color: #000;
+  border-width: 1px;
+  border-color: #454F63;
+  }
+
+  .delet_btn{
+    background: #003C64;
+      border: none;
+      font-size: 12px;
+      margin-left: 10px;
+      font-weight: 700;
+    }
+    .delet_btn:hover{
+    color: #000;
+    }
+
+  .disply{
+    display: flex;
+    }
+
+    .listData{
+      border-radius: 6px;
+      background-color: #003C64;
+      margin: 5px 5px;
+      padding: 5px 10px;
+      color: #fff;
+      font-size: 14px;
+      
+      }
+
+  .inp {
+    border:none;
+    border-bottom: 2px solid #cfcfcf;
+    padding: 5px 10px;
+    outline: none;
+    }
+  .button_calss:hover{
+  background-color: #003C64!important;
+  border: none!important;
+  padding: 5px 20px;
+  border: none;
+  
+  }
+  .button_calss:focus{
+  background-color: #003C64!important;
+  border: none!important;
+  padding: 5px 20px;
+  border: none;
+  
+  
+  }
+  
+  .share_button {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: large;
+    padding: 12px;
+    color: #003C64;
+    font-weight: 1000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  .card_img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .ant-card-cover{
+    height: 145px;
+  }
+  
+  .card {
+    margin-bottom: 17px;
+  }
+  
+  .card .ant-card-body {
+    padding: 0 !important;
+  }
+  
+  /* .content{
+      background-image: url('../../assets/contentback.png');
+  } */
+  
+  @media screen and (max-width: 992px) {
+    .options {
+      display: none;
+    }
+    .card {
+      align-items: center;
+      display: flex;
+    }
+    /* .ant-card{
+      height: 100vh;
+  } */
+  }
+  @media screen and (min-width: 993px) {
+    /* .options{
+        display: none;
+    }   */
+    .dropdown {
+      display: none;
+    }
+  }
+  
+  .active-resource {
+    background-color: #003C64; /* Green */
+    color: white;
+  }
+  
+  .card_body .ant-card-body {
+    padding: 0 !important;
+  }
+  .card_body img{
+    opacity: 0.2;
+  }
+/*   .inactive {
+    color: "#646666";
+    background-color: white;
+  } */
+  
+  /* .resourceCenter.primaryBtnResource.top-tab-header-active{
+     background-color: gray;
+  } */
+  
+  .dropactive {
+    background-color: #00AEC1; /* Green */
+    color: white;
+  }
+  
+  /* Custom styles for Ant Design Tabs */
+  .ant-tabs-tab-active .ant-tabs-tab-btn {
+    background: #F1F0F5 !important;
+    color: #FF6D00 !important;
+    border-radius: 6px 6px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .ant-tabs-tab {
+    background: #F1F0F5 !important;
+    color: #444 !important;
+    border-radius: 6px 6px 0 0;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+    font-size: 18px;
+  }
+  .ant-tabs-top > .ant-tabs-nav 
+  .ant-tabs-tab:not(.ant-tabs-tab-active) 
+  .ant-tabs-tab-btn {
+  color: #444444 !important;
+}
+  .ant-tabs-nav{
+    margin-left: 1.5% !important;
+    box-shadow: none !important
+  }
+  .ant-tabs .ant-tabs-ink-bar {
+    background: #FF6D00 !important;
+    height: 3px !important;
+    border-radius: 2px;
+  }
+  .tabs{
+    border-color: black;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 10px;
+    color: #707070;
+    font-size: 14px;
+  }
+  .contentType{
+    font-size: 16px; 
+    font-weight: bold
+  }
+  .tabsactive {
+    border-color: black;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: #00AEC1; /* Green */
+    color: white;
+    font-size: 14px;
+
+  }
+
+  .tagHeader {
+    color: #444444;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 130%;
+    margin-top: 5px;
+  }
+  
+
+  .dropinactive {
+    background-color: rgb(247, 247, 247);
+    color: black;
+  }
+  /* .content{
+      background-image: url('../../assets/contentback.png');
+  } */
+  
+  @media screen and (max-width: 992px) {
+    .options {
+      display: none;
+    }
+    .card {
+      align-items: center;
+      display: flex;
+    }
+    /* .ant-card{
+      height: 100vh;
+  } */
+  }
+  @media screen and (min-width: 993px) {
+    /* .options{
+        display: none;
+    }   */
+    .dropdown {
+      display: none;
+    }
+    .sideBar {
+      height: 100%;
+      padding: 15px;
+      /* margin: 10px; */
+      border-radius: 10px;
+      box-shadow: 2px 3px 6px rgb(0 0 0 / 9%);
+      border: 0.5px solid #e7edf5;
+    }
+    
+  }
+
+  
+  .contentMain {
+    height: 100%;
+    /* margin: 10px; */
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgb(0 0 0 / 9%);
+    border: 0.5px solid #e7edf5;
+    margin-bottom: 30%;
+  }
+
+  .sideBar{
+    height: 100%;
+    /* margin: 10px; */
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgb(0 0 0 / 9%);
+    border: 0.5px solid #e7edf5;
+    margin-bottom: 20%;
+  }
+  
+  /* card-  content */
+  .Body_text {
+    padding: 8px;
+    font-family: robotobold;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .Body_text2 {
+    padding-left: 8px;
+    font-family: robotobold;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(73, 72, 72);
+    letter-spacing: 1px;
+    height: 75px;
+    max-height: 75px;
+  }
+  
+  .cardbutton.block {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px;
+    padding: 7px 20px;
+  }
+  
+  .article_modal,
+  .article_modal .ant-modal-content {
+    height: 95%;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .article_modal .article_content {
+    height: 100%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  .article_modal .ant-modal-body {
+    height: 100%;
+    padding: 18px;
+  }
+  
+  .center_icon {
+    position: absolute;
+    left: 50%;
+    top: 23%;
+    transform: translate(-50%, -50%);
+    /* background-image: url("https://pocbanca.iorta.in/assets/Group19142x.png"); */
+    width: 20px;
+    height: 20px;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50px;
+  }
+  
+  .block {
+    display: block;
+    width: 100%;
+    border: none;
+    /* background-color: rgb(255, 255, 255); */
+    padding: 7px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: inset;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .Card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  

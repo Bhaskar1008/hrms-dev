@@ -1,0 +1,80 @@
+/* @import '../../../assets/_Mixing.scss' */
+
+@media (min-width: 320px) {
+    .main-containerPerformance {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        
+      }
+      .for-data {
+        padding-bottom: 60px;
+      }
+  }
+  @media (min-width: 920px) {
+  .main-containerPerformance {
+    /* margin-left: -300px;
+    margin-right: -300px; */
+    /* margin-top: -50px; */
+    margin-bottom: -50px;
+    padding-left: 300px;
+    padding-right: 300px;
+    /* padding-top: 4rem; */
+    padding-bottom: 50px;
+    margin-left: unset;
+    margin-right: unset;
+    box-sizing: border-box;
+    background: #F2F2F3;
+  }
+  .for-data {
+    padding-bottom: 30px;
+  }
+  .filterSelect{
+    padding: 0 0 0 20px;
+    width: 135px;
+  
+  }
+}
+.myPerformance{
+  margin-top: 15px;
+}
+.h2performance{
+flex-basis: 50%;
+}
+ .reportGenerate{
+display: flex;
+flex-basis: 50%;
+align-items: center;
+justify-content: end;
+}
+  
+.generateReportButton{
+  height: 40px;
+  width: 160px;
+  border-radius: 10px;
+  color: white;
+  background-color: #1D428A;
+  border: #1D428A  solid 1px ;
+  margin-top: 12px;
+}
+  
+.generateReportButton,
+ .generateReportButton:hover,
+ .generateReportButton:active,
+ .generateReportButton:focus {
+  height: 40px;
+  width: 160px;
+  border-radius: 10px;
+  color: white;
+  background-color: #1D428A;
+  border: #1D428A  solid 1px ;
+  margin-top: 12px;
+}  
+  

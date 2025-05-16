@@ -1,0 +1,115 @@
+.icon{
+    font-size: 56px;
+    color: rgb(1, 180, 187);
+    z-index: 10000;
+    position: fixed;
+    bottom: 50px;
+    right: 23px;
+}
+.iconpfr{
+    position: fixed;
+    right: 34px;
+}
+.eventicon{
+    bottom: 230px;
+    background-color: #00ACC1;
+
+}
+.goalicon{
+    bottom:175px;
+    background-color: red;
+}
+.leadicon{
+    bottom: 120px;
+    background-color: #4caf50;
+}
+.pgpfr{
+    position: fixed;
+    right: 83px;
+}
+.eventpg{
+    
+    bottom: 223px;
+}
+.goalpg{
+    
+    bottom: 168px;
+}
+.leadpg{
+    
+    bottom: 113px;
+}
+.popover-icon{
+    font-size: 30px;
+    color: rgb(1, 180, 187);
+}
+
+@media (min-width:992px) {
+    .icon{
+        bottom: 40px;
+        right: 25px;
+    }
+    .iconpfr{
+        right: 34px;
+    }
+    .pgpfr{
+        right: 83px;
+    }
+    .eventicon{
+        bottom: 220px;
+    }
+    .goalicon{
+        bottom:165px;
+    }
+    .leadicon{
+        bottom: 110px;
+    }
+    .eventpg{
+        
+        bottom: 215px;
+    }
+    .goalpg{
+        
+        bottom: 160px;
+    }
+    .leadpg{
+        
+        bottom: 107px;
+    }
+
+}
+.content{
+    /* display: flex; */
+    position: fixed;
+    right: 34px;
+    bottom: 110px;
+    /* transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out; */
+}
+
+.paragraph{
+    display: inline-block;
+    padding: 0px 10px;
+    width:150px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    /*flex-basis: 1 1 30px;
+    */
+}
+

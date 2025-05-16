@@ -1,0 +1,50 @@
+.tabs{
+    margin: 10px 0 20px;
+    display: flex;
+  }
+  .iconbutton{
+      border-radius: 50px;
+  }
+  .profile{
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(89, 49, 165);
+    border-radius: 35px;
+    height: 45px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    /* margin: auto; */
+  }
+  .status{
+      color: red;
+  }
+  .detailsCard{
+    background-color: white;
+      box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+      border-width: unset;
+      border-style: unset;
+      border-color: unset;
+      height: 85px;
+      padding: 5px 5px !important;
+  }
+  .detailsCard .updatetitle{
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .detailsCard .updatetotal{
+    font-size: 12px;
+    color: #3C3D3D;
+    font-weight: 750;
+  }
+  .notification{
+      color: #fff;
+      background-color: red;
+      border-radius: 20px;
+      width: 18px;
+      height: 30px;
+      padding-bottom: 25px;
+  }

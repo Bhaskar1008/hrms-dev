@@ -1,0 +1,202 @@
+.main-classes {
+  padding: 20px 70px 70px 40px;
+
+  margin-top: -10px;
+}
+.ant-upload-list-item-info {
+  position: absolute;
+  top: 24px;
+  right: 0;
+}
+.policy-header {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 25px;
+}
+.dashboard-button {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 1.1375rem */
+  letter-spacing: 0.00875rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 1.1375rem */
+  letter-spacing: 0.00875rem;
+  padding: 4px 15px;
+}
+.dashboard-button:hover {
+  background: #ffffff;
+  /* Neutral/5 */
+  border: 1px dashed #d9d9d9;
+  /* drop-shadow/button-secondary */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+  border-radius: 12px;
+  /* justify-content: center;
+  align-items: center; */
+}
+.rsStart {
+  color: var(--primary-oona-purple, #1D428A);
+
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0875rem;
+  text-transform: uppercase;
+}
+.rsquestionDiv {
+  /* display: flex; */
+  margin-top: 2rem;
+  margin-left: 31px;
+}
+.rsuploaderDiv{
+  margin-left: 31px;
+}
+.rsquestionDiv h3 {
+  color: var(--primary-oona-purple, #1D428A);
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 2.4rem */
+}
+.rsdocUploader {
+  margin-top: 1rem;
+  display: flex;
+  width: 44.625rem;
+  padding: 0.9375rem 1.125rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.125rem;
+  border: 1px solid var(--lilac-50, #4A5F98);
+  background: var(--neutrals-white, #fff);
+}
+.folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.9375rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: var(--lilac-75, #1D428A);
+}
+
+.browseBtn {
+  height: 3rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #1D428A;
+  background: #1D428A;
+  color: #fff;
+  letter-spacing: 0.00875rem;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+}
+.browseBtn:hover {
+  border: 1px solid var(--primary-oona-purple, #1D428A);
+  background: var(--primary-oona-purple, #1D428A);
+  color: var(--neutrals-white, #fff);
+}
+.rsUpload {
+  margin-top: 1.5rem;
+  color: var(--primary-oona-purple, #1D428A);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 1.65rem */
+  margin-bottom: 1.5rem;
+}
+.rsProceed {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 31px;
+  width: 7.8125rem;
+  height: 3rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  border: 1px solid #1D428A;
+  background: #1D428A;
+
+  /* drop-shadow/button-primary */
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  color: #fff;
+  text-align: center;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.00875rem;
+}
+.rsProceed:hover {
+  background: #1D428A;
+  border: 1px solid #1D428A;
+
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  color: #fff;
+}
+.rsUploadText P {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .main-classes {
+    padding: 0px;
+  }
+  .dashboard-button {
+    display: none;
+  }
+  .rsdocUploader {
+    width: 21rem;
+    background: #f1f1f1;
+  }
+  .rsProceed {
+    margin-top: 2rem;
+    width: 22rem;
+  }
+  .rsquestionDiv li {
+    display: none;
+  }
+  .rsquestionDiv h3 {
+    display: none;
+  }
+  .rsuploaderDiv {
+    padding: 1.5rem 1rem 0rem 1rem;
+    /* width: 24.25rem; */
+    height: 15.8125rem;
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+  }
+  .rsUpload {
+    margin-top: 0rem;
+  }
+  .rsStart {
+    width: 100vw;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: -5rem;
+    text-transform: none;
+    font-size: 1.5625rem;
+    background: #fff;
+    margin-left: -12px;
+    height: 47px;
+    margin-top: 11px;
+  }
+  .rsUploadText P {
+    margin-top: 20px;
+  }
+}

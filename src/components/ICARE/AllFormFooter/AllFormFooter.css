@@ -1,0 +1,92 @@
+
+.bac{
+    display: flex;
+    position: fixed;
+    position: 0;
+    bottom: 0;
+    width: 100%;
+}
+.allformfooter{
+    background-color: #4AC6BB;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    
+}
+.seconddata{
+    text-align: center;
+    padding: 10px;
+    background: #1D428A;
+    width: 20%;
+    color: #fff;
+}
+.seconddata p{
+    margin-bottom: 0px;
+    font-size: 14px;
+font-style: normal;
+font-weight: 600;
+}
+.seconddata h2{
+    color: var(--neutrals-white, #FFF);
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 30px */
+margin-top: 0px;
+}
+/* .footer-details{
+    display: flex;
+    justify-content: space-between;
+} */
+.firstdata p{
+    color: var(--neutrals-white, #FFF);
+
+/* Body 2 - SemiBold */
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 16.8px */
+margin-bottom: 0px;
+} 
+
+.firstdata h2{
+    color: var(--neutrals-white, #FFF);
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 30px */
+margin-top: 0px;
+} 
+
+
+@media (min-width: 320px) {
+    .firstdata{
+        margin-left: 0px;
+        }
+        .npolicy{
+            margin-left: 0px; color: '#fff'; font-size: 15px;
+        }
+}
+
+@media (min-width: 920px) {
+    .firstdata{
+        margin-left: 4rem;
+        }
+        .npolicy{
+        margin-left: 10px; color: '#fff'; font-size: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .seconddata h2{
+        font-size: 0.875rem;
+    }
+    .seconddata p{
+        font-size: 0.5625rem;
+    }
+    .firstdata h2{
+        font-size: 0.875rem;
+    }
+   
+}

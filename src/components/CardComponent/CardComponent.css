@@ -1,0 +1,152 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 16px;
+  overflow: hidden;
+  border-left: 3px solid #00BCD4;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  /* border-bottom: 1px solid #E5E7EB; */
+  border: none;
+  background-color: white;
+}
+
+.date {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+
+.tag.motor {
+  background-color: #00BCD4;
+}
+
+.tag.travel {
+  background-color: #00BFA5;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  grid-gap: 12px;
+  gap: 12px;
+  border-bottom: 1px solid #141415;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F3F4F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9CA3AF;
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 600;
+  color: #00AEC1;
+  font-size: 16px;
+}
+
+.company {
+  color: #444444;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  color: #444444;
+  font-size: 12px;
+}
+
+.value {
+  color: #4C4C4C;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status.active {
+  color: #4FBF26;
+}
+
+.status.active::before {
+  background-color: #4FBF26;
+}
+
+.status.required {
+  color: #F18100;
+}
+
+.status.required::before {
+  background-color: #F18100;
+}
+
+.view-details {
+  width: 100%;
+  padding: 12px;
+  background: #D6F2F5;
+  border: none;
+  color: #00AEC1;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-details:hover {
+  background: #E5E7EB;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

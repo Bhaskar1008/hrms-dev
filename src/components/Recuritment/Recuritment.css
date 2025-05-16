@@ -1,0 +1,32 @@
+.form-container{
+    background-color: #f1eeee;
+    margin-bottom: 30px;
+}
+.CardContainer{
+    box-shadow: 0px 2px 2px #00000029;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    height: unset;
+}
+.maindiv{
+    display: flex;
+}
+.selectbtns{
+    padding: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #F7F7F7;
+    box-shadow: 0px 4px 4px #00000029;
+    border: 0.5px solid #C1C8CC;
+    border-radius: 5px;
+    opacity: 1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.checkbox{
+    color:rgb(228, 106, 37);
+    font-size:14px;
+    font-weight: 300px;
+    display: flex;
+}

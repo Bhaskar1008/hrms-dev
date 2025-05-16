@@ -1,0 +1,470 @@
+/* .outerDiv {
+  background-image: url("../../images/phil_life_background.png");
+  background-repeat: no-repeat;
+  background-position: 50% 77%;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: #f2f2f3;
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+  background-size: cover;
+} */
+
+.outerDiv {
+  background: 
+      /* linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),  */
+      url(../../assets/ihc_icon/iCare_Sales\ Portal\ Login\ BG.png),
+      linear-gradient(to bottom, #ffffff 10%, #e6eef3 90%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover, cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.wrapper-div {
+  display: flex;
+  height: 250px;
+  width: 59%;
+  flex-direction: row;
+  margin-left: 28%;
+  margin-top: 12px;
+}
+
+.card-list .main-card .ant-card-body {
+  padding: 5px;
+}
+.main-card .ant-card-body {
+  padding: 0px 75px 0px 0px;
+}
+.ant-modal-title {
+  text-align: center;
+  color: #1d428a;
+  font-weight: 600;
+}
+.main {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.ant-card-body {
+  padding: 10 !important;
+}
+
+.login-card {
+  width: 400px;
+  margin-top: 65px;
+}
+
+.main-card .ant-card-head {
+  min-height: 48px;
+  margin-bottom: -1px;
+  padding: 0 24px;
+  font-weight: 500;
+  font-size: 16px;
+  background: transparent;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 2px 2px 0 0;
+  color: #1d428a;
+  border-bottom: 2px solid var(--lilac-75, #1d428a);
+  width: 245px;
+}
+.OTPInput {
+  border: 1px solid #1d428a;
+  width: 40px;
+}
+.logo-center {
+  /* width: 350px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95px;
+}
+.ios3 .ant-modal-header {
+  background: #1d428a !important;
+  color: white;
+}
+.ios3 .ant-modal-title {
+  color: white;
+}
+.ios3 .ant-modal-close-x {
+  color: white;
+}
+.loginbtn {
+  background: #FF6D00 !important;
+  color: #fff;
+  height: 40px;
+  border-color: transparent;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid var(--primary-oona-purple, #1d428a);
+  background: var(--primary-oona-purple, #1d428a);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  width: 80px;
+}
+.ant-btn.ant-btn-block {
+  width: 45%;
+}
+.forgotPassword {
+  color: var(--primary-oona-purple, #18191B);
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.14px;
+  margin-top: 15px;
+  text-shadow: 1px 1px 1px whitesmoke, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px whitesmoke;
+}
+.contactUs {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #1d428a;
+  cursor: pointer;
+}
+.advertise-card .ant-card-body {
+  padding: 12px;
+}
+.advertise-card .ant-card-head {
+  color: #1d428a;
+}
+
+.addCard .advertise-card {
+  width: 320px;
+  height: 148px;
+  border-radius: 11px;
+  border: 1px solid var(--lilac-25, #dcd6e9);
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+}
+.addCard .advertise-card p {
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.loginHeading {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 52.68px;
+  letter-spacing: 0%;
+  color: #223C86;
+}
+
+.agent_portal_text {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1%;
+  color: #1D428A;
+}
+
+.legal-link {
+  color: #1D428A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-body .gutter-row {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-card {
+  background-color: transparent;
+}
+.addButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 27px;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  margin: 5px;
+}
+@media (min-width: 450px) and (max-width: 768px) {
+  .addButtonCard {
+    /* {{ backgroundColor: '', borderRadius: "10px" }} */
+    background-color: #000080;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 1pc;
+    /* left: -22px; */
+    /* width: 86%; */
+    /* width: 300px; */
+    /* height: 59%; */
+    width: 300px;
+    top: 15px;
+    /* left: -22px; */
+    /* width: 86%; */
+  }
+  .addButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  }
+}
+/* Mobile View */
+@media (min-width: 320px) and (max-width: 428px) {
+  /* .main-body {
+    background-image: url("../../images/bgloginimage.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+  } */
+  .addButtonCard {
+    /* {{ backgroundColor: '', borderRadius: "10px" }} */
+    background-color: #000080;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 1pc;
+    left: -22px;
+    /* width: 86%; */
+  }
+  /* .addButtonCard {
+
+    background-color: #000080;
+    border-radius: 10px;
+    display: block;
+  }
+  .addButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  } */
+
+  .login-card {
+    margin-top: 55px;
+    margin-left: -41px;
+  }
+  .loginHeading {
+    display: none;
+  }
+  .main-card .ant-card-body {
+    width: 325px;
+  }
+  .addCard .advertise-card {
+    width: 264px;
+    margin-left: 10px;
+    height: 152px;
+  }
+  .addCard {
+    margin-top: 140px;
+    margin-left: 30px;
+  }
+  .ant-modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    pointer-events: auto;
+    height: 60%;
+    width: 100%;
+  }
+}
+
+.loginbtndisabled {
+  background: #cccccc !important;
+  color: #000;
+  height: 40px;
+  border-color: transparent;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid var(--primary-oona-purple, #cccccc);
+  background: var(--primary-oona-purple, #cccccc);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  width: 80px;
+}
+.ant-form-item {
+  margin-bottom: 10px;
+}
+.ant-checkbox + span {
+  /* color: #1d428a; */
+  font-size: 14px;
+  /* font-weight: bold; */
+}
+@media (min-width: 920px) {
+  .addCard {
+    margin-top: 6rem;
+    margin-left: 30px;
+  }
+  .ant-modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    pointer-events: auto;
+    height: 60%;
+  }
+}
+
+/* Tablet view styles (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* .main-body {
+    background-image: url("../../images/bgloginimage.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+  } */
+
+  .login-card {
+    margin-top: 55px;
+  }
+  .loginHeading {
+    display: none;
+  }
+  .main-card .ant-card-body {
+    padding: 0px;
+  }
+  .addCard .advertise-card {
+  }
+  .addCard {
+    /* Adjust tablet-specific styles */
+  }
+  .ant-modal-content {
+    /* Adjust tablet-specific styles */
+  }
+}
+
+@media (min-width: 769px) and (orientation: landscape) {
+  .addButtonCard {
+    background-color: #000080;
+    border-radius: 10px;
+    display: none;
+  }
+  .addButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  }
+}
+@media (min-width: 430px) and (max-width: 768px) and (orientation: landscape) {
+  /* Apply landscape-specific styles here */
+  .addButtonCard {
+    background-color: #000080;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 1pc;
+    /* margin-top: -72px; */
+    /* width: 86%; */
+  }
+  .addButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  /* Apply portrait-specific styles here */
+  .loginHeading {
+    display: none;
+  }
+}
+@media (min-width: 821px) {
+  /* Hide the offline message on screens wider than 768px (web) */
+  .newFile {
+    display: none;
+  }
+}
+
+.popup1 {
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 20px; */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  background: aliceblue;
+  width: 90%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background shade */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup button {
+  margin-top: 15px;
+}
+.popup_header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: #1d428a;
+}
+.popup_header h2 {
+  font-size: 20px;
+  padding: 7px 7px;
+  color: #fff;
+}
+.popup_body {
+  padding: 10px;
+  color: black;
+}
+.popup_footer {
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+.delete-button1 {
+  border: navajowhite;
+  margin-top: 12px;
+  background: #1d428a;
+  color: #fff;
+}
+.delete-button1 span {
+  font-size: 20px !important;
+}
+
+hr {
+  margin: 0rem 0;
+}

@@ -1,0 +1,126 @@
+.oona-header {
+  background: var(--primary-oona-purple, #1D428A);
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.logo-head ul {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+  padding-left: 0px;
+  cursor: pointer;
+}
+.login-head ul {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.parent-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.drawer-head {
+  display: flex;
+}
+.drawer-head h3 {
+  color: var(--primary-oona-purple, #1D428A);
+  /* Button 2 */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.14px;
+}
+
+.left-side-drawer {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Start closed */
+  width: 300px;
+  height: 100vh;
+  background-color: #f7f4fb;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0px 4px 14px 0px rgba(255, 255, 255, 0.05);
+  border-right: 3px solid #36c2b6;
+}
+
+.left-side-drawer.open {
+  left: 0; /* Slide open when open class is added */
+}
+
+.toggle-button {
+  display: block;
+}
+
+.drawer-content {
+  padding: 20px;
+}
+.containernavdeco1 {
+  align-self: stretch;
+  background: linear-gradient(90deg, #4ac6bb, #7a4cb7 93.75%);
+  height: 8px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.wrapper-layout {
+  z-index: 999;
+  background-color: #1D428A;
+  height: 100vh;
+  width: 100%;
+}
+
+.login-head {
+  cursor: pointer;
+}
+.open1 {
+  position: fixed;
+  top: 0;
+  /* Start closed */
+  width: 100%;
+  height: 100vh;
+  background-color: #00000078;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0px 4px 14px 0px rgba(255, 255, 255, 0.05);
+}
+.drawer-main-data.open {
+  left: 0;
+  width: 100%;
+}
+
+.logo-head .ant-spin-dot {
+  padding-top: 2px;
+}
+.ant-spin-dot {
+  color: #ffffff;
+}
+.ant-spin-spinning {
+  margin-top: 5px;
+}
+@media (min-width: 821px) {
+  /* Hide the offline message on screens wider than 768px (web) */
+  .newFile {
+    display: none;
+  }
+}
+/* ::selection {
+    color: #fff;
+    background: initial;
+  } */

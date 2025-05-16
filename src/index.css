@@ -1,0 +1,15 @@
+@import "~antd/dist/antd.css";
+/* .export-btn-holder{
+    position: relative;
+} */
+.ant-btn-default:hover{
+    color: black;
+}
+.ant-btn-dashed:hover{
+    color:#000;
+    border: 1px dashed #d9d9d9;
+}
+.ant-btn-default{
+    color: #000;
+}
+

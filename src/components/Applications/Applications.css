@@ -1,0 +1,134 @@
+
+.main-container{
+   height: 140rem;
+}
+  .container{
+      /* display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row; */
+      /* border: 2px solid black; */
+      align-items: center;
+      padding: 10px;
+      overflow-x: auto;
+      margin: 10px;
+      margin-left: 3rem;     
+  }
+  .ct-container{
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100%;
+      background-color: #ff1b43;
+      position: absolute;
+      margin-left: 8rem;
+      margin-top: 1rem;
+      box-shadow: 0 15px 20px rgb(0 0 0 / 30%);
+      justify-content: center;
+      align-items: center;
+  }
+  .card {
+      /* justify-self: left; */
+      float: left;
+      /* box-shadow: 1px 1px 1px rgb(185, 181, 181); */
+      box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+      margin: 12px;
+      width: 10.5rem;
+      text-align: center;
+      height: 7rem;
+      border-radius: 5px;
+      background-color: white;
+      position: relative;
+
+  }
+  /* .card:hover{
+      background-color: aqua !important;
+  } */
+  
+  .card p{
+      position: relative;
+      top: 4.5rem;
+  }
+  .icons{
+      height: 3rem;
+      width: 3rem;
+      position: absolute;
+      top: 1.8rem;
+      left: 3.75rem;
+
+  }
+  .assured-name{
+      font-size: 12px;
+      font-family: robotregular;
+      font-weight: bold;
+  }
+  
+  span {
+      display: block;
+      line-height: 110%;
+      font-size: 13px;
+
+  }
+  hr{
+      margin-bottom: 8px;
+  }
+  .span-title {
+      opacity: 0.7;
+      font-size: 12px;
+      font-family: robotoregular;
+  }
+  .span-details{
+    font-size: 12px;
+    font-family: robotoregular;
+
+  }
+  .user-container {
+      /* display: flex;
+      flex-direction: row; */
+      margin: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
+
+    
+  }
+  .user-card {
+      /* box-shadow: 1px 1px 1px rgb(185, 181, 181); */
+      box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+      margin: 1%;
+      float: left;
+      border-radius: 3px;
+      /* justify-self: left; */
+  }
+  .mail-image-main{
+      position: relative;
+  }
+  .mail-image{
+      height: 1.8rem;
+      width: 1.8rem;
+      margin-top: 0px;
+      margin-right: 0px ;
+      margin-left: 10px;
+      position: absolute;
+    
+  }
+ .page-holder{
+     font-weight: 300;
+     font-size: large;
+     position: absolute;
+     top: 95rem;
+     left: 30rem;
+     
+     
+ }
+ .pagination{
+     position: relative;
+ }
+/*  */
+  /* @media (max-width=1100px){
+      .user-container{
+          flex-direction: column;
+      }
+      .user-card{
+          width: 80%;
+      }
+  } */

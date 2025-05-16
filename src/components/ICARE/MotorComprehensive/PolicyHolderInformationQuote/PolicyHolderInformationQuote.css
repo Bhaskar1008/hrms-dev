@@ -1,0 +1,222 @@
+/* comaun css */
+.dashboard-button {
+  background: #fff;
+  /* Neutral/5 */
+  border: 1px dashed #d9d9d9;
+  /* drop-shadow/button-secondary */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.dashboard-button:hover {
+  background: #fff;
+  /* Neutral/5 */
+  border: 1px dashed #d9d9d9;
+  /* drop-shadow/button-secondary */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.info-head h3 {
+  color: var(--primary-oona-purple, #1D428A);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 1rem;
+}
+
+/* media query */
+.box-size {
+  background-color: #fafafa;
+}
+@media (min-width: 320px) {
+  .main-class {
+    padding: 10px ;
+    background-color: #f2f2f3;
+  }
+  .sidebar ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 920px) {
+  .main-class {
+    padding: 20px 70px 70px 70px;
+    background-color: #f2f2f3;
+    margin-top: -10px;
+  }
+  .sidebar ul li {
+    display: block;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+}
+
+.sidebar {
+  margin-top: 5px;
+}
+.policy-header {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 25px;
+}
+.dashboard-button {
+  background: #ffffff;
+  border: 1px dashed #d9d9d9;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 15px;
+}
+.dashboard-button:hover {
+  background: #ffffff;
+  color: #000;
+  border: 1px dashed #d9d9d9;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+  border-radius: 12px;
+  /* justify-content: center;
+  align-items: center; */
+}
+.sidebar ul {
+  margin-left: -30px;
+}
+.sidebar ul li {
+  /* Overline 2 - Small */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.98px;
+  /* text-transform: uppercase; */
+  color: #000;
+  list-style-type: none;
+}
+
+.right-side {
+  margin-top: 10px;
+}
+.policy-type h2 {
+  color: var(--primary-oona-purple, #1D428A);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* text-transform: uppercase; */
+  margin-top: 10px;
+  margin-bottom: 30px !important;
+}
+.questionDiv {
+  display: flex;
+}
+.questionDiv ul {
+  margin-left: -15px;
+  font-size: x-large;
+  margin-bottom: 0px;
+}
+.questionDiv ul li {
+  color: #1D428A;
+}
+
+.questionDiv ul li h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1D428A;
+  display: initial;
+}
+
+.next-button {
+  display: flex;
+  width: 7.8125rem;
+  height: 3rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: #1D428A;
+  border: 1px solid #1D428A;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 12px;
+  padding: 0px 20px;
+  color: #fff;
+}
+
+.next-button:hover, .next-button:focus, .next-button:active {
+  background: #1D428A;
+  border: 1px solid #1D428A;
+  /* drop-shadow/button-primary */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 12px;
+  padding: 0px 20px;
+  color: #fff;
+}
+
+.prev-button {
+  display: flex;
+  width: 7.8125rem;
+  height: 3rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: #fff;
+  border: 1px solid #1D428A;
+  margin-right: 10px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 12px;
+  padding: 0px 20px;
+  color: #1D428A;
+}
+
+.prev-button:hover {
+  background: #fff;
+  border: 1px solid #1D428A;
+  /* drop-shadow/button-primary */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 12px;
+  padding: 0px 20px;
+  color: #1D428A;
+}
+
+.button-header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 5rem;
+}
+
+.ant-col-24.ant-form-item-label {
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .dashboard-button{
+    display: none;
+  }
+  .policy-type h2 {
+   
+    height: 89px;
+    width: 100vw;
+    padding: 1.5rem;
+    position: absolute;
+    top: -9rem;
+    text-transform: none;
+    font-size: 1.5625rem;
+    background: #fff;
+    margin-left: -12px;
+    margin-top: 19px;
+  }
+  .prev-button{
+    width: 9rem;
+  }
+  .next-button{
+    width: 9rem;
+  }
+}

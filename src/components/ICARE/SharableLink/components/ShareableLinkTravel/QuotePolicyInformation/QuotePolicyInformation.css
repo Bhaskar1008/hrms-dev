@@ -1,0 +1,207 @@
+.parent-customer {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10rem;
+    /* background-color: #fff; */
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .dashbtn{
+    display: flex;
+height: 2.5rem;
+padding: 0.4rem 1rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border-radius: 0.75rem;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 1.1375rem */
+letter-spacing: 0.00875rem;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 1.1375rem */
+letter-spacing: 0.00875rem;
+  }
+  .headers {
+    color: var(--primary-oona-purple, #1D428A);
+    margin-top: 1rem;
+    font-size: 25px;
+    /* font-family: General Sans; */
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .headings {
+    color: #1D428A;
+  
+    font-size: 28px;
+    /* font-family: General Sans; */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .rightsides{
+    flex: 2 1;
+    margin-right: 15rem;
+  }
+  .inputbox {
+    border-radius: 4px;
+    border: 1px solid #818f99;
+    background: #fff;
+    height: 2.75rem;
+    padding: 0.625rem 0.5rem;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+  }
+  .Travelerinfo {
+    color: #1D428A;
+  
+    font-size: 28px;
+  
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .traveler_btn {
+    border: 1px solid #818f99;
+  
+    width: 28rem;
+    height: 4rem;
+    padding: 0.625rem 0.5rem;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+  
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 1.25rem;
+   
+    background: #fff;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    color: var(--primary-oona-purple, #1D428A);
+
+
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 1.2rem */
+  }
+  .traveler_btn:hover{
+    border: 2px solid var(--secondary-medium-turquoise, #4ac6bb);
+  }
+  .traveler {
+    color: var(--primary-oona-purple, #1D428A);
+  
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .traveler-parent {
+    margin-top: 2rem;
+  }
+  .next-btn {
+    display: flex;
+    height: 3rem;
+    padding: 0.4rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--primary-oona-purple, #1D428A);
+    background: var(--primary-oona-purple, #1D428A);
+  
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+    color: var(--character-primary-inverse, #fff);
+    text-align: center;
+  
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.00875rem;
+  }
+  .travel-heading {
+    color: var(--primary-oona-purple, #1D428A);
+  
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .traveloption {
+    margin-top: 1rem;
+    display: flex;
+    width: 28rem;
+    height: 4.0625rem;
+    padding: 1.1875rem 1.875rem;
+    align-items: center;
+    gap: 1.5625rem;
+    align-self: stretch;
+    border-radius: 1.25rem;
+  
+    background: #fff;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    color: var(--primary-oona-purple, #1D428A);
+  
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .traveloption:hover{
+    border: 2px solid var(--secondary-medium-turquoise, #4ac6bb);
+  }
+  .textinputt {
+    display: flex;
+    height: 2.38rem;
+    padding: 0.625rem 0.5rem;
+   
+  
+    border-radius: 4px;
+    border: 1px solid var(--neutrals-125, #818f99);
+    background: var(--neutrals-white, #fff);
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  @media (max-width: 767px) {
+    .parent-customer {
+      flex-direction: column;
+      margin: 4px;
+      gap: 0;
+    }
+    .left-side .ant-btn-dashed {
+      display: none;
+     }
+     .stepdata2{
+      width: 23rem;
+     }
+     .traveloption{
+      width: 23rem;
+     }
+     .next-btn{
+      width: 23rem;
+     }
+     /* .traveler{
+      width: 22rem;
+     } */
+     .traveler_btn{
+width: 23rem;
+     }
+     .inputbox{
+      width: 23rem;
+     }
+     .textinputt{
+      width: 23rem;
+     }
+  }

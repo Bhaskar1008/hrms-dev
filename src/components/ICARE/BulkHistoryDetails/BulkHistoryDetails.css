@@ -1,0 +1,141 @@
+.wrapper-history {
+  /* max-width: 1080px; */
+  width: 100%;
+  padding-top: 24px;
+}
+/* .history-table .ant-table-tbody>tr>td,
+.history-table .ant-table-thead>tr>th {
+    padding: 12px 24px;
+} */
+.details-of-request {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1D428A;
+  text-align: left;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download-error {
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #1D428A;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  gap: 8px;
+  text-align: left;
+  font-size: 12px;
+  color: #1D428A;
+  font-weight: 600;
+}
+
+.view_details {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1D428A;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.view_details .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  color: none;
+}
+
+.history-table
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  display: none;
+}
+
+.history-table .ant-table-thead > tr > th {
+  background-color: #1D428A;
+  color: #fff;
+  padding: 16px 15px;
+}
+.history-table .ant-table-tbody > tr > td {
+  padding: 20px 15px 15px 0px;
+  text-align: center;
+}
+.back-button-details {
+  display: flex;
+  flex-direction: column;
+}
+.back-buttond {
+  border-radius: 8px;
+  border: solid 1px #1D428A;
+  color: #1D428A;
+}
+.back-buttond:hover {
+  background-color: #1D428A;
+  color: #fff;
+}
+.backButton {
+  margin-top: 10px;
+}
+
+/* For mobile devices (up to 767px width) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .wrapper-history {
+    padding-top: 16px; /* Adjust padding for smaller screens */
+  }
+
+  .details-of-request {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+
+  .download-error {
+    padding: 6px 8px; /* Adjust padding for smaller screens */
+    font-size: 10px; /* Decrease font size for smaller screens */
+  }
+
+  .view_details {
+    font-size: 10px; /* Decrease font size for smaller screens */
+  }
+
+  .history-table .ant-table-thead > tr > th {
+    padding: 12px 16px; /* Adjust padding for smaller screens */
+  }
+
+  .history-table .ant-table-tbody > tr > td {
+    padding: 12px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* For tablet devices (768px to 1023px width) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper-history {
+    padding-top: 20px; /* Adjust padding for tablet screens */
+  }
+
+  .details-of-request {
+    font-size: 16px; /* Keep font size the same as mobile for tablet screens */
+  }
+
+  .download-error {
+    padding: 8px 12px; /* Adjust padding for tablet screens */
+    font-size: 11px; /* Increase font size slightly for tablet screens */
+  }
+
+  .view_details {
+    font-size: 11px; /* Increase font size slightly for tablet screens */
+  }
+
+  .history-table .ant-table-thead > tr > th {
+    padding: 14px 18px; /* Adjust padding for tablet screens */
+  }
+
+  .history-table .ant-table-tbody > tr > td {
+    padding: 14px 18px; /* Adjust padding for tablet screens */
+  }
+}

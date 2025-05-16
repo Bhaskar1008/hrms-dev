@@ -1,0 +1,239 @@
+/* media query */
+.box-size {
+    background-color: #fafafa;
+  }
+  @media (min-width: 320px) {
+    .rsmain-class {
+      padding: 1px 2px;
+      background-color: #F2F2F3;
+    }
+    .sidebar ul li {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+  }
+  @media (min-width: 920px) {
+    .rsmain-class {
+      padding: 20px 70px 70px 70px;
+      background-color: #F2F2F3;
+      margin-top: -10px;
+    }
+    .sidebar ul li {
+      display: block;
+      justify-content: space-around;
+      margin-top: 2rem;
+    }
+  }
+  
+  
+  .sidebar {
+    margin-top: 5px;
+  }
+  .policy-header {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 25px;
+  }
+.dashbtn{
+  display: flex;
+  height: 2.5rem;
+  padding: 0.4rem 1rem;
+  border: 1px dashed #d9d9d9;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; 
+  letter-spacing: 0.00875rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; 
+  letter-spacing: 0.00875rem;
+}
+.dashbtn:hover{
+  border: 1px dashed #d9d9d9;
+}
+  /* .sidebar ul {
+    
+  } */
+  .sidebar ul li {
+    /* Overline 2 - Small */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.98px;
+    text-transform: uppercase;
+    color: #000;
+    list-style-type: none;
+  }
+  
+  .right-side {
+    margin-top: 10px;
+  
+  }
+  .policy-type  {
+    color: var(--primary-oona-purple, #1D428A);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px !important;
+  }
+  .questionDiv {
+    display: flex;
+  }
+  .questionDiv ul {
+    margin-left: -15px;
+    font-size: x-large;
+    margin-bottom: 0px;
+  }
+  .questionDiv ul li {
+    color: #1D428A;
+  }
+  
+  .questionDiv  h3 {
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #1D428A;
+    display: initial;
+  }
+  
+  
+  .next-button {
+    display: flex;
+    width: 7.8125rem;
+    height: 3rem;
+    padding: 0.4rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: #1D428A;
+    border: 1px solid #1D428A;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 12px;
+    padding: 0px 20px;
+    color: #fff;
+  }
+  
+  .next-button:hover, .next-button:active, .next-button:focus {
+    background: #1D428A;
+    border: 1px solid #1D428A;
+    /* drop-shadow/button-primary */
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 12px;
+    padding: 0px 20px;
+    color: #fff;
+  }
+  
+  .prev-button {
+    display: flex;
+    width: 7.8125rem;
+    height: 3rem;
+    padding: 0.4rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: #fff;
+    border: 1px solid #1D428A;
+    margin-right: 10px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 12px;
+    padding: 0px 20px;
+    color: #1D428A;
+  }
+  
+  .prev-button:hover {
+    background: #fff;
+    border: 1px solid #1D428A;
+    /* drop-shadow/button-primary */
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 12px;
+    padding: 0px 20px;
+    color: #1D428A;
+  }
+  
+  .button-header {
+    margin-top: 20px;
+    display: flex;
+    /* padding: 0.4rem 1rem; */
+   
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    
+  }
+  
+  .ant-col-24.ant-form-item-label{
+  font-weight: 600;
+  }
+  @media(max-width:767px){
+    .policy-type{
+    
+      height: 83px;
+      width: 100vw;
+      padding: 1.5rem;
+      
+      position: absolute;
+      top: -8rem;
+      text-transform: none;
+      font-size: 1.5625rem;
+      background: #fff;
+      margin-left: -12px;
+
+    }
+   .policy-header .dashbtn{
+      display: none;
+    }
+    .questionDiv li{
+      list-style: none;
+    }
+    .questionDiv  h3 {
+      font-size: 22px;
+    }
+    /* .questionDiv ul{
+      margin-left: 10px;
+
+    } */
+    .questionDiv ul li{
+      width: 22rem;
+    }
+    .prev-button{
+      width: 10rem;
+    }
+    .next-button{
+      width: 10rem;
+    }
+    .rspolicydiv{
+      margin-top: 1rem;
+      width: 100%;
+      padding: 24px 16px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 14px 0 rgba(0,0,0,.08);
+    }
+  
+  }
+
+  .screenLoader {
+    position: fixed;
+    height: 100%;
+    background: #00000047;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40vh;
+  }
+  

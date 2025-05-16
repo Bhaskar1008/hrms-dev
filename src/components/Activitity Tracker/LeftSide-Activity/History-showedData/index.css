@@ -1,0 +1,27 @@
+.PastFuture{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EDDEDE;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+.PastFuture article{
+    font-weight: bold;
+    color: #585454;
+    margin-left: 5px;
+}
+.pastEventChange{
+    padding: 0 !important;
+    margin:0 7px;
+}
+.pastEvent{
+    margin-left: 10px;
+    color: #BB251A;
+    font-weight: bold;
+}
+.pastEventsDates p:nth-child(2){
+    background-color: #F8E9E8 !important;
+    color: #BB251A !important;
+}

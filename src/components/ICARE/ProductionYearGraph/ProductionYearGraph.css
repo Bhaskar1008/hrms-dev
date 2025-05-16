@@ -1,0 +1,112 @@
+.user-informtion{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.user-child h2{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    color:  #343D46;
+}
+
+.user-child-p p {
+    color: #7C7C7C;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 0px!important;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 320px) {
+    
+    .production-graph {
+        height: 365px;
+        }
+        .agent-data {
+            display: block;
+            /* margin-bottom: 20px; */
+        }
+        .agent-data button{
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        
+    
+}
+@media (min-width: 920px) {
+    .user-parent{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    .production-graph {
+    height: 340px;
+    }
+    .agent-data {
+        display: flex;
+        /* margin-bottom: 20px; */
+    }
+    .agent-data button{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+}
+@media (max-width:767px) {
+    .agent-data h4{
+        margin-right: 49px;
+    }
+    
+}
+.production-graph {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    background: #FFF;
+/* subtle drop shadow */
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    height: 429px;
+}
+.har{
+    color: #1D428A;
+    height: 2px;
+    margin: 20px 0px !important;
+    border-top: 2px solid;
+    opacity: 1.25;
+}
+.agent-data h4{
+    color: #000;
+/* Desktop - Title 0 */
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%;
+
+}
+.agent-data button {
+border-radius: 12px;
+border: 1px solid var(--lilac-50, #4A5F98);
+background: var(--neutrals-white, #FFF);
+/* drop-shadow/button-secondary */
+box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+display: flex;
+height: 26px;
+padding: 6.4px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #1D428A;
+font-weight: 600;
+text-transform: uppercase;
+font-size: 11px;
+}
+
+.circle-year {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+}

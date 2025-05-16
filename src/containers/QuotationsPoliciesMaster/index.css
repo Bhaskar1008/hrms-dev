@@ -1,0 +1,177 @@
+.dashboard {
+    min-height: 100vh;
+    background: #F9FAFB;
+    padding: 24px;
+    position: relative;
+  }
+  
+  
+  .icare_header h1 {
+    color: #00AEC1;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #E5E7EB;
+  }
+  
+  .tab {
+    padding: 12px 0;
+    color: #6B7280;
+    font-weight: 500;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .tab.active {
+    color: #FF5722;
+  }
+  
+  .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #FF5722;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    /* border-bottom: 1px solid #E5E7EB; */
+}
+  
+  .toolbar h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #00AEC1;
+  }
+  
+  .filter-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 2px solid #00BBD5;
+    border-radius: 12px;
+    background-color: white;
+    color: #00BBD5;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: #e6f9fb;
+  }
+  
+  .filter-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
+  
+  .fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #00BCD4;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .fab:hover {
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 640px) {
+    .dashboard {
+      padding: 16px;
+    }
+    
+    .toolbar {
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    
+    .fab {
+      bottom: 16px;
+      right: 16px;
+    }
+  }
+
+  .page-holder {
+    margin: 2rem 0;
+    text-align: end;
+    margin-right: 50px;
+  }
+  
+  /* Pagination item links */
+  .page-holder .ant-pagination-item a {
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #1D428A;
+  }
+  
+  /* Active pagination item */
+  .page-holder .ant-pagination-item-active {
+    background-color: #1D428A;
+    border-color: #E8E8E8;
+  }
+  .page-holder .ant-pagination-item-active a {
+    color: white;
+    background-color: #1D428A;
+    font-weight: bold;
+  }
+  
+  /* General pagination items */
+  .page-holder .ant-pagination-item {
+    font-size: 10px;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #00AEC1;
+    border: 1px solid #E8E8E8;
+  }
+  
+  /* Prev/Next buttons */
+  .page-holder .ant-pagination-prev button,
+  .page-holder .ant-pagination-next button {
+    color: #00AEC1;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0;
+  }
+  
+  /* Hide page size options */
+  .page-holder .ant-pagination-options {
+    display: none;
+  }
+  
+  /* For specific layout styling */
+  .Pagination-Mapbranch {
+    margin: 2rem 0;
+  }
+  

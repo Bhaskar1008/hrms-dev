@@ -1,0 +1,81 @@
+/* Personal Details Styles */
+.personal-details-container {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.personal-details-header {
+  background: white;
+  color: #FF6D00;
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.edit-button {
+  color: #595959;
+  border: none;
+  padding: 0;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-button:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.edit-button .anticon {
+  font-size: 16px;
+}
+
+.personal-details-content {
+  padding: 16px;
+  background-color: white;
+}
+
+.details-placeholder {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Details Grid */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.detail-row {
+  margin-bottom: 8px;
+}
+
+.detail-label {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.detail-value {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .personal-details-container {
+    width: 100%;
+  }
+} 

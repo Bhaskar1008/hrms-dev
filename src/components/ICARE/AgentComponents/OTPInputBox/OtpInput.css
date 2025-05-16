@@ -1,0 +1,127 @@
+.agent_login_otp_wrapper .otp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    gap: 12px;
+    color: #000;
+}
+
+.agent_login_otp_wrapper .otp-input {
+    width: 55px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 16px 22px;
+    color: #000;
+    /* margin-left: 10px; */
+}
+
+.agent_login_otp_wrapper .otp-input:focus-visible {
+    outline-color: #FF6D00;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.agent_login_otp_wrapper .resend-container {
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    color: #65737e;
+    margin-bottom: 12px;
+    /* font-family: Roboto; */
+}
+
+.agent_login_otp_wrapper .resend-text {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.agent_login_otp_wrapper .resend_button {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #4ac6bb;
+    border: none;
+    background: transparent;
+}
+
+.agent_login_otp_wrapper .resend_button:hover {
+    background-color: transparent;
+}
+
+.agent_login_otp_wrapper .timer-text {
+    font-size: 14px;
+}
+
+.agent_login_otp_wrapper .message-text-box {
+    width: 100%;
+    /* background-color: #007BE5; */
+    margin-bottom: 5%;
+}
+
+.agent_login_otp_wrapper .timer-text-otp {
+    margin-bottom: 5%;
+}
+
+.agent_login_otp_wrapper .verify_btn {
+    /* height: 50px; */
+    width: 100%;
+    background-color: #FF6D00;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agent_login_otp_wrapper .otp_title_text {
+    text-align: center;
+}
+
+.verify_btn:hover,
+.verify_btn:active,
+.verify_btn:focus {
+    background-color: #FF6D00;
+    color: #ffffff;
+}
+
+.agent_login_otp_wrapper .wrapper-main-box {
+    /* background-color: aquamarine; */
+    height: 34vh;
+    /* text-align: center; */
+}
+
+/* .message-wrapper-box{
+    background-color: #FFEB00;
+  
+    text-align: left;
+  } */
+
+@media (min-width: 992px) {
+    .agent_login_otp_wrapper .wrapper-main-box {
+        /* background-color: aquamarine; */
+        /* overflow-y: hidden; */
+        height: 32vh;
+    }
+}

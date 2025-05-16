@@ -1,0 +1,416 @@
+/* media query */
+@media (min-width: 300px) and (max-width: 500px) {
+  .main-head h2 {
+    top: -105px !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 420px) {
+  .main-class {
+    padding: 20px 15px 70px 15px;
+    background-color: #f2f2f3;
+    margin-top: 0px;
+  }
+  .sidebar ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .info-head h4 {
+    color: var(--primary-oona-purple, #1D428A);
+    /* Desktop - H4 */
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  .child1 .ant-upload {
+    margin-top: -15px;
+  }
+  .child1 .ant-upload-list-item-info {
+    height: 100%;
+    padding: 0 4px;
+    transition: background-color 0.3s;
+    margin-top: -46px;
+}
+  .main-head h2 {
+    margin-left: 0 !important;
+  }
+}
+@media (min-width: 920px) {
+  .main-class1 {
+    padding: 0px 70px 70px 70px;
+    background-color: #f2f2f3;
+    margin-top: 0px;
+  }
+  .sidebar ul li {
+    display: block;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  .info-head h4 {
+    color: var(--primary-oona-purple, #1D428A);
+    /* Desktop - H4 */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  .child1 .ant-upload.ant-upload-select {
+    display: inline-block;
+    margin-top: -18px;
+  }
+  .child1 .ant-upload-list-item-info {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    top: -57px;
+    left: -448px;
+    width: 204%;
+  }
+}
+.ant-input[disabled], .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector, .ant-select-disabled, .ant-picker.ant-picker-disabled {
+  background-color: #f9f9f9  !important;
+  border-color: #d9d9d9;
+}
+
+.next-button {
+  display: flex;
+
+  padding: 0rem 1rem;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  gap: 0.5rem;
+  background: #1D428A;
+  border: 1px solid #1D428A;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 12px;
+  width: 125px;
+  height:48px
+}
+.next-button:hover, .next-button:focus, .next-button:active {
+  display: flex;
+  /* width: 4.8125rem; */
+  /* height: 2rem; */
+  padding: 0rem 1rem;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  gap: 0.5rem;
+  background: #1D428A;
+  border: 1px solid #1D428A;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 12px;
+}
+
+.prev-button {
+  display: flex;
+height: 48px;
+padding: 6.4px 16px;
+justify-content: center;
+align-items: center;
+border-radius: 12px;
+border: 1px dashed #d9d9d9;
+background:  #FFF;
+color: #1D428A;
+font-size: 14px;
+font-weight: 600;
+box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+width: 125px;
+height:48px
+}
+.prev-button:hover {
+  background: #fff;
+  border: 1px solid #1D428A;
+  /* drop-shadow/button-primary */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 12px;
+  color: #1D428A;
+}
+.next-button-header {
+  margin-top: 10px;
+  display: flex;
+  padding: 0.4rem 1rem;
+  align-items: center;
+  gap: 0.625rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.la label {
+  font-weight: 600;
+}
+.la .form-item-label {
+  padding: 0px;
+}
+.policy-header {
+  margin-top: 1rem;
+}
+
+.dashboard-button {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; 
+  letter-spacing: 0.00875rem;
+  font-size: 0.875rem;
+}
+.dashboard-button:hover {
+  background: #ffffff;
+  /* Neutral/5 */
+  border: 1px dashed #d9d9d9;
+  /* drop-shadow/button-secondary */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+  border-radius: 12px;
+  /* justify-content: center;
+  align-items: center;
+  margin-top: 15px; */
+}
+.sidebar ul {
+  margin-left: -30px;
+}
+.sidebar ul li {
+  /* Overline 2 - Small */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.98px;
+  text-transform: uppercase;
+  color: #000;
+  list-style-type: none;
+}
+.right-side {
+  margin-top: 10px;
+}
+
+.main-head h2 {
+  color: var(--primary-oona-purple, #1D428A);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+.main-head {
+  margin-top: 3rem;
+  margin-bottom: 20px;
+}
+.info-head {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.information h3 {
+  color: var(--neutrals-250, #18191b);
+  /* Desktop - H6 */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.information {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ant-col-24.ant-form-item-label {
+  padding: 0px;
+}
+.browseButton {
+  background: #1D428A;
+  border: 1px solid #1D428A;
+  border-radius: 12px;
+  padding: 0px 20px;
+  color: #fff;
+  height: 48px;
+  width: 116px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+.browseButton:hover {
+  background: #1D428A;
+  border: 1px solid #1D428A;
+  border-radius: 12px;
+  padding: 0px 20px;
+  color: #fff;
+  height: 48px;
+  width: 116px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+.browseBtn {
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex-basis: 95%;
+}
+.browseDocDiv {
+  display: flex;
+  height: 78px;
+  width: 100%;
+  border-radius: 18px;
+  background-color: white;
+  margin-top: 10px;
+}
+.folderIcon {
+  display: flex;
+  height: 47px;
+  width: 44px;
+  background: #1D428A;
+  flex-basis: 6%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.FolderAddOutlinedSign {
+  color: white;
+  font-size: 27px;
+  margin: 9px;
+}
+.UploadBtn {
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex-basis: 95%;
+}
+
+.UploadButton {
+  background: #1D428A;
+  border: 1px solid #1D428A;
+  border-radius: 12px;
+  padding: 0px 20px;
+  color: #fff;
+  height: 48px;
+  width: 116px;
+  margin: 15px;
+  cursor: pointer;
+}
+.uploadDocDiv {
+  display: flex;
+  height: 78px;
+  width: 100%;
+  border-radius: 18px;
+  background-color: white;
+  margin-top: 10px;
+}
+.UploadfolderIcon {
+  height: 47px;
+  width: 44px;
+  background: #1D428A;
+  flex-basis: 6%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.FolderAddOutlined {
+  color: white;
+  font-size: 27px;
+  margin: 9px;
+}
+.ant-col-24.ant-form-item-label {
+  padding: 0px !important;
+}
+.ant-input {
+  border: 1px solid #818f99;
+  border-radius: 5px;
+}
+.ant-select {
+  border: 1px solid #818f99;
+  border-radius: 5px;
+}
+.ant-picker {
+  border: 1px solid #818f99;
+  border-radius: 5px;
+}
+.ant-select-arrow {
+  color: #4ac6bb;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .main-head h2 {
+   
+    font-size: 22px;
+    margin-left: -11px;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: -90px;
+    /* background: #fff; */
+    font-size: 24px;
+    /* width: 23rem; */
+  }
+  .main-head {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+  .dashboard-button{
+    display: none;
+  }
+  .topheading {
+    background: white;
+    padding-right: 0 !important;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0 !important;
+  }
+  .topheading .steppaMobile2 .stepdata2{
+    box-shadow: none;
+    border-top: 1px solid #E1E2E2;
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    width: 100%;
+    padding: 8px 16px;
+  }
+}
+
+.parent-div {
+  display: flex;
+  justify-content: space-between;
+  height: 78px;
+  width: 100%;
+  border-radius: 18px;
+  background-color: white;
+  padding: 16px;
+  /* align-items: center; */
+}
+.child11 {
+  background: #1D428A;
+  color: white;
+  border: 1px solid #1D428A;
+  padding: 0px;
+  font-size: 25px;
+  border-radius: 10px;
+  height: 45px;
+  width: 45px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disable-purple-btn {
+  color: white !important;
+  border-color: #1D428Aba !important;
+  background: #1D428Aba !important;
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  .ctplRight{
+    margin-left: 30px;
+  }
+}
+
+.ant-picker-suffix{
+  color: rgb(74 198 187);
+  font-size: 18px;
+}

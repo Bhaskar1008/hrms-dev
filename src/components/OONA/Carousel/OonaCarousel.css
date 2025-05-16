@@ -1,0 +1,19 @@
+
+.carousel-img img{
+    background-color: white;
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+      border-radius: 10px;
+    }
+    .carousel-img{
+        border-radius: 10px;
+    }
+    .ant-carousel .slick-dots li.slick-active button{
+        background: #1D428A;
+    }
+    .ant-carousel .slick-dots li button{
+        background: #fff;
+        opacity: 1.3;
+    }

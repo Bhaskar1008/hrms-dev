@@ -1,0 +1,67 @@
+.accreditation-container {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  /* background-color: #f8f9fc; */
+  /* padding: 20px; */
+}
+
+.accreditation-card {
+  /* background-color: #ffffff; */
+  /* padding: 40px 30px; */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.accreditation-title {
+  color: #ff6a00;
+  margin-bottom: 8px;
+}
+
+.accreditation-subtitle {
+  display: block;
+  margin-bottom: 30px;
+  color: #555;
+  /* margin-top: 2%; */
+}
+
+.accreditation-form .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.back-btn {
+  border: 1px solid #00aec1;
+  color: #00aec1;
+  height: 40px;
+  width: 130px;
+  border-radius: 8px;
+}
+
+.next-btn {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+  height: 40px;
+  width: 130px;
+  border-radius: 8px;
+}
+
+.next-btn:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+.ant-form-item-label > label {
+  font-weight: 400;
+  color: #444444;
+}
+.ant-input-lg {
+  border-radius: 4px;
+}

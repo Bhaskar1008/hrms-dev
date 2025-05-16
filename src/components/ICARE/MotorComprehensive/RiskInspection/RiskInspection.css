@@ -1,0 +1,157 @@
+/* .main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.title h1 {
+  padding: 10px;
+  color: #1D428A;
+}
+
+.sub_title h3 {
+  padding: 10px;
+}
+
+.button-header {
+  margin-top: 20px;
+  display: flex;
+  padding: 0.4rem 1rem;
+
+  align-items: center;
+  gap: 0.625rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+
+
+
+@media (min-width: 320px) {
+  .main-container {
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  .for-data {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 920px) {
+  .main-container {
+
+    margin-bottom: -50px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+    padding-bottom: 50px;
+    margin-left: unset;
+    margin-right: unset;
+    box-sizing: border-box;
+    background: #f2f2f3;
+  }
+  .for-data {
+    padding-bottom: 30px;
+  }
+} */
+.email-container {
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.middle-section {
+  width: 709px;
+
+  margin: 0 auto;
+}
+.title h3 {
+  color: #1D428A;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 5px;
+  margin-top: 8px;
+}
+.sub_title {
+  padding: 10px;
+  font-size: 18px;
+  color: darkgrey;
+}
+.list li {
+  font-size: 18px;
+  font-style: normal;
+font-weight: 500;
+  color: #272729ea;
+  margin:  6px;
+  text-indent: -1.5em;
+}
+.Rsbtn {
+  display: flex;
+  height: 3rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 3rem;
+  border-radius: 0.75rem;
+  border: 1px solid  #1D428A;
+  background:  #1D428A;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  color:  #fff;
+  text-align: center;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 1.1375rem */
+  letter-spacing: 0.00875rem;
+ 
+}
+.Rsbtn:hover{
+  border: 1px solid  #1D428A;
+  background:  #1D428A;
+ color:  #fff;
+}
+.Rsbtn:active{
+  border: 1px solid  #1D428A;
+  background:  #1D428A;
+ color:  #fff;
+}
+@media only screen and (max-width: 767px) {
+
+
+  .email-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  .img1{
+width: 50vh;
+  }
+
+  .middle-section {
+    width: 90%; 
+  }
+  .img1 {
+    max-width: 100%;
+    height: auto;
+  }
+  .title h3{
+    margin-top: 15px;
+  }
+  .list li{
+    margin-left: 1.5em;
+    text-indent: -1.5em;
+  }
+  .Rsbtn {
+    width: 100%;
+  }
+
+      }

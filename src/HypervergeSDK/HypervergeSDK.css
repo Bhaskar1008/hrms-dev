@@ -1,0 +1,106 @@
+.fw-bold {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: black;
+}
+.browser-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 16px;
+}
+.browse-btn {
+    border-radius: 12px;
+    padding: 0px 20px;
+    color: #fff;
+    height: 48px;
+    width: 116px;
+}
+.browse-btn:hover {
+    color: white;
+}
+
+.hv-instruction-upload-button {
+    white-space: nowrap !important;
+}
+.hv-instruction-upload-button .hv-upload-text{
+    width: 100% !important;
+    text-align: center !important;
+}
+.doc-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .doc-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .doc-text {
+    font-size: 14px;
+    color: #000000d9;
+    margin-bottom: 0;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .signature-name {
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .doc-delete-icon {
+    /* opacity: 0; */
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  
+  .doc-text:hover {
+    background: #f1f1f1;
+  }
+  
+  /* .doc-box:hover .doc-delete-icon {
+    opacity: 1;
+  } */
+
+  .child11 {
+    color: #fff;
+    padding: 0;
+    font-size: 25px;
+    border-radius: 10px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.points-none {
+    pointer-events: none;
+}
+
+/* Media Query */
+@media screen and (max-width: 500px) {
+    .doc-text-container {
+        max-width: 60% !important;
+    }
+    .doc-text {
+    max-width: 219px !important;
+    }
+    
+}
+@media screen and (max-width: 400px){
+.doc-text {
+    max-width: 150px !important;
+}
+}

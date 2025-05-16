@@ -1,0 +1,349 @@
+.completedcontestdetails-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.completedcontestdetails-card-style {
+  display: flex;
+
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+  /* background-color:brown; */
+  border-radius: 5px;
+  overflow: hidden;
+  border-width: 1px;
+  border-color: grey;
+  /* border-style:solid; */
+  box-shadow: 0.3px 0.55px 1.1px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+.completedcontestdetails-card-top-flex {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  flex: 0.14;
+  /* background-color: blue; */
+  margin-left: 0.5%;
+  margin-right: 120px;
+}
+
+.completedcontestdetails-card-coloured-style {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+  background-color: #f1f1f1;
+}
+.completedcontestdetails-card-coloured-content-style {
+  display: flex;
+  flex-direction: row;
+  flex: 0.9;
+  /* background-color: yellow; */
+  margin-left: 7px;
+}
+.completedcontestdetails-title-text {
+  font-size: calc(10px + 0.4vw);
+  font-weight: bold;
+  color: #545a5e;
+}
+.completedcontestdetails-title-position-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: brown; */
+}
+.completedcontestdetails-title-name-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: burlywood; */
+}
+
+.completedcontestdetails-title-score-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: purple; */
+}
+
+.completedcontestdetails-title-stats-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: orange; */
+}
+
+.completedcontestdetails-title-information-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: blue; */
+}
+.completedcontestdetails-title-action-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+}
+
+.completedcontestdetails-card-bottom-flex {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  flex: 1;
+
+  margin-left: 0.5%;
+  margin-right: 120px;
+  /* background-color: yellow; */
+  /* margin-left: 0.5%;
+  margin-right: 120px; */
+}
+.completedcontestdetails-card-bottom-content-flex {
+  display: flex;
+  flex-direction: row;
+  /* flex: 1; */
+  flex: 1;
+  /* background-color: yellow; */
+  /* margin-left: 7px; */
+}
+.completedcontestdetails-card-bottom-contentalign-flex {
+  display: flex;
+  flex-direction: row;
+  /* flex: 1; */
+  flex: 0.9;
+  margin-left: 7px;
+  /* background-color: red; */
+}
+
+.completedcontestdetails-content-text {
+  font-size: calc(9.5px + 0.36vw);
+  color: grey;
+}
+.completedcontestdetails-content-position-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  /* background-color: brown; */
+}
+.completedcontestdetails-content-name-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  /* background-color: burlywood; */
+}
+.completedcontestdetails-content-score-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  /* background-color: purple; */
+}
+.completedcontestdetails-content-stats-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  /* background-color: orange; */
+}
+.completedcontestdetails-content-progressbar-flex {
+  display: flex;
+  flex-direction: column;
+}
+.completedcontestdetails-progressbar-top-style {
+  width: calc(3vw + 9vw);
+  font-size: 0px;
+}
+.completedcontestdetails-progressbar-bottom-style {
+  width: calc(3vw + 9vw);
+  font-size: 0px;
+  margin-top: 0.5vw;
+}
+.completedcontestdetails-content-information-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: flex-start;
+  /* background-color: blue; */
+}
+.completedcontestdetails-content-information-column-flex {
+  display: flex;
+  flex-direction: column;
+}
+.completedcontestdetails-content-action-flex {
+  display: flex;
+  flex-direction: row;
+  flex: 0.2;
+  justify-content: center;
+  /* background-color: green; */
+}
+.completedcontestdetails-content-action-button-style {
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+  font-size: calc(9.4px + 0.2vw);
+  margin-top: 7%;
+  height: calc(5px + 4vh);
+  width: calc(7px + 10vw);
+  border: none;
+  cursor: pointer;
+}
+.fontDetail-size {
+  font-size: calc(8.5px + 3vw);
+}
+
+@media (min-width: 319px) and (max-width: 374px) {
+  .completedcontestdetails-card-top-flex {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .completedcontestdetails-card-coloured-content-style {
+    flex: 1;
+    margin-left: 0%;
+  }
+
+  .completedcontestdetails-card-bottom-contentalign-flex {
+    flex: 1;
+    margin-left: 0%;
+  }
+  .completedcontestdetails-title-name-flex {
+    justify-content: center;
+  }
+  .completedcontestdetails-title-score-flex {
+    justify-content: center;
+  }
+  .completedcontestdetails-content-score-flex {
+    justify-content: center;
+  }
+  .completedcontestdetails-progressbar-top-style {
+    margin-top: 0.5vw;
+  }
+  .completedcontestdetails-progressbar-bottom-style {
+    margin-top: 3vw;
+  }
+  .completedcontestdetails-title-action-flex {
+    justify-content: flex-end;
+  }
+
+  .completedcontestdetails-card-bottom-flex {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .completedcontestdetails-content-action-flex {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .completedcontestdetails-card-top-flex {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .completedcontestdetails-card-coloured-content-style {
+    flex: 1;
+    margin-left: 0%;
+  }
+  .completedcontestdetails-card-bottom-contentalign-flex {
+    flex: 1;
+    margin-left: 0%;
+  }
+  .completedcontestdetails-progressbar-top-style {
+    margin-top: 0.5vw;
+  }
+  .completedcontestdetails-progressbar-bottom-style {
+    margin-top: 3vw;
+  }
+  .completedcontestdetails-title-score-flex {
+    justify-content: center;
+  }
+  .completedcontestdetails-content-score-flex {
+    justify-content: center;
+  }
+  .completedcontestdetails-title-action-flex {
+    justify-content: flex-end;
+  }
+  .completedcontestdetails-card-bottom-flex {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .completedcontestdetails-content-action-flex {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .completedcontestdetails-card-top-flex {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .completedcontestdetails-card-coloured-content-style {
+    flex: 1;
+    margin-left: 0%;
+  }
+  .completedcontestdetails-card-bottom-contentalign-flex {
+    flex: 1;
+    margin-left: 0%;
+  }
+
+  .completedcontestdetails-title-action-flex {
+    justify-content: flex-end;
+  }
+  .completedcontestdetails-card-bottom-flex {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .completedcontestdetails-progressbar-top-style {
+    margin-top: 0.5vw;
+  }
+  .completedcontestdetails-progressbar-bottom-style {
+    margin-top: 2vw;
+  }
+  .completedcontestdetails-content-action-flex {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .completedcontestdetails-card-coloured-content-style {
+    flex: 1;
+    margin-left: 0%;
+  }
+  .completedcontestdetails-card-bottom-contentalign-flex {
+    flex: 1;
+    margin-left: 0%;
+  }
+  .completedcontestdetails-title-score-flex {
+    justify-content: center;
+  }
+  .completedcontestdetails-content-score-flex {
+    justify-content: center;
+  }
+  .completedcontestdetails-progressbar-top-style {
+    margin-top: 0.3vw;
+  }
+  .completedcontestdetails-progressbar-bottom-style {
+    margin-top: 0.7vw;
+  }
+  .completedcontestdetails-title-action-flex {
+    justify-content: center;
+  }
+  .completedcontestdetails-content-action-flex {
+    justify-content: center;
+  }
+}

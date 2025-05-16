@@ -1,0 +1,104 @@
+@media (min-width: 320px) {
+    .main-container {
+        /* margin-left: -300px;
+        margin-right: -300px; */
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+        
+      }
+     
+  }
+  @media (min-width: 920px) {
+  .main-container {
+    /* margin-left: -300px;
+    margin-right: -300px; */
+    /* margin-top: -50px; */
+    margin-bottom: -50px;
+    padding-left: 300px;
+    padding-right: 300px;
+    /* padding-top: 4rem; */
+    padding-bottom: 50px;
+    margin-left: unset;
+    margin-right: unset;
+    box-sizing: border-box;
+    background: #F2F2F3;
+  }
+  .ant-tabs{
+    align-items: start;
+  }
+}
+.main-container .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: var(--lilac-75, #1D428A);
+    text-align: center;
+
+/* Desktop - Title 2 */
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+line-height: 120%;
+}
+.main-container .ant-tabs-tab-btn{
+    font-size: 14px;
+    font-weight: bold;
+}
+.main-container .ant-tabs-ink-bar {
+    border-bottom: 2px solid var(--lilac-75, #1D428A);
+}
+
+.main-heading h2{
+    color: var(--primary-oona-purple, #1D428A);
+/* Desktop - H4 */
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+.ant-tabs-content{
+    text-align: start;
+}
+.notification-card{
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+width: 480px;
+padding: 16px;
+margin-top: 15px;
+}
+.notification-parent {
+    display: flex;
+    justify-content: space-between;
+}
+.notifi-child h3{
+    color: var(--primary-dark-purple, #21153A);
+    /* Body 1 - SemiBold */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+.notifi-child p{
+    color: var(--secondary-medium-turquoise, #4AC6BB);
+/* Body 2 - Medium */
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%;
+margin-top: 10px;
+}
+.circle1{
+border-radius: 14px;
+background: var(--primary-oona-purple, #1D428A);
+box-shadow: 0px 3px 12px 0px rgba(103, 63, 174, 0.50);
+height: 15px;
+width: 15px;
+margin-top: 15px;
+}

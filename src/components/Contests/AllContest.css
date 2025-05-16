@@ -1,0 +1,224 @@
+.contestall-main-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-right: 50px;
+  /* background-color: blue; */
+}
+.contestall-two-cards-row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contestall-card-style {
+  display: flex;
+  flex-direction: column;
+  height: 108px;
+  width: 48.6%;
+  /* background-color:brown; */
+  border-radius: 5px;
+  overflow: hidden;
+  border-width: 1px;
+  border-color: grey;
+  /* border-style:solid; */
+  box-shadow: 0.3px 0.55px 1.1px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+.contestall-topcard-row-flex {
+  display: flex;
+  flex: 0.7;
+  /* backgroundColor:blue; */
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.contestall-topcard-underline-text {
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  font-weight: bold;
+  font-size: 15.5px;
+  color: #545a5e;
+}
+.contestall-topcard-date-text {
+  font-weight: bold;
+  font-size: 12.5px;
+  color: #545a5e;
+}
+.contestall-bottomcard-flex {
+  display: flex;
+  flex: 1;
+  /* background-color:yellow; */
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contestall-bottomcard-progressbar-row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.contestall-bottomcard-progressbar-style {
+  width: 220px;
+  font-size: 0px;
+}
+
+.contestall-bottomcard-progressbar-text {
+  font-size: 14.2px;
+  /* font-weight:bold; */
+  color: #545a5e;
+}
+
+.contestall-bottomcard-button-style {
+  background-color: #464141;
+  border: none;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block */
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 7px;
+  height: 28.3px;
+  width: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .contestall-main-style {
+    margin-left: 1px;
+    margin-right: 2px;
+  }
+  .contestall-two-cards-row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .contestall-card-style {
+    margin-left: 20px;
+    height: 70px;
+    width: 80%;
+  }
+  .contestall-topcard-underline-text {
+    font-size: 11.4px;
+  }
+  .contestall-topcard-date-text {
+    font-size: 11px;
+  }
+  .contestall-bottomcard-progressbar-style {
+    width: 90px;
+  }
+  .contestall-bottomcard-progressbar-text {
+    font-size: 11.3px;
+  }
+  .contestall-bottomcard-button-style {
+    height: 20px;
+    width: 60px;
+    font-size: 10.4px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .contestall-main-style {
+    margin-left: 1px;
+    margin-right: 2px;
+  }
+  .contestall-two-cards-row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .contestall-card-style {
+    margin-left: 20px;
+    height: 78px;
+    width: 80%;
+  }
+  .contestall-topcard-underline-text {
+    font-size: 11.2px;
+  }
+  .contestall-topcard-date-text {
+    font-size: 11.2px;
+  }
+  .contestall-bottomcard-progressbar-style {
+    width: 90px;
+  }
+  .contestall-bottomcard-progressbar-text {
+    font-size: 11.2px;
+  }
+  .contestall-bottomcard-button-style {
+    height: 23px;
+    width: 70px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .contestall-main-style {
+    margin-left: 1px;
+    margin-right: 2px;
+  }
+  .contestall-two-cards-row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .contestall-card-style {
+    margin-left: 20px;
+    height: 78px;
+    width: 80%;
+  }
+  .contestall-topcard-underline-text {
+    font-size: 12.4px;
+  }
+  .contestall-topcard-date-text {
+    font-size: 11.6px;
+  }
+  .contestall-bottomcard-progressbar-style {
+    width: 110px;
+  }
+  .contestall-bottomcard-progressbar-text {
+    font-size: 12.4px;
+  }
+  .contestall-bottomcard-button-style {
+    height: 23.5px;
+    width: 70px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contestall-main-style {
+    margin-left: 1px;
+    margin-right: 2px;
+  }
+
+  .contestall-card-style {
+    margin-left: 6px;
+    margin-right: 6px;
+    height: 90px;
+    width: 48%;
+  }
+  .contestall-topcard-underline-text {
+    font-size: 13.5px;
+  }
+  .contestall-topcard-date-text {
+    font-size: 12.4px;
+  }
+  .contestall-bottomcard-progressbar-style {
+    width: 110px;
+  }
+  .contestall-bottomcard-progressbar-text {
+    font-size: 13.2px;
+  }
+  .contestall-bottomcard-button-style {
+    height: 24.4px;
+    width: 85px;
+    font-size: 11.6px;
+  }
+}

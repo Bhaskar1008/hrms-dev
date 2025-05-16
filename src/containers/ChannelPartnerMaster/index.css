@@ -1,0 +1,266 @@
+.dashboard {
+  min-height: 100vh;
+  background: #F9FAFB;
+  padding: 24px;
+  position: relative;
+}
+
+.icare_header {
+  margin-bottom: 24px;
+}
+
+.icare_header h1 {
+  color: #00AEC1;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.tab {
+  color: #6B7280;
+  font-weight: 500;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 20px;
+}
+
+.tab.active {
+  color: #FF6D00;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #FF6D00;
+}
+
+.icare_content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.toolbar-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.type-button {
+  padding: 8px 16px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  background: white;
+  color: #1F2937;
+  cursor: pointer;
+}
+
+.type-button .type-icon {
+  width: 24px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.type-button.active {
+  background: #00AEC1;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-color: #00AEC1;
+}
+
+.select-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  background: white;
+  color: #1F2937;
+  min-width: 120px;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 2px solid #00BBD5;
+  border-radius: 12px;
+  background-color: white;
+  color: #00BBD5;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #e6f9fb;
+}
+
+.fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #00BCD4;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.fab:hover {
+  transform: translateY(-2px);
+}
+
+.pagination {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-holder {
+  margin: 2rem 0;
+  text-align: end;
+  margin-right: 50px;
+}
+
+/* Pagination item links */
+.page-holder .ant-pagination-item a {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #00AEC1;
+}
+
+/* Active pagination item */
+.page-holder .ant-pagination-item-active {
+  background-color: #00AEC1;
+  border-color: #E8E8E8;
+}
+
+.page-holder .ant-pagination-item-active a {
+  color: white;
+  background-color: #00AEC1;
+  font-weight: bold;
+}
+
+/* General pagination items */
+.page-holder .ant-pagination-item {
+  font-size: 10px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #00AEC1;
+  border: 1px solid #E8E8E8;
+}
+
+/* Prev/Next buttons */
+.page-holder .ant-pagination-prev button,
+.page-holder .ant-pagination-next button {
+  color: #00AEC1;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+}
+
+/* Hide page size options */
+.page-holder .ant-pagination-options {
+  display: none;
+}
+
+/* For specific layout styling */
+.Pagination-Mapbranch {
+  margin: 2rem 0;
+}
+
+/* Custom Pagination Styling */
+.custom-pagination .ant-pagination {
+  display: flex;
+  justify-content: right;
+  padding: 16px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.custom-pagination .ant-pagination-item {
+  background-color: #f5f5f5;
+  color: #00AEC1;
+  font-weight: 500;
+  border: 1px solid rgb(63, 60, 60);
+  margin: 0 4px;
+  transition: all 0.3s;
+}
+
+.custom-pagination .ant-pagination-item-active {
+  background-color: #00AEC1;
+  color: #fff;
+  font-weight: 600;
+}
+
+.custom-pagination .ant-pagination-item:hover {
+  background-color: #d6e4ff;
+  color: #00AEC1;
+}
+
+.custom-pagination .ant-pagination-prev,
+.custom-pagination .ant-pagination-next {
+  font-size: 18px;
+  font-weight: 500;
+  color: #00AEC1;
+}
+
+.custom-pagination .ant-pagination-prev a,
+.custom-pagination .ant-pagination-next a {
+  color: #00AEC1;
+}
+
+.custom-pagination .ant-pagination-prev:hover a,
+.custom-pagination .ant-pagination-next:hover a {
+  color: #00AEC1;
+}
+
+@media (max-width: 640px) {
+  .dashboard {
+    padding: 16px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .toolbar-left {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .fab {
+    bottom: 16px;
+    right: 16px;
+  }
+}

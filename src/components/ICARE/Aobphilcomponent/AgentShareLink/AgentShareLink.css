@@ -1,0 +1,18 @@
+.agent-share > .ant-btn > span {
+    display: contents;
+}
+.agent-share .anticon{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.agent-share button{
+    background: #1d428a;
+    color: white;
+    border-radius: 9px;
+    margin-top: 10px;
+    padding: 0px 8px;
+}
+.agent-share button:hover, .agent-share button:active, .agent-share button:focus{
+    background: #1d428a;
+    color: white;
+}

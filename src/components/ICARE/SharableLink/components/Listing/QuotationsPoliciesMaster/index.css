@@ -1,0 +1,133 @@
+.page-holder {
+  margin: 2rem 0rem;
+  text-align: end;
+  margin-right: 50px;
+}
+
+.page-holder > ul > .ant-pagination-item a {
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #1D428A;
+}
+.page-holder > ul > .ant-pagination-item-active a {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #1D428A;
+}
+
+.page-holder > ul > .ant-pagination-item {
+  font-size: 10px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #1D428A;
+  border-color: #e8e8e8;
+}
+.page-holder > ul > .ant-pagination-item-active {
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  background-color: 545454;
+  border-color: #e8e8e8;
+}
+
+.page-holder > ul > .ant-pagination-next > button,
+.page-holder > ul > .ant-pagination-prev > button {
+  color: #1D428A;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: none;
+  border-radius: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+}
+
+.page-holder > ul > .ant-pagination-options {
+  display: none;
+}
+.Pagination-Mapbranch {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.icon-size {
+  font-size: 50px;
+  color: #1fb3ab;
+  position: sticky;
+  right: 0;
+  left: 90vw;
+  bottom: 5vh;
+}
+.export-btn {
+  position: absolute;
+  top: 135px;
+  right: 200px;
+  background-color: orange;
+  border: none;
+}
+.list-btn {
+  position: absolute;
+  top: 135px;
+  right: 80px;
+  border: none;
+}
+.dashboard-btn {
+  position: absolute;
+  top: 135px;
+  right: 285px;
+  border: none;
+}
+.export-btn:hover {
+  background-color: pink;
+}
+.tags {
+  display: flex;
+  margin-left: 3.5rem;
+}
+
+@media (min-width: 320px) {
+  .main-containerListing {
+    /* margin-left: -300px;
+        margin-right: -300px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  .for-data {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 920px) {
+  .main-containerListing {
+    /* margin-left: -300px;
+    margin-right: -300px; */
+    /* margin-top: -50px; */
+    margin-bottom: -50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    /* padding-top: 4rem; */
+    padding-bottom: 50px;
+    margin-left: unset;
+    margin-right: unset;
+    box-sizing: border-box;
+    background: #f2f2f3;
+  }
+  .for-data {
+    padding-bottom: 30px;
+  }
+}
+
+.bottom-mmm {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

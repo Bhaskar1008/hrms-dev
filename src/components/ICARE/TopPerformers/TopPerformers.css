@@ -1,0 +1,94 @@
+
+.topPerformance{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.filterIcon{
+  background-color: #1D428A;
+  color: #fff;
+  border-radius: 8px;
+}
+.filterIcon:hover, .filterIcon:active .filterIcon:focus{
+  background-color: #1D428A;
+  color: #fff;
+} 
+
+.peformnceHeading h2{
+  color: var(--primary-oona-purple, #1D428A);
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 38.4px */
+margin-top: 5px;
+margin-bottom: 10px;
+}
+.peformnceHeading p{
+  color: var(--lilac-50, #4A5F98);
+
+/* Overline 2 - Small */
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.98px;
+text-transform: uppercase;
+}
+.cardUser_data{
+  border-radius: 8px;
+background: var(--neutrals-white, #FFF);
+display: flex;
+width: 100%;
+padding: 6px 12px;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px;
+}
+
+.spinnerloader{
+  border-radius: 8px;
+    background: var(--neutrals-white, #FFF);
+    display: flex;
+    height: 200px;
+    width: 100%;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.digit_number{
+  margin-right: 10px;
+}
+.digit_number h2{
+  color: var(--secondary-medium-turquoise, #4AC6BB);
+
+font-size: 41px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 49.2px */
+}
+.headingandperofm{
+  text-align: left;
+  width: 70%;
+}
+.headingandperofm h2{
+  color: #000;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 16.8px */
+margin-top: 15px;
+margin-bottom: 5px;
+}
+.headingandperofm p{
+  color: var(--neutrals-150, #65737E);
+
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 16.8px */
+}
+.peformImg img{
+  width: 50px;
+height: 50px;
+/* border: 1px solid #FFF; */
+}

@@ -1,0 +1,272 @@
+@media (min-width: 450px) {
+    .agent_login .form_wrapper {
+        max-width: 450px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .register_pop_conf_modal {
+        max-width: 450px;
+    }
+
+
+
+
+}
+
+
+
+/* hide scrollbar register_pop_conf_modal modal content */
+.register_pop_conf_modal .modal_content {
+    height: 320px;
+    overflow: auto;
+}
+
+.register_pop_conf_modal .modal_content::-webkit-scrollbar {
+    display: none;
+}
+
+.outerDiv {
+    background-image: url("../../../../images/oona-ph-bg.png");
+    background-repeat: no-repeat;
+    background-position: 50% 77%;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-color: #f2f2f3;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+}
+
+.agent_login .ant-card {
+    min-height: 418px;
+    border-radius: 8px;
+}
+
+.agent_login .ant-btn.ant-btn-block {
+    width: 100%;
+}
+
+.agent_login .form_content_wrap .get_otp_btn {
+    color: white;
+    font-size: 16px;
+    /* font-family: Roboto; */
+    font-weight: 500;
+    word-wrap: break-word;
+    background: #1D428A;
+    box-shadow: 0px 2px 10px rgba(72, 44, 119, 0.22);
+    border-radius: 8px;
+    border: none;
+}
+
+.agent_login .ant-form-item-label>label {
+    color: #444444;
+    font-size: 12px;
+    /* font-family: Roboto; */
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.agent_login .forgotPassword {
+    color: #8A8A8A;
+    font-size: 12px;
+    /* font-family: Roboto Flex; */
+    font-weight: 500;
+    line-height: 16px;
+    word-wrap: break-word;
+    display: inline-flex;
+    gap: 8px;
+}
+
+
+
+.agent_login .ant-card-body {
+    padding: 16px;
+}
+
+.agent_login .login_header_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agent_login .login_header_text .heading {
+    color: #1D428A;
+    font-size: 20px;
+    /* font-family: Roboto; */
+    font-weight: 600;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.agent_login .login_header_text .otp_description {
+    color: #7E7E7E;
+    font-size: 12px;
+    /* font-family: Roboto; */
+    font-weight: 400;
+    line-height: 15.60px;
+    word-wrap: break-word
+}
+
+.agent_login .form_content_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.button_accept_cancel .accept {
+    color: white;
+    font-size: 14px;
+    /* font-family: Roboto; */
+    font-weight: 600;
+    line-height: 18.20px;
+    letter-spacing: 0.14px;
+    word-wrap: break-word;
+    background: #1D428A;
+    border-radius: 8px;
+    border: none;
+}
+
+.welcome_onboraing_registration {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.button_accept_cancel .decline,
+.welcome_onboraing_registration .cancel_btn {
+    color: #4A5F98;
+    font-size: 14px;
+    /* font-family: Roboto; */
+    font-weight: 600;
+    line-height: 18.20px;
+    letter-spacing: 0.14px;
+    word-wrap: break-word;
+    border-radius: 8px;
+    border: none;
+}
+
+.checklist_for_resigter {
+    color: #4AC6BB;
+    font-size: 14px;
+    /* font-family: Roboto Flex; */
+    font-weight: 600;
+    line-height: 16px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.checklist_for_resigter .png_jpeg {
+    color: #9B959F;
+    font-size: 12px;
+    /* font-family: Roboto Flex; */
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16px
+}
+
+.welcome_onboraing_registration .registerbtndisabled,
+.welcome_onboraing_registration .registerbtndisabled:hover {
+    color: white;
+    font-size: 16px;
+    /* font-family: Roboto; */
+    font-weight: 500;
+    word-wrap: break-word;
+    background: #686868;
+    border-radius: 8px;
+    border: none;
+}
+
+.welcome_onboraing_registration .registerbtn {
+    color: white;
+    font-size: 16px;
+    /* font-family: Roboto; */
+    font-weight: 500;
+    word-wrap: break-word;
+    background: #1D428A;
+    border-radius: 8px;
+    border:none;
+}
+
+.welcome_onboraing_registration .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #1D428A;
+    border-color: #1D428A;
+}
+
+.agent_login_wrapper .ant-modal-title {
+    text-align: left;
+}
+
+.modal_header {
+    margin-bottom: 14px;
+
+}
+
+.ant-modal-content {
+    border-radius: 8px;
+}
+
+/* .nextbtn .ant-btn{
+    border: none
+  } */
+
+.otp_verify_modal .ant-modal-content {
+    height: 418px;
+}
+
+.modal_header .header_title {
+    color: #1D428A;
+    font-size: 16px;
+    /* font-family: Roboto; */
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 18px;
+    word-wrap: break-word;
+}
+
+.text_otp_verification {
+    color: #1D428A;
+    font-size: 20px;
+    /* font-family: Roboto; */
+    font-weight: 600;
+    text-transform: capitalize;
+    word-wrap: break-word;
+
+}
+
+.otp_verify_modal .message {
+    color: #65737E;
+    font-size: 12px;
+    /* font-family: Roboto; */
+    font-weight: 400;
+    line-height: 15.60px;
+    word-wrap: break-word;
+}
+
+.otp_verify_modal .change_number {
+    color: #1D428A;
+    font-size: 12px;
+    /* font-family: Roboto; */
+    font-weight: 500;
+    text-decoration: underline !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+
+    .agent_login .form_wrapper {
+        width: 320px;
+        margin: auto;
+    }
+
+    .register_pop_conf_modal .ant-modal-content {
+        width: 320px;
+        margin: auto;
+    }
+}

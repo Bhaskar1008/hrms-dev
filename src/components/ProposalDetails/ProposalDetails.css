@@ -1,0 +1,27 @@
+.proposal>*{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.proposal-title{
+    margin: 0 auto;
+    font-size: 22px;
+    color: #cfd1d3;
+}
+.bg-proposal{
+    background-image: url('https://sdrestdemo.iorta.in/assets/Proposalimage.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+.product-btn{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-btn>span{
+    margin:auto 0;
+}

@@ -1,0 +1,140 @@
+.step2{
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--neutrals-75, #C8CDD1);
+    background: var(--neutrals-50, #E1E2E2);
+    box-shadow: 0px 4px 14px 0px rgba(255, 255, 255, 0.05);
+    width: 13px;
+    height: 192px;
+    flex-shrink: 0;
+
+}
+.inner-page2{
+    border-radius: 20px;
+    background: var(--secondary-medium-turquoise, #4AC6BB);
+    width: 12px;
+    height: 122px;
+    flex-shrink: 0;
+}
+
+.sidebarstep2 ul li{
+    /* Overline 2 - Small */
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.98px;
+text-transform: uppercase;
+color: #000;
+list-style-type: none;
+margin-top: 2.4rem;
+}
+.steppa2{
+    display: flex;
+}
+.sidebarstep2{
+    margin-top: 3rem;
+}
+.data4 p{
+    margin-bottom: 0px;
+}
+.data4 h4{
+    color: var(--neutrals-white, #FFF);
+    text-align: center;
+    
+    /* Overline 2 - Small */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.98px;
+    text-transform: uppercase;
+    width: 20px;
+height: 18px;
+flex-shrink: 0;
+background-color: #4AC6BB;
+border-radius: 20px;
+}
+
+.data3 h4{
+    color: var(--neutrals-white, #FFF);
+    text-align: center;
+    
+    /* Overline 2 - Small */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.98px;
+    text-transform: uppercase;
+    width: 20px;
+height: 18px;
+flex-shrink: 0;
+background-color: #A3ACB2;
+border-radius: 20px;
+
+}
+
+@media (min-width: 320px) {
+    
+    .steppa2{
+        display: none;
+    }
+    .steppaMobile2{
+        display: block;
+        
+    }
+    .stepdata2{
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        padding: 8px;
+        margin-top: 68px;
+        margin-left: -21px;
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .data4, .data3{
+        display: flex;
+    }
+}
+@media (min-width: 920px) {
+    .sidebarstep2 ul li{
+        margin-top: 2.4rem;
+    }
+
+    .steppa2{
+        display: flex;
+    }
+
+    .steppaMobile2{
+        display: none;
+    }
+    
+    
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .sidebarstep2 ul li {
+      margin-top: 2.4rem;
+      font-size: 9px;
+      width: 171px;
+    height: 22px;
+    }
+  
+    .steppa2 {
+      display: flex;
+    }
+  
+    .steppaMobile2 {
+      display: none;
+    }
+    .stepdata2 {
+      display: none;
+  }
+  .rsstep2{
+      height: 175px;
+  }
+  
+  }
+  

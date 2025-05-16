@@ -1,0 +1,135 @@
+.rsstep2 {
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--neutrals-75, #c8cdd1);
+  background: var(--neutrals-50, #e1e2e2);
+  box-shadow: 0px 4px 14px 0px rgba(255, 255, 255, 0.05);
+  width: 13px;
+  height: 192px;
+  flex-shrink: 0;
+}
+.inner-page2 {
+  border-radius: 20px;
+  background: var(--secondary-medium-turquoise, #4ac6bb);
+  width: 12px;
+  height: 122px;
+  flex-shrink: 0;
+}
+
+.Rssidebarstep2 ul li {
+  /* Overline 2 - Small */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.98px;
+  text-transform: uppercase;
+  color: #000;
+  list-style-type: none;
+  margin-top: 2.4rem;
+}
+.rssteppa2 {
+  display: flex;
+}
+.sidebarstep2 {
+  margin-top: 3rem;
+}
+.rsdata4 p {
+  margin-bottom: 0px;
+}
+.rsdata4 h4 {
+  color: var(--neutrals-white, #fff);
+  text-align: center;
+
+  /* Overline 2 - Small */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.98px;
+  text-transform: uppercase;
+  width: 20px;
+  height: 18px;
+  flex-shrink: 0;
+  background-color: #4ac6bb;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.rsdata3 h4 {
+  color: var(--neutrals-white, #fff);
+  text-align: center;
+
+  /* Overline 2 - Small */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.98px;
+  text-transform: uppercase;
+  width: 20px;
+  height: 18px;
+  flex-shrink: 0;
+  background-color: #a3acb2;
+  border-radius: 20px;
+  margin-right: 12px;
+}
+
+@media (min-width: 320px) {
+  .rssteppa2 {
+    display: none;
+  }
+  .steppaMobile2 {
+    display: block;
+  }
+  .rsstepdata2 {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    /* border-radius: 12px; */
+    margin-top: 68px;
+    margin-left: -9px;
+    width: 100vw;
+  }
+  .rsdata4,
+  .data3 {
+    display: flex;
+  }
+}
+@media (min-width: 920px) {
+  .Rssidebarstep2 ul li {
+    margin-top: 2.4rem;
+  }
+
+  .rssteppa2 {
+    display: flex;
+  }
+
+  .steppaMobile2 {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .Rssidebarstep2 ul li {
+    margin-top: 2.4rem;
+    font-size: 9px;
+    width: 171px;
+  height: 22px;
+  }
+
+  .rssteppa2 {
+    display: flex;
+  }
+
+  .steppaMobile2 {
+    display: none;
+  }
+  .rsstepdata2 {
+    display: none;
+}
+.rsstep2{
+    height: 175px;
+}
+
+}

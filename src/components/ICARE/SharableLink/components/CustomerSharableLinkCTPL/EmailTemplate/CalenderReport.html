@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        border-left: 8px solid #05f0bd;
+
+        height: 100vh;
+      }
+
+      .email-container {
+        margin: 0 auto;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+  
+      .left-section strong {
+        color: #30054f;
+        font-weight: 600;
+        font-size: 19px;
+      }
+      .middle-section p {
+        color:#000;
+      }
+      .middle-section strong {
+        color: #000;
+        font-weight: 600;
+      }
+      .middle-section {
+        width: 709px;
+
+        margin: 0 auto;
+      }
+      .middle-section .ptag{
+        color: blue;
+      }
+      .img1{
+width:100%;
+height: 39%;
+  }
+   
+     
+    
+      @media only screen and (max-width: 767px) {
+  body {
+    border-left: 0;
+  }
+
+  .email-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img1{
+width:100%;
+  }
+
+  .middle-section {
+    width: 90%; 
+  }
+
+  
+
+ 
+
+ 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+  
+      <div class="middle-section">
+        <img src="https://oona-ph-bucket.s3.amazonaws.com/report/ee6dacde120504da82a2b1e7396ca4e925a4c872ef800d4d4524ba604ae7ed76.png" alt="CTPL Image"  class="img1"/>
+
+        <p>Dear  Agent name</p>
+        <p  class="ptag">
+         Please find below attached file of events from calender.
+         
+        </p>
+        <p>Click this link to download the file:</p>
+        <p><a href="insert_hyperlink_here">insert_hyperlink_here</a></p>
+        <p>
+          If you have clarifications, please reach out to the designated
+          <strong>Sales Representative.</strong>
+        </p>
+      </div>
+    </div>
+   
+    
+  </body>
+</html>

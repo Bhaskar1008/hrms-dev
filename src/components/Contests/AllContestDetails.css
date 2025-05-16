@@ -1,0 +1,161 @@
+.AllContestDetails1-main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* background-color: blanchedalmond; */
+}
+
+.AllContestDetails1-row-flex {
+  display: flex;
+  flex-direction: row;
+  /* background-color: blue; */
+  height: 100vh;
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.AllContestDetails1-card-flex {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%;
+  height: 100vh; */
+  /* background-color: brown; */
+}
+.AllContestDetails1-details-card-style {
+  height: 83vh;
+  width: 80vw;
+  /* background-color:brown; */
+  border-radius: 5px;
+  overflow: hidden;
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+  box-shadow: 0.3px 0.55px 1.1px 2px rgba(0, 0, 0, 0.2);
+  /* margin-top: 30px; */
+}
+.AllContestDetails1-details-card-content-align {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 1.3vw;
+}
+.AllContestDetails1-details-card-title-text {
+  font-size: calc(10px + 0.5vw);
+  font-weight: bold;
+}
+.AllContestDetails1-details-card-grey-line {
+  width: 99%;
+  height: 1px;
+  background-color: #d1d0d0;
+  margin-top: 0.8vw;
+  margin-bottom: 0.8vw;
+
+  border-width: 2px;
+}
+
+ul.AllContestDetails1-details-list-style {
+  list-style: none;
+}
+ul.AllContestDetails1-details-list-style li::before {
+  content: "\2022";
+  color: #a6a3a3;
+  font-weight: bold;
+  display: inline-block;
+  /* display: inline-block; */
+  width: calc(10px + 1vw);
+  margin-left: -3vw;
+}
+ul.AllContestDetails1-details-list-style li {
+  font-size: calc(8.5px + 0.5vw);
+  color: #b3b0b0;
+  font-weight: bold;
+}
+.AllContestDetails1-details-nonlist-text {
+  font-size: calc(9px + 0.45vw);
+  color: #a7a5a5;
+  margin-left: -1.3vw;
+}
+
+.AllContestDetails1-eligibility-card-style {
+  height: 53vh;
+  width: 80vw;
+  /* background-color: brown; */
+  border-radius: 5px;
+  overflow: hidden;
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+  box-shadow: 0.3px 0.55px 1.1px 2px rgba(0, 0, 0, 0.2);
+  /* margin-top: 30px; */
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .AllContestDetails1-details-card-title-text {
+    font-size: 10px;
+  }
+  .AllContestDetails1-details-card-style {
+    height: 86vh;
+    width: 100vw;
+  }
+  ul.AllContestDetails1-details-list-style li::before {
+    margin-left: -12vw;
+  }
+  .AllContestDetails1-details-nonlist-text {
+    margin-left: -8.3vw;
+  }
+  .AllContestDetails1-details-nonlist-text {
+    font-size: 9.5px;
+  }
+  .AllContestDetails1-eligibility-card-style {
+    width: 100vw;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  /* .AllContestDetails1-details-card-title-text {
+    font-size: 10px;
+  } */
+  .AllContestDetails1-details-card-style {
+    height: 86vh;
+    width: 100vw;
+  }
+  ul.AllContestDetails1-details-list-style li::before {
+    margin-left: -12vw;
+  }
+  .AllContestDetails1-details-nonlist-text {
+    font-size: 10.4px;
+  }
+  .AllContestDetails1-details-nonlist-text {
+    margin-left: -8.3vw;
+  }
+  .AllContestDetails1-eligibility-card-style {
+    width: 100vw;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .AllContestDetails1-details-card-style {
+    height: 86vh;
+    width: 100vw;
+  }
+  ul.AllContestDetails1-details-list-style li::before {
+    margin-left: -12vw;
+  }
+
+  .AllContestDetails1-details-nonlist-text {
+    margin-left: -8.3vw;
+  }
+  .AllContestDetails1-eligibility-card-style {
+    width: 100vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .AllContestDetails1-details-card-style {
+    height: 86vh;
+    width: 100vw;
+  }
+  ul.AllContestDetails1-details-list-style li::before {
+    margin-left: -7vw;
+  }
+
+  .AllContestDetails1-details-nonlist-text {
+    margin-left: -5vw;
+  }
+}

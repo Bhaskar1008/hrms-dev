@@ -1,0 +1,26 @@
+.parent{
+    /* width: 90rem;
+    height: 6rem;
+    flex-shrink: 0; */
+    background:  #FFF; 
+}
+.container{
+    display: flex;
+width: 44.9375rem;
+height: 6rem;
+padding: 0.75rem 1.5rem;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+}
+.text{
+    color:  #4F5B66;
+  
+  
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.00688rem;
+  text-transform: uppercase;
+  }

@@ -1,0 +1,127 @@
+.channel-partner-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin: 16px;
+    overflow: hidden;
+    border-left: 3px solid #00BCD4;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FF6D00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .header-info {
+    flex-grow: 1;
+  }
+  
+  .name {
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 4px;
+  }
+  
+  .company-id {
+    color: #6B7280;
+    font-size: 14px;
+  }
+  
+  .company-id-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .company-id {
+    color: #6B7280;
+    font-size: 14px;
+  }
+  
+  .type-icon {
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .type-icon.self {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.0026 7.0026C6.08594 7.0026 5.30121 6.67621 4.64844 6.02344C3.99566 5.37066 3.66927 4.58594 3.66927 3.66927C3.66927 2.7526 3.99566 1.96788 4.64844 1.3151C5.30121 0.662326 6.08594 0.335938 7.0026 0.335938C7.91927 0.335938 8.70399 0.662326 9.35677 1.3151C10.0095 1.96788 10.3359 2.7526 10.3359 3.66927C10.3359 4.58594 10.0095 5.37066 9.35677 6.02344C8.70399 6.67621 7.91927 7.0026 7.0026 7.0026ZM0.335938 13.6693V11.3359C0.335938 10.8637 0.457465 10.4297 0.700521 10.0339C0.943576 9.63802 1.26649 9.33593 1.66927 9.1276C2.53038 8.69705 3.40538 8.37413 4.29427 8.15885C5.18316 7.94357 6.08594 7.83593 7.0026 7.83593C7.91927 7.83593 8.82205 7.94357 9.71093 8.15885C10.5998 8.37413 11.4748 8.69705 12.3359 9.1276C12.7387 9.33593 13.0616 9.63802 13.3047 10.0339C13.5477 10.4297 13.6693 10.8637 13.6693 11.3359V13.6693H0.335938Z' fill='%23FF6D00'/%3E%3C/svg%3E");
+  }
+  
+  .type-icon.team {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_3415_14070' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_3415_14070)'%3E%3Cpath d='M3.33333 5.00065V3.33398H16.6667V5.00065H3.33333ZM3.33333 16.6673V11.6673H2.5V10.0007L3.33333 5.83398H16.6667L17.5 10.0007V11.6673H16.6667V16.6673H15V11.6673H11.6667V16.6673H3.33333ZM5 15.0007H10V11.6673H5V15.0007Z' fill='%2300AEC1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .status-badge {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #ecf1f2;
+    color: #00AEC1;
+    border: 1px solid #00AEC1;
+  }
+  
+  .card-content {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .label {
+    color: #7C7C7C;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .value {
+    color: #7C7C7C;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .view-registration {
+    width: 100%;
+    padding: 12px;
+    background: #D6F2F5;
+    border: none;
+    color: #00AEC1;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .view-registration:hover {
+    background: #E5E7EB;
+  }
+  
+  @media (max-width: 640px) {
+    .card-content {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,348 @@
+/* .main-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+ 
+} */
+
+.successQuotationContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  background-color: white;
+  padding-bottom: 40px;
+  height: 100%;
+  flex-direction: row;
+}
+
+.section1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: 50px;
+  padding-inline: 10px;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.section1 > div {
+  text-align: center;
+}
+
+.section1 > div > h2 {
+  color: #1D428A;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.section1 > div > p {
+  color: #1D428A;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.shareContainer > p {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.shareContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shareDiv img {
+  background: white;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.shareDiv {
+  display: flex;
+  background: #4ac6bb;
+  border-radius: 30px;
+  padding: 6px 8px;
+  font-size: 16px;
+  align-items: center;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 360px;
+}
+
+.shareDiv > p {
+  margin: 0;
+  margin-inline: 10px;
+}
+
+.section2 {
+  width: 50%;
+  display: flex;
+  padding-top: 50px;
+}
+
+.section2 > div {
+  border: 2px solid #4ac6bb;
+  border-radius: 10px;
+  padding: 10px 18px;
+  min-width: 330px;
+}
+
+.section2 > div > p {
+  color: #1D428A;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.priceLabel {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 120%
+}
+
+.priceValue {
+  font-weight: 600;
+}
+
+.priceDiv {
+  color: #262626;
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalAmount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalAmount p:first-child {
+  color: #1D428A;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.totalAmount p:last-child {
+  font-size: 23px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.successBtn {
+  background: #1D428A;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 0;
+  height: fit-content;
+}
+
+.setOfbtn {
+  display: flex;
+  margin-top: 10px;
+}
+
+.share2 {
+  display: none;
+}
+
+.quoteWhiteBtn {
+  border: 1px solid #4A5F98;
+  border-radius: 10px;
+  color: #1D428A;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  margin: 10px 5px;
+}
+
+.quoteBtnLight {
+  display: flex;
+  border: 1px dashed #d9d9d9;
+  border-radius: 12px;
+  width: 100%;
+  margin: 10px 0px;
+  font-weight: 600;
+  padding: 10px 0;
+  height: fit-content;
+  justify-content: center;
+}
+
+.quoteBtnLight > span {
+  margin-left: 10px;
+}
+
+.successHeaderMobile {
+  display: none;
+}
+
+@media (width < 645px) {
+  .successQuotationContainer {
+    display: block;
+  }
+
+  .section1 {
+    width: 100%;
+    align-items: center;
+  }
+
+  .section2 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (width < 432px) {
+  .successHeaderPC {
+    font-size: 30px;
+  }
+
+  .share1 {
+    display: none;
+  }
+
+  .share2 {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  .section1 > div > p {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .section2 > div {
+    border: none;
+    width: 100%;
+    min-width: none;
+  }
+}
+
+.paymentContainer {
+  position: absolute;
+  top: 67px;
+  right: -320px;
+  background: white;
+  min-width: 0px;
+  padding: 22px 20px;
+  min-width: 320px;
+  height: 100%;
+  border-left: 2px solid #4A5F98;
+  transition: all 0.3s;
+}
+
+.paymentContainerShow {
+  right: 0;
+}
+
+.paymentContainer > p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1D428A;
+}
+
+.paymentList {
+}
+
+.paymentOptions {
+  display: flex;
+  /* justify-content: space-between; */
+  border: 1px solid #dcd6e9;
+  border-radius: 20px;
+  padding: 11px 18px;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+  color: #1D428A;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.paymentOptions > span {
+  font-weight: 600;
+  color: #1D428A;
+  margin-left: 15px;
+}
+
+.paymentOptions img {
+  height: 24px;
+}
+
+/* CSS for tablet view (both horizontal and vertical) */
+@media (min-width: 433px) and (max-width: 1024px) {
+  .successHeaderPC {
+    font-size: 30px;
+  }
+  .successQuotationContainer {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 40px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .share1 {
+    display: none;
+  }
+
+  .share2 {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  .section1 > div > p {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .section2 > div {
+    border: none;
+    /* width: 100%; */
+    min-width: none;
+  }
+
+}
+
+@media (min-width: 433px) and (max-width: 1200px), (orientation: landscape) {
+  .successHeaderPC {
+    font-size: 30px;
+  }
+  .successQuotationContainer {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    background-color: white;
+    padding-bottom: 40px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .share1 {
+    display: none;
+  }
+
+  .share2 {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  .section1 > div > p {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  /* .section2 > div {
+    border: none;
+    width: 100%;
+    min-width: none;
+  } */
+}

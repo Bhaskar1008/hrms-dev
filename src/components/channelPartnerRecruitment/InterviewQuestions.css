@@ -1,0 +1,97 @@
+/* Interview Questions Styles */
+.interview-container {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.interview-header {
+  background-color: white;
+  color: #FF6D00;
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.export-icon {
+  color: #595959;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.interview-content {
+  padding: 16px;
+  background-color: white;
+}
+
+.question-item {
+  margin-bottom: 16px;
+}
+
+.question-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.question-input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-top: 5px;
+}
+
+.interview-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.reject-button {
+  background-color: white;
+  border: 1px solid #FF0000;
+  color: #FF0000;
+  border-radius: 10px !important;
+  min-width: 80px;
+}
+
+.reject-button:hover {
+  background-color: rgba(255, 0, 0, 0.05);
+  border: 1px solid #E60000;
+  color: #E60000;
+}
+
+.reject-button:focus, 
+.reject-button:active {
+  background-color: white;
+  border: 1px solid #FF0000;
+  color: #FF0000;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+  outline: none;
+}
+
+.approve-button {
+  background-color: #00C288;
+  border: none;
+  border-radius: 10px !important;
+  min-width: 80px;
+}
+
+.approve-button:hover {
+  background-color: #00A877;
+}
+
+.approve-button:focus, 
+.approve-button:active {
+  background-color: #00C288;
+  box-shadow: 0 0 0 2px rgba(0, 194, 136, 0.2);
+  outline: none;
+} 

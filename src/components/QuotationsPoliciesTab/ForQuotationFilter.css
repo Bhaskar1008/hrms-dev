@@ -1,0 +1,18 @@
+.la label {
+    font-weight: 600;
+  }
+  .la .form-item-label {
+    padding: 0px;
+  }
+  .OnlyWuotationFilterButton{
+    margin-top: 2rem;
+    padding: 4px 20px;
+    background-color: #1D428A;
+    color: #fff;
+    border: none;
+  }
+  .OnlyWuotationFilterButton:hover, .OnlyWuotationFilterButton:active, .OnlyWuotationFilterButton:focus{
+    background-color: #1D428A;
+    color: #fff;
+
+  } 

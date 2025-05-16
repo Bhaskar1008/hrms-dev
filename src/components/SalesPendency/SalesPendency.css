@@ -1,0 +1,55 @@
+.wrapper {
+  width: 1300px;
+  max-width: 100%;
+}
+.pendency-main{
+    display: flex;
+    height: 30vh;
+    background-color: rgb(206, 160, 225);  
+}
+.sales-pendency{
+    display: flex;
+    padding: 20px 20px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+  .pendency-head3{
+      display: flex;
+      color: #fff;
+      text-align: left;
+      font-size: 15px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .pendency-head4{
+    display: flex;
+    font-size: 14px;
+    color: #fff;
+    
+  }
+  .pendency-btn{
+      background-color: rgb(206, 160, 225);
+      font-size: 15px;
+      color: #fff;
+      width: 10vw;
+      height: 45px;
+      
+      
+  }
+  @media (max-width:524px) {
+    .pendency-main{
+      display: flex;
+      flex-direction: row;
+    }
+    .sales-pendency{
+      display: flex;
+      flex-direction: row;
+    }
+    
+  }

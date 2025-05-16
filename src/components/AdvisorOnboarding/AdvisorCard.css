@@ -1,0 +1,103 @@
+.advisor-card{
+    padding: 15px;
+    width: 610px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+    /* &:hover{
+        border-color: transparent;
+        box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    } */
+    .font-bold{
+        font-weight: 500;
+    }
+    .advisor-name{
+        color: rgb(0,172,193);
+    }
+    .app-id-label{
+        color: rgb(100,102,102);
+    }
+    .app-id{
+        font-size: 12px;
+        color: #000000;
+    }
+    .adv-detail-label{
+        color: rgb(60,61,61);
+
+    }
+    .adv-text{
+        font-weight: 400;
+        font-size: 12px;
+        color:rgb(150,153,153)
+    }
+    .lead-box{
+        background-color: rgb(255,235,224);
+        padding: 5px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+    .lead-agent{
+        text-align: center;
+        color: rgb(191,89,31);
+    }
+    .lead-status{
+        text-align: center;
+    }
+    .paragraph{
+        margin: 0;
+        font-size: 12px;
+    }
+    
+    .divider{
+        height: 1.5rem;
+        border-left:2px solid rgba(0, 0, 0, 0.06);
+    }
+    .upd-divider{
+        height: 7rem;
+        border-left:2px solid rgba(0, 0, 0, 0.06);
+
+    }
+    .middle-divider{
+        margin: 10px 0 0 0;
+        border-top:2px solid rgba(0, 0, 0, 0.06);
+
+    }
+    .more-icon{
+        cursor: pointer;
+    }
+    .adv-upd-btn{
+        width: 100%;
+        color: #ffffff;
+        padding: 3px 20px;
+        background-color: #00ACC1;
+        border: none;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+    .mb-10{
+        margin-bottom: 10px;
+    /* }
+     .show-toggle-btn{
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+    } */
+}
+.popover-divider{
+    margin: 5px 0 !important;
+}
+
+@media(max-width:610px){
+    .advisor-card{
+        width:98vw;
+    }
+}

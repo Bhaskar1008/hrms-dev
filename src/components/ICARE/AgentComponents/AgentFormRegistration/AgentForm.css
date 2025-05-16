@@ -1,0 +1,346 @@
+.title_wrapper {
+      position: fixed;
+      top: 65px;
+      z-index: 100;
+      width: 100%;
+}
+
+.register-yourself {
+      position: relative;
+      letter-spacing: 0.07em;
+      text-transform: capitalize;
+      font-weight: 600;
+}
+
+.subheader {
+      position: relative;
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 12px 16px;
+      box-sizing: border-box;
+      text-align: left;
+      font-size: 16px;
+      color: #1D428A;
+      /* font-family: Roboto; */
+}
+
+.frame-child {
+      position: absolute;
+      top: 0px;
+      left: 5px;
+      border-radius: 50%;
+      background-color: #4ac6bb;
+      width: 20px;
+      height: 20px;
+}
+
+.div {
+      position: absolute;
+      top: 0px;
+      left: calc(50% - 4px);
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+}
+
+.ellipse-parent {
+      position: relative;
+      width: 30px;
+      height: 20px;
+      flex-shrink: 0;
+}
+
+.mobile-verification {
+      flex: 1;
+      position: relative;
+      font-size: 12px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #18191b;
+      text-align: left;
+}
+
+.frame-item {
+      position: absolute;
+      top: 0px;
+      left: 5px;
+      border-radius: 50%;
+      background-color: #a3acb2;
+      width: 20px;
+      height: 20px;
+}
+
+.component-29 {
+      display: none;
+      position: relative;
+      background-color: #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+      border-top: 1px solid #e1e2e2;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 12px 16px;
+      gap: 4px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      /* font-family: Roboto; */
+}
+
+.new-agentmitra-registration {
+      align-self: stretch;
+      position: relative;
+      text-transform: capitalize;
+      font-weight: 600;
+}
+
+.to-know-you {
+      position: relative;
+      font-size: 12px;
+      letter-spacing: 0.07em;
+      line-height: 18px;
+      color: #4a5259;
+      display: inline-block;
+}
+
+.new-agentmitra-registration-f-parent {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 12px;
+      text-align: left;
+      font-size: 16px;
+      color: #1D428A;
+      /* font-family: Roboto; */
+}
+
+.applicant-account-form {
+      font-size: 16px;
+      text-transform: capitalize;
+      font-weight: 600;
+      /* font-family: Roboto; */
+      color: #1D428A;
+      text-align: left;
+      display: inline-block;
+}
+
+.agent_form .form_wrapper {
+      margin-top: 170px;
+      padding: 0 16px;
+}
+
+.indicates-mandatory-fields {
+      width: 100%;
+      position: relative;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      line-height: 130%;
+      display: inline-block;
+      font-family: Roboto;
+      color: #e00000;
+      text-align: left;
+}
+
+.profile_form .ant-modal-content .ant-modal-header {
+      background-color: #1D428A;
+}
+
+.profile_form .ant-modal-title {
+      text-align: left;
+      color: #fff;
+}
+
+.profile_form .ant-modal-close {
+      color: #fff;
+}
+
+.a-referral-link {
+      width: 100%;
+      position: relative;
+      font-size: 12px;
+      display: inline-block;
+      /* font-family: Roboto; */
+      color: #4a5259;
+      text-align: left;
+      opacity: 0.8;
+}
+
+/* verify mobile modal css start */
+.verify_mobile_modal .ant-title {
+      color: #1D428A;
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      /* font-family: Roboto; */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+}
+
+.verify_mobile_modal .ant-modal-header {
+      padding: 16px 0 0 0;
+      border-bottom: none;
+      border-radius: 4px;
+}
+
+.verify_mobile_modal .ant-modal-body {
+      padding: 13px 24px 16px 24px;
+}
+
+.verify_mobile_modal .ant-modal-content {
+      border-radius: 4px;
+      max-height: 346px;
+}
+
+.verify_mobile_modal .agent_login_otp_wrapper .otp-input {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 16px;
+      margin-right: 5px;
+      padding: 8px 8px;
+      color: #000;
+}
+
+.verify_mobile_modal .agent_login_otp_wrapper .wrapper-main-box .otp_title_text {
+      text-align: center;
+}
+
+.verify_mobile_modal .enter-the-otp-container {
+      color: #4a5259;
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      /* font-family: Roboto; */
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.48px;
+      text-align: center;
+}
+
+.verify_mobile_modal .agent_login_otp_wrapper .otp-container {
+      margin-bottom: 12px;
+}
+
+.desktop-register-yourself {
+      width: 100%;
+      position: relative;
+      font-size: 20px;
+      letter-spacing: 0.07em;
+      text-transform: capitalize;
+      font-weight: 500;
+      color: #1D428A;
+      text-align: left;
+      display: inline-block;
+}
+
+.nextbtn .ant-btn{
+  border: none
+}
+
+/* verify mobile modal css end */
+@media (min-width: 1440px) {
+      .main_container {
+            max-width: 1440px;
+            margin: auto;
+      }
+
+      .main_container .form_wrapper {
+            max-width: 730px;
+      }
+}
+
+@media (min-width: 768px) {
+      .main_container {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            padding: 0 16px;
+            margin-top: 30px;
+      }
+
+      .main_container .title_wrapper {
+            min-width: 240px;
+      }
+
+      .main_container .new-agentmitra-registration {
+            font-size: 28px;
+      }
+
+      .main_container .title_wrapper {
+            display: flex;
+            width: 100%;
+            position: relative;
+            top: 87px;
+            z-index: 0;
+            height: 200px;
+            align-items: end;
+      }
+
+      .agent_form .form_wrapper {
+            margin-top: 87px;
+            max-width: 730px;
+      }
+
+      .main_container .component-29 {
+            display: block;
+            flex-direction: column;
+            display: flex;
+            align-items: flex-start;
+            background: none;
+            position: static;
+            box-shadow: none;
+            gap: 40px;
+            border-top: none;
+            width: 20%;
+            padding: 4px 8px;
+      }
+}
+
+.next-button {
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      background: #1D428A;
+      border: 1px solid #1D428A;
+      box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+      border-radius: 12px;
+      padding: 0px 20px;
+      color: #fff;
+      width: 8rem;
+      height: 48px;
+      padding: 6.4px 16px;
+}
+
+.next-button:hover,
+.next-button:active,
+.next-button:focus {
+      justify-content: center;
+      align-items: center;
+      background: #1D428A;
+      border: 1px solid #1D428A;
+      box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+      border-radius: 12px;
+      color: #fff;
+}
+.input-box {
+      display: flex;
+      height: 40px;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid var(--Neutral-10, #e2e2e2);
+      background: var(--White-10, #fff);
+    }

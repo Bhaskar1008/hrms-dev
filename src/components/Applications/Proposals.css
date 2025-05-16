@@ -1,0 +1,116 @@
+.proposal-main{
+    /* display: flex; */
+    height: 700vh;
+    /* margin:  0 auto;
+    margin-left: 1vw; */
+    background-color: #f7f7f7;
+}
+.benefit-illustrator{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 2rem;
+}
+.prepayment-card{
+    margin-left: 0 auto;
+    padding: 20px 20px;
+    /* height: 200vh; */
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow:  1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.prepaymentreview-btn1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    width: 10vw;
+}
+.prepaymentreview-btn{
+    display: flex;
+    background-color: rgb(59, 55, 30);
+    color: white;
+    width: 10vw;
+    font-size: 15px;
+    height: 5vh;
+    padding-left: 3vw;
+}
+.benefit-illustrator-first{
+    height: 55rem;
+    width: 50rem;
+    background-color:#FFFFFF;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%)
+
+}
+.benefit-illustrator-second{
+    height: 55rem;
+    width: 28rem;
+    background-color:#FFFFFF;
+    /* float: right; */
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%)
+}
+.generate-BI{
+    height: 6rem;
+    width: 50.3rem;
+    background-color:#FFFFFF;
+    display: flex;
+    margin: 30px;
+    margin-left: 40px;
+    /* flex-wrap: wrap; */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%)
+}
+/* .BI-Btn{
+    
+    
+} */
+/* .benefit-illustrator-summary u{
+    font-size: 16px;
+    padding-top: 2rem;
+
+} */
+.input-div{
+    margin: 1rem;
+}
+
+.input-container:visited{
+    border: none;
+}
+.input-container{
+    width: 22rem;
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid;
+    border-bottom-color: rgb(153, 153, 153);
+}
+.p-title{
+    font-size: 14px;
+    /* padding-top: 10px; */
+    /* padding-left: 10px; */
+    color: #9d9d9d;
+    font-family: robotoregular
+}
+.p-title2{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #9d9d9d;
+    font-family: robotoregular
+}
+.p-details{
+    color: #565656;
+    font-family: robotobold;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}

@@ -1,0 +1,290 @@
+
+.main-classinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.next-buttoninfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: #1D428A;
+    border: 1px solid #1D428A;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 12px;
+    padding: 18px 18px;
+    color: #fff;
+  }
+  
+  .next-buttoninfo:hover {
+    background: #1D428A;
+    border: 1px solid #1D428A;
+
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 12px;
+    color: #fff;
+  }
+  
+  .prev-buttoninfo {
+    display: flex;
+    padding: 0.4rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: #fff;
+    border: 1px solid #1D428A;
+    margin-right: 10px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 12px;
+    padding: 18px 18px;
+    color: #1D428A;
+  }
+  
+  .prev-button:hover {
+    background: #fff;
+    border: 1px solid #1D428A;
+    /* drop-shadow/button-primary */
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 12px;
+    color: #1D428A;
+  }
+  
+  .button-Motor{
+    display: flex;
+    height: 77px;
+    padding: 19px 30px;
+    align-items: center;
+    gap: 25px;
+    flex: 0.4 0 0;
+    border-radius: 20px;
+    background: #FFF;
+    color: #1D428A;
+    font-weight: 600;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    margin-right: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .activeforMotorButtonPrice:hover, .activeforMotorButtonPrice:active, .activeforMotorButtonPrice:focus{
+    border: 2px solid #1D428A;
+    color: #1D428A;
+  }
+  .activeforMotorButtonPrice{
+    border: 2px solid #1D428A;
+    display: flex;
+    height: 77px;
+    padding: 19px 30px;
+    align-items: center;
+    gap: 25px;
+    flex: 0.4 0 0;
+    border-radius: 20px;
+    background: #FFF;
+    color: #1D428A;
+    font-weight: 600;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    margin-right: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+  .button-Motor:active, .button-Motor:hover, .button-Motor:focus{
+    color: #1D428A;
+  }
+  
+  .ctplfleet-span{
+    display: grid;
+    text-align: initial;
+  }
+  .second-span-ctpl{
+    color: var(--lilac-50, #4A5F98);
+  
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  text-wrap: initial;
+  }
+  
+
+  
+  .btndiv {
+    display: flex;
+  
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .next {
+    display: flex;
+    height: 48px;
+    padding: 6.4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffff;
+    border-radius: 12px;
+    border: 1px solid #1D428A;
+    background:  #1D428A;
+  width: 8rem;
+ 
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  }
+  .next:hover{
+    color: #ffff;
+    border: 1px solid #1D428A;
+    background:  #1D428A;
+  }
+  
+  .shareDiv img {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    padding: 6.4px;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2px;
+    
+    border-radius: 28.8px;
+background: #FFF;
+  }
+  
+  .shareDiv {
+    display: flex;
+    background: #4ac6bb;
+    border-radius: 12px;
+    padding: 1px 2px;
+    margin: 1px;
+    font-size: 16px;
+    align-items: center;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 360px;
+    margin-top: 24px;
+   
+  }
+  
+  .shareDiv > p {
+    margin: 0;
+    margin-inline: 10px;
+   
+  }
+  @media (min-width: 320px) {
+  
+    .slect-methodsinfo {
+      border: 'none';
+      width: 100px !important;
+      margin-left: '10px';
+      margin-right: '10px';
+    }
+    .policyHeading .ant-select-single.ant-select-show-arrow .ant-select-selection-item{
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .policyHeading .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+      background-color: #fafafa;
+      border: none;
+      border-bottom: 1px solid #b9b8b8;
+      border-radius: 2px;
+    }
+    .policyHeading h3{
+      color: var(--Primary-Oona-Purple, #1D428A);
+
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; 
+margin-top: 15px;
+  
+    }
+  
+    .policy-type h2{
+      text-transform: none;
+      font-size: 18px;
+    }
+    .radioValue{
+      margin-left: 1px;
+    }
+    .questionDiv ul li h3{
+      font-size: 18px;
+      margin-right: 0px;
+    }
+    .policyHeading .ant-form-item{
+      margin-bottom: 15px;
+      }
+      .next-button-headerinfo {
+        margin-top: 15px;
+        display: flex;
+      }
+  }
+  @media (min-width: 920px) {
+    .main-classinfo {
+      padding: 0px 10px;
+    }
+    .slect-methodsinfo {
+      border: 'none';
+      width: 220px !important;
+      margin-left: '10px';
+      margin-right: '10px';
+    }
+    .policyHeading .ant-select-single.ant-select-show-arrow .ant-select-selection-item{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .policyHeading .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+      background-color: #fafafa;
+      border: none;
+      border-bottom: 1px solid #b9b8b8;
+      border-radius: 2px;
+    }
+    .policyHeading  .ant-form-item{
+    margin-bottom: 25px;
+    }
+    .policyHeading h3{
+      color:#1D428A ;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .policy-type h2{
+      text-transform: none;
+      font-size: 1.5625rem;
+    }
+    .radioValue{
+      margin-left: 1px;
+    }
+    .questionDiv ul li h3{
+      font-size: 23px;
+      margin-right: 10px;
+    }
+  
+    .next-button-headerinfo {
+      margin-top: 20px;
+      display: flex;
+    padding: 0.4rem 1rem;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    }
+  }
+  @media(max-width:767px){
+    .linkbox{
+      width: 21rem;
+    }
+    .copy{
+      margin-left: 0px;
+      padding: 4px;
+    }
+    .button-Motor{
+      width: 100%;
+    }
+    .next{
+      width: 100%;
+    }
+  }

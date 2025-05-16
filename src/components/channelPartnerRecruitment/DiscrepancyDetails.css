@@ -1,0 +1,82 @@
+/* Discrepancy Details Styles */
+.discrepancy-container {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.discrepancy-header {
+  background-color: white;
+  color: #FF6D00;
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.discrepancy-content {
+  padding: 16px;
+  background-color: white;
+}
+
+.discrepancy-tabs {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.discrepancy-tab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.discrepancy-tab.active {
+  background-color: #00BCD4;
+  color: white;
+}
+
+.discrepancy-info {
+  padding: 16px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.discrepancy-field {
+  margin-bottom: 12px;
+}
+
+.discrepancy-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.discrepancy-field.half {
+  width: 48%;
+}
+
+.field-label {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.field-value {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+} 

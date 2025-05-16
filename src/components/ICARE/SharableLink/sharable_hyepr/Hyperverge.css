@@ -1,0 +1,244 @@
+/* Custom */
+.fs-24 {
+  font-size: 24px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.purple-text {
+  color: #1D428A;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.event-none {
+  pointer-events: none;
+}
+
+/* CSS */
+.hyper-box {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+.checking-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.check-btn-hyper {
+  height: 65px;
+  padding: 19px 30px;
+  border-radius: 20px;
+  background: #fff !important;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+  font-size: 18px;
+  font-weight: 600;
+  color: #1D428A !important;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 6px;
+}
+.check-btn-hyper.active {
+  border: 2px solid !important;
+  border-color: #1D428A !important;
+}
+/* .check-btn-hyper:hover {
+    border-color: #d9d9d9;
+} */
+.docId.ant-input {
+  border-radius: 5px !important;
+}
+.input-box {
+  margin-bottom: 6px !important;
+}
+.valid-user,
+.valid-user:hover,
+.valid-user.ant-btn:focus,
+.valid-user.ant-btn:active {
+  background-color: #5ba46a !important;
+  border-color: #5ba46a !important;
+}
+.invalid-user,
+.invalid-user:hover,
+.invalid-user.ant-btn:focus,
+.invalid-user.ant-btn:active {
+  background-color: #bb251a !important;
+  border-color: #bb251a !important;
+}
+
+.main-component {
+  padding: unset;
+  width: 100% !important;
+  display: block !important;
+  background: white;
+  box-shadow: none;
+}
+.main-component h2 {
+  margin-bottom: 14px !important;
+}
+
+.ant-select-status-error.ant-select:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  background-color: #fff;
+  border: 1px solid #ff4d4f !important;
+  height: 42px;
+}
+
+.verified-btn {
+  display: flex;
+  height: 3rem;
+  padding: 0.4rem 0.9375rem;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.625rem;
+  gap: 0.625rem;
+  flex: 1 0;
+  align-self: stretch;
+  border-radius: 0.75rem;
+  border: 1px solid var(--lilac-50, #4A5F98);
+  background: var(--primary-oona-purple, #1D428A);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  width: 100%;
+}
+.verified-btn:hover,
+.verified-btn.ant-btn:focus,
+.verified-btn.ant-btn:active {
+  border: 1px solid var(--lilac-50, #4A5F98);
+  background: var(--primary-oona-purple, #1D428A);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  color: #fff;
+}
+
+/* Media Query */
+@media (max-width: 767px) {
+  .varified-btn,
+  .clear {
+    width: 100%;
+  }
+}
+
+/* Hyperverge CSS */
+.fw-bold {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #000;
+}
+.browser-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 16px;
+  width: 100%;
+  height: 87px;
+  border: 1px solid #1D428A;
+  border-radius: 18px;
+}
+.browse-btn {
+  border-radius: 12px;
+  padding: 0px 20px;
+  color: #fff;
+  height: 48px;
+  width: 116px;
+}
+.browse-btn:hover {
+  color: white;
+}
+
+.hv-instruction-upload-button {
+  white-space: nowrap !important;
+}
+.hv-instruction-upload-button .hv-upload-text {
+  width: 100% !important;
+  text-align: center !important;
+}
+.doc-box {
+  display: flex;
+  align-items: center;
+}
+
+.doc-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.doc-text {
+  font-size: 14px;
+  color: #000000d9;
+  margin-bottom: 0;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 230px !important;
+}
+.signature-name {
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.doc-delete-icon {
+  /* opacity: 0; */
+  margin-left: 12px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+.anticon {
+  margin-top: 2px;
+}
+
+.doc-text:hover {
+  background: #f1f1f1;
+}
+
+/* .doc-box:hover .doc-delete-icon {
+    opacity: 1;
+  } */
+
+.child11 {
+  color: #fff;
+  padding: 0;
+  font-size: 25px;
+  border-radius: 10px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.points-none {
+  pointer-events: none;
+}
+
+/* Media Query */
+@media screen and (max-width: 500px) {
+  .doc-text-container {
+    max-width: 60% !important;
+  }
+  .doc-text {
+    max-width: 219px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .doc-text {
+    max-width: 118px !important;
+  }
+}

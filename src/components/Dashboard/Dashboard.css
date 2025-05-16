@@ -1,0 +1,146 @@
+.dashboard-main {
+    margin-top: 1vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow:  1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.dashboard-mains {
+    margin-top: 1vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding: 5px 5px;
+    border-radius: 5px;
+    height: 60vh;
+    background-color: #fff;
+    box-shadow:  1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.dashboard-select {
+    width: 12vw;
+    font-size: 16px;
+    border: none;
+   
+}
+.dashboard-title {
+    background-color: #191970;
+    color: #fff;
+    width: 90%;
+    height: 6vh;
+}
+.dashboard-head4{
+    padding-left: 2vw;
+    margin-top: 1vw;
+    font-size: 14px;
+    padding-left: 2vw;
+    font-weight: bold;
+}
+.table-main {
+ margin-top: 1vw;
+ margin-left: 4vw;
+ margin-right: 4vw;
+ width: 80%;
+ padding: 10px 10px;
+ border-radius: 5px;
+ background-color: #fff;
+ box-shadow:  1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+ }
+
+.table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+}
+.th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+    
+.contact-detail-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0 10px;
+    margin-top: 1vw;
+    
+}
+.contact-detail-form>.ant-col{
+    flex:0 1 30%;
+
+}
+.chart-main {
+    padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+  width: 150vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wrapper {
+    width: 1300px;
+    max-width: 100%;
+  }
+.renewal-table{
+    margin-left: 2vw;
+    /* margin-right: 6vw; */
+  }
+.form-item-name{
+    margin-bottom: 5px;
+}
+.export-button{
+    padding-left: 1px;
+    
+}
+.export-btn{
+    color: #fff;
+    border-color: orange;
+    margin-top: 3vw;
+    margin-left: 1px;
+    width: 10vw;
+    /* font-weight: bold; */
+    font-size: 12px;
+    background-color: orangered;
+}
+.export-btn:hover {
+    color: #fff;
+    border-color: orange;
+    background-color: orangered;
+}
+
+.vl {
+    
+    border-left: 2px solid Gainsboro;
+    height: 300px;
+  }
+  .chart-main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+  width: 150vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.div1 {
+    margin-top: 3vw;
+    width: 141px;
+    height: 36px;
+    border: 1px solid #ddd;
+  }

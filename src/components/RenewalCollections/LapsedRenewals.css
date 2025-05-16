@@ -1,0 +1,58 @@
+.page-holder{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.page-holder>ul>.ant-pagination-item a{
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #1D428A;
+}
+.page-holder>ul>.ant-pagination-item-active a{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #1D428A;
+}
+
+.page-holder>ul>.ant-pagination-item {
+    font-size: 10px;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #1D428A;
+    border-color: #E8E8E8;
+}
+.page-holder>ul>.ant-pagination-item-active{
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+    background-color: 545454;
+    border-color: #E8E8E8;
+}
+
+.page-holder>ul>.ant-pagination-next>button,
+.page-holder>ul>.ant-pagination-prev>button{
+    color: #1D428A;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: none;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+}
+
+.page-holder>ul>.ant-pagination-options{
+    display: none;
+}
+
+.icon-size{
+    font-size: 50px;
+    color: #1FB3AB;
+    position: sticky;
+    right: 0;
+    left: 90vw;
+    bottom: 5vh;
+}

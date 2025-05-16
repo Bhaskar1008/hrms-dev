@@ -1,0 +1,140 @@
+
+.main {
+    background-color: #fff;
+  
+    height: 100vh;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  .success_img {
+    max-width: 100vh;
+    max-height: 100vh;
+  }
+  .success_msg {
+    color: var(--primary-oona-purple, #1D428A);
+    text-align: center;
+    font-size: 51px;
+  
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+  }
+  .quote-msg {
+    display: flex;
+    /* width: 383px; */
+    flex-direction: column;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: #18191b;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  
+ .quote-msg2{
+    margin-top: 0.5rem;
+    color: var(--neutrals-125, #818F99);
+text-align: center;
+
+
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 1.2rem */
+ }
+
+  .btn_parent {
+    display: flex;
+  
+    margin-top: 1rem;
+    display: flex;
+    height: 40px;
+    padding: 6.4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .back_btn {
+    border-radius: 12px;
+    border: 1px dashed, #d9d9d9;
+    background: #fff;
+  
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+    color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+text-align: center;
+
+
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 1.1375rem */
+letter-spacing: 0.00875rem;
+  }
+  .back_btn:hover {
+    border: 1px dashed, #d9d9d9;
+    background: #fff;
+    color: #000;
+  }
+  .print_btn {
+    border-radius: 12px;
+    border: 1px solid #1D428A;
+    background: #1D428A;
+  
+    
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+    color: var(--character-primary-inverse, #FFF);
+text-align: center;
+
+
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 1.1375rem */
+letter-spacing: 0.00875rem;
+  }
+  .print_btn:hover {
+    border: 1px solid #1D428A;
+    background: #1D428A;
+    color: white;
+  }
+  .quote-msg3{
+    margin-top: 3rem;
+    color: var(--neutrals-250, #18191B);
+text-align: center;
+
+
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 1.05rem */
+  }
+  .link_box {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .link {
+    display: inline-block;
+
+width: 20rem;
+
+    height: 2.75rem;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid #343d46;
+    background: #fff;
+  }
+  .img{
+    margin-left: 5rem;
+  }
+  @media (max-width: 767px) {
+  }
+  

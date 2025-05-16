@@ -1,0 +1,45 @@
+.icon-size {
+  font-size: 50px;
+  color: #1fb3ab;
+  position: fixed;
+  right: 0;
+  left: 93vw;
+  /* bottom: 35vh; */
+}
+
+.GoalModal {
+  width: 330px !important;
+}
+
+.GoalModal .ant-modal-header .ant-modal-title {
+  font-weight: 750;
+}
+
+.GoalModal .ant-modal-body,
+.GoalModal .ant-modal-footer {
+  background-color: rgb(247, 247, 247);
+}
+
+.GoalModal .ant-modal-body .modal-body {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  padding: 13px;
+  background: #fff;
+}
+
+.GoalModal input {
+  padding: 5px 12px;
+  background: #fff;
+  box-shadow: 0px 2px 2px #00000029;
+  font-size: small;
+}
+
+.GoalModal .ant-modal-footer {
+  display: none;
+}
+
+.GoalModal .ant-form-item-explain-error {
+  font-size: smaller;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,253 @@
+body {
+  background-color: #f7f7f7 !important;
+}
+.header {
+  background-image: url("https://pocbanca.iorta.in/assets/header-tabs.png");
+  height: 100px;
+  padding: 25px 40px;
+  background-size: 100% 100%;
+}
+.header h1 {
+  color: #00acc1;
+}
+
+.ant-btn.primaryBtn {
+  background-color: rgb(60, 61, 61);
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.ant-btn.secondaryBtn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(60, 61, 61);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.tabs {
+  padding: 20px 0px;
+}
+
+.mainTab {
+  padding: 2% 3%;
+  padding-bottom: 15px;
+  background-color: #fff;
+}
+
+hr {
+  margin: 10px 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+}
+
+.active_tabs_button {
+  border: none;
+  /* margin: 0 6px; */
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  padding: 5px;
+  cursor: pointer;
+  /* width: 90px; */
+  color: #fff;
+  background-color: #00acc1;
+  width: 32%;
+  cursor: pointer;
+}
+
+.kpiDrop .tabs_button {
+  border: none;
+  /* margin: 0 6px; */
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  padding: 5px;
+  cursor: pointer;
+  /* width: 90px; */
+  color: #000;
+  width: 80%;
+  cursor: pointer;
+}
+
+button.tabs_button img,
+button.active_tabs_button img {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+}
+
+/* my style */
+
+.dashboard_user {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 1%;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 8px 8px;
+  margin: 8px 8px;
+}
+.card-heading h4 {
+  color: #09b2bd;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.card-heading {
+  margin-bottom: 17px;
+}
+
+.parent h3 {
+  font-size: 27px;
+  color: #777777;
+  font-weight: 700;
+}
+.parent p {
+  margin-top: 0px;
+  font-size: 13px;
+  color: #777777;
+  margin-bottom: 0px !important;
+  font-weight: bold;
+}
+.child1 h3 {
+  font-size: 27px;
+  color: red;
+  font-weight: 700;
+}
+.child1 p {
+  margin-top: -5px;
+  font-size: 13px;
+  color: red;
+  margin-bottom: 0px !important;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -8px;
+  padding: 10px;
+}
+
+.flex-data h3 {
+  font-weight: 700;
+  font-size: 17px;
+  color: #515253;
+}
+@media screen and (min-width: 320px) {
+  .flex-data {
+    display: block;
+  }
+  .flex-data h3 {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px !important;
+  }
+  /* .ant-select-arrow{
+    margin-top: -12px!important;
+  } */
+  .card-heading h4 {
+    font-size: 15px;
+  }
+  .card {
+    text-align: justify;
+    align-items: inherit;
+  }
+}
+@media screen and (min-width: 920px) {
+  .flex-data {
+    display: flex;
+  }
+  /* .ant-select-arrow {
+    margin-top: 0px !important;
+  } */
+  .card-heading h4 {
+    font-size: 14px;
+  }
+  .flex-data h3 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+.refesh {
+  border: none;
+  color: #09b2bd;
+  font-weight: bold;
+}
+
+.parent h3 {
+  font-size: 14px;
+}
+.headerTab_data{
+  background-color: #003c64;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-top: -1rem;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  color: #fff;
+}
+.headerTab_data h1{
+  font-size: 27px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.ant-select-arrow {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 50%!important;
+  right: 11px;
+  width: 12px;
+  height: 12px;
+  margin-top: 0px!important;
+  /* color: rgba(0, 0, 0, 0.25); */
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.kpiSelectors:not(.ant-select-customize-input) .ant-select-selector{
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 3px 5px rgba(0, 0, 0, 0.23) !important;
+}

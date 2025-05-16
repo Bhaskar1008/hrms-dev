@@ -1,0 +1,82 @@
+
+  .mainContainer{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  }
+  .image-container{
+    display: inline-flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* gap: 1rem; */
+  }
+  .success{
+    width: 15rem;
+height: 15rem;
+  }
+  .message-container{
+    display: flex;
+    width: 26.25rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .message{
+    align-self: stretch;
+    color: var(--primary-oona-purple, #1D428A);
+text-align: center;
+
+
+font-size: 2.5625rem;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; 
+  }
+  .message2{
+    margin-top: 1rem;
+    align-self: stretch;
+    color:  #18191B;
+text-align: center;
+
+
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: 120%;
+  }
+  .dashboard{
+    display: flex;
+    height: 2.5rem;
+    padding: 0.4rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; 
+    letter-spacing: 0.00875rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; 
+    letter-spacing: 0.00875rem;
+}
+
+
+@media(max-width:767px){
+  .dashboard{
+    width: 22rem;
+  }
+  .message2{
+    font-size: 1.2rem;
+    width: 23rem;
+    font-size: 1.2rem;
+    margin-left: 9px;
+  }
+}
+  

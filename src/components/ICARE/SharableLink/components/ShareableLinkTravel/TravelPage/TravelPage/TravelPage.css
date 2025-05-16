@@ -1,0 +1,235 @@
+.parent-element {
+  display: flex;
+  padding: 20px 70px;
+}
+.left-side {
+  flex: 1;
+  margin-top: 10px;
+}
+.dashbtn {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.4rem 1rem;
+  border: 1px dashed #d9d9d9;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+
+  
+}
+.RsCustomer{
+  color:  #1D428A;
+
+font-size: 1.5625rem;
+
+font-weight: 600;
+}
+  
+
+
+
+.right-side {
+  flex: 2;
+  margin-right: 100px;
+}
+.rsheading_1 {
+  color: var(--primary-oona-purple, #1D428A);
+
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.875rem */
+}
+.policy ul {
+  font-size: x-large;
+}
+.policy ul li {
+  color: #1D428A;
+}
+.la label {
+  color: #000;
+  font-weight: 600;
+}
+.policyHolder {
+  margin-top: 2.125rem;
+  color: var(--primary-oona-purple, #1D428A);
+
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 2.1rem */
+}
+.inputboxx {
+  display: flex;
+  height: 2.75rem;
+  padding: 0.625rem 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--neutrals-125, #818f99);
+  background: var(--neutrals-white, #fff);
+}
+
+.btnParentDiv {
+  display: flex;
+  /* width: 23.25rem; */
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.Rsconfirm_btn {
+  display: flex;
+  height: 3rem;
+  width: 8rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  /* width: 4.0625rem; */
+  border-radius: 0.75rem;
+  border: 1px solid var(--primary-oona-purple, #1D428A);
+  background: var(--primary-oona-purple, #1D428A);
+
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  color: var(--character-primary-inverse, #fff);
+  text-align: center;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 1.1375rem */
+  letter-spacing: 0.00875rem;
+
+}
+.Rsconfirm_btn:hover {
+  background: var(--primary-oona-purple, #1D428A);
+
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+  color: var(--character-primary-inverse, #fff);
+}
+.back_btn {
+  display: flex;
+  width: 8rem;
+  height: 3rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--lilac-50, #4A5F98);
+  background: var(--neutrals-white, #fff);
+
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+  color: var(--lilac-75, #1D428A);
+  text-align: center;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 1.1375rem */
+  letter-spacing: 0.00875rem;
+}
+.back_btn:hover {
+  border: 1px solid var(--lilac-50, #4A5F98);
+  background: var(--neutrals-white, #fff);
+  color:#1D428A ;
+}
+
+@media (max-width: 767px) {
+  .parent-element {
+    padding: 10px 8px;
+    flex-direction: column;
+    margin: 4px;
+    /* background-color: #fff; */
+  }
+  .left-side .ant-btn-dashed {
+    display: none;
+  }
+  .RsCustomer {
+    width: 100vw;
+    height: 92px;
+    font-size: 1.5625rem;
+    position: absolute;
+
+    margin-left: -11px;
+    padding: 0.5rem 1rem;
+   
+    top: 60px;
+
+    background: #fff;
+  }
+  .heading_2 {
+    display: flex;
+    padding: 1.25rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    align-self: stretch;
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    font-size: 1.5rem;
+    /* background-color: #fff; */
+    width: 21.75rem;
+  }
+  .policyHolder {
+    font-size: 1.5625rem;
+
+    font-weight: 600;
+  }
+  .policy li {
+    list-style: none;
+  }
+  .policy ul {
+    padding-left: 0px;
+    width: 22rem;
+  }
+
+  .Rsconfirm_btn {
+    height: 3rem;
+    width: 10rem;
+  }
+  .back_btn {
+    height: 3rem;
+    width: 10rem;
+  }
+  .inputboxx {
+    width: 21rem;
+  }
+  .btnParentDiv {
+    width: 23.25rem;
+    margin-bottom: 4rem;
+  }
+  .policyHolder{
+    margin-top: 0rem;
+  }
+  .btnParentDiv{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 500) {
+  .RsCustomer {
+    top: 20px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  .right-side{
+    margin-right: 0px;
+    margin-left: 15px;
+  }
+  .back_btn{
+    width: 12rem;
+  }
+  .Rsconfirm_btn{
+    width: 12rem;
+  }
+  .btnParentDiv{
+    margin-top: 1rem;
+  }
+}

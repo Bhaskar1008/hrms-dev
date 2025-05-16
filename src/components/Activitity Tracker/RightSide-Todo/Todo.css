@@ -1,0 +1,73 @@
+.Todo-Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e6e9eb;
+}
+.Todo-CreateBtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Todo-CreateBtn svg {
+  font-size: 14px;
+  color: #00acc1; /* Icon color */
+  margin-right: 6px; /* Space between icon and text */
+}
+
+.Todo-CreateBtn .TaskLabel {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00acc1;
+  text-transform: uppercase;
+}
+
+.Todo-Button {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.Todo-Button div:nth-child(1) {
+  margin-right: 16px;
+}
+/* .Todo-Button-Todo button, .Todo-Button-Archive button{
+    width: 100px;
+    border: none;
+} */
+
+.TodoButtons {
+  min-width: 120px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  background-color: transparent;
+  color: #888888;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.TodoButtons.active {
+  color: #FF6D00;
+  border-bottom: 2px solid #FF6D00;
+}
+
+@media (max-width: 860px) {
+  .TodoButtons {
+    min-width: 100px;
+  }
+}
+@media (min-width: 320px) {
+  /* .active {
+    background-color: #00acc1;
+    color: #fff;
+  } */
+  .TodoCards {
+    margin: 15px 0;
+  }
+}

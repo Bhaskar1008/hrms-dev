@@ -1,0 +1,228 @@
+/* Progress Tracking Styles */
+.progress-tracking-container {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-tracking-header {
+  background: linear-gradient(to right, #008DF0, #00AEC1);
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.progress-tracking-card {
+  border-radius: 0 !important;
+  box-shadow: none;
+  border: none;
+}
+
+.progress-tracking-card .ant-card-body {
+  padding: 12px 16px;
+  background-color: white;
+}
+
+.progress-tracking-content {
+  padding: 12px 16px;
+  background-color: white;
+}
+
+/* Status Row */
+.status-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.status-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #737373;
+}
+
+.status-value {
+  margin-left: 139px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status-value.in-progress {
+  color: #FF9F1C;
+  font-weight: bold;
+}
+
+/* Nested Card */
+.nested-card {
+  background-color: #f5f7fa;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* Stages Header */
+.stages-header {
+  margin-bottom: 12px;
+}
+
+.stages-header span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #033089;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  margin-bottom: 20px;
+}
+
+.progress-with-label {
+  position: relative;
+  height: 8px;
+}
+
+.progress-percent-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF9F1C;
+  color: white;
+  padding: 0 4px;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 2;
+  height: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  border-radius: 3px;
+}
+
+.accreditation-progress {
+  height: 8px !important;
+}
+
+/* Override Ant Design progress bar styles */
+.accreditation-progress .ant-progress-inner {
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  height: 8px !important;
+}
+
+.accreditation-progress .ant-progress-bg {
+  border-radius: 4px;
+  height: 8px !important;
+}
+
+.accreditation-progress .ant-progress-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Progress Steps */
+.progress-steps {
+  position: relative;
+}
+
+.progress-steps::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #00AEC1;
+  z-index: 1;
+}
+
+.step-item {
+  display: flex;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.step-item:last-child {
+  margin-bottom: 0;
+}
+
+.step-marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #00AEC1;
+  margin-right: 12px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.step-item.completed .step-marker {
+  background-color: #00AEC1;
+}
+
+.step-item.shared .step-marker {
+  background-color: #00AEC1;
+}
+
+.step-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.step-status {
+  font-size: 12px;
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.step-status.completed {
+  color: #00AEC1;
+}
+
+/* .step-status.shared {
+  color: #00AEC1;
+} */
+
+.check-icon {
+  margin-right: 4px;
+  font-size: 12px;
+}
+
+.step-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-icon {
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+
+.share-icon {
+  color: #2196F3;
+}
+
+.copy-icon {
+  color: #4CAF50;
+} 

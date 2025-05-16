@@ -1,0 +1,43 @@
+{
+  "errCode": -1,
+  "errMsg": [
+    {
+      "_id": "618e3551ec9bcc5892344bc0",
+      "showComment": false,
+      "leadId": {
+        "_id": "618ba9fb881d494838430563",
+        "salutation": "",
+        "firstName": "sonam",
+        "primaryMobile": 9811651177
+      },
+      "partnerId": null,
+      "customerId": null,
+      "teamMember_clone": [],
+      "statusReason": "",
+      "isLeadFailed": false,
+      "manuallyrenewalCustomer": [],
+      "clientVisit": "",
+      "teamMember": [],
+      "manuallycustomerAdded": "false",
+      "statusType": "open",
+      "tata_appointment_type": "",
+      "durationType": "customedatetime",
+      "appointment_type": "existingapplication",
+      "start_time_MS": 1636801200000,
+      "end_time_MS": 1636804800000,
+      "start_time": 39600000,
+      "start_date": 1636761600000,
+      "userId": {
+        "_id": "616e908c43ed727bbac8d2d4",
+        "primary_email": "Duttprasad.Birmole@tataaig.com"
+      },
+      "end_time": 43200000,
+      "end_date": 1636761600000,
+      "event_type": "training",
+      "event_name": "training",
+      "event_description": "Duttprasad Birmole will meet Sonam for Training",
+      "created_date": 1636709713489
+    }
+  ],
+  "dbDate": "Fri Nov 12 2021 09:35:13 GMT+0000 (Coordinated Universal Time)"
+}

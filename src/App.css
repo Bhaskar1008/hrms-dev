@@ -1,0 +1,81 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+  }
+  h1,h2,h3,h4,h5,h6{
+      font-weight: bold;
+      margin-bottom: 0px;
+      line-height: 40px;
+  }
+  p{
+      margin: 0;
+  }
+.box-size{
+    box-sizing: border-box;
+    background-color: #fafafafa;
+}
+.ContactUS{
+    width: 100%;
+    height: 100%;
+}
+.ant-modal-mask{
+    backdrop-filter: blur(5px);
+}
+.inputs{
+    border: 1px solid #B5C1C4;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 6px #00000014 !important;
+    height: 41px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.inputs:focus,.inputs:hover{
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #B5C1C4;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-weight: bold; */
+  margin-bottom: 0px !important;
+  /* line-height: 40px; */
+  cursor: pointer;
+}
+/* p{
+    margin: 0 !important;
+} */
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* shubham css */
+/* .sc-hKwDye{
+    position: absolute!important;
+} */
+/* .ant-btn:focus{
+   color: #fff;
+    background: #1D428A;
+} */
+
+@media (min-width: 821px) {
+  /* Hide the offline message on screens wider than 768px (web) */
+  .newFile {
+    display: none;
+  }
+}

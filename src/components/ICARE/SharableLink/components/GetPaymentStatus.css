@@ -1,0 +1,51 @@
+/* Card.css */
+.cardPayment {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 100px; /* Adjust the top margin for vertical centering */
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .cardPayment-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cardPayment-content {
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    /* Responsive styles for screens less than 768px */
+    .cardPayment {
+      width: 100%;
+      
+    }
+  }
+
+  /* LoadingDots.css */
+.loading-dots {
+    font-size: 24px;
+    animation: loading 1.5s infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes loading {
+    0%, 20% {
+      content: '.';
+    }
+    40% {
+      content: '..';
+    }
+    60% {
+      content: '...';
+    }
+    80%, 100% {
+      content: '';
+    }
+  }
